@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classfloorContactForce" kind="class" language="C++" prot="public">
+    <compoundname>floorContactForce</compoundname>
+    <basecompoundref refid="classbaseForce" prot="public" virt="non-virtual">baseForce</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classfloorContactForce_1ab63bf14b6a6820788c5c08b51d570783" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double floorContactForce::min_dist</definition>
+        <argsstring></argsstring>
+        <name>min_dist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="30" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1a20f4973d5ab43370e079e1ec26d52a0e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int floorContactForce::num_contacts</definition>
+        <argsstring></argsstring>
+        <name>num_contacts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="31" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfloorContactForce_1acfe8f94f266f32d0e59dcb873e89c50d" prot="private" static="no" mutable="no">
+        <type>shared_ptr&lt; <ref refid="classsymbolicEquations" kindref="compound">symbolicEquations</ref> &gt;</type>
+        <definition>shared_ptr&lt;symbolicEquations&gt; floorContactForce::sym_eqs</definition>
+        <argsstring></argsstring>
+        <name>sym_eqs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="40" column="16" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1a1532630197908e323dea581a7860d7e2" prot="private" static="no" mutable="no">
+        <type>Vector&lt; double, 2 &gt;</type>
+        <definition>Vector&lt;double, 2&gt; floorContactForce::contact_input</definition>
+        <argsstring></argsstring>
+        <name>contact_input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="41" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1a5a443d97ae6810feed3c9df50249da04" prot="private" static="no" mutable="no">
+        <type>Vector&lt; double, 8 &gt;</type>
+        <definition>Vector&lt;double, 8&gt; floorContactForce::fric_jacobian_input</definition>
+        <argsstring></argsstring>
+        <name>fric_jacobian_input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="42" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1ade763515b7b82e9fb7a417130a97f967" prot="private" static="no" mutable="no">
+        <type>Matrix&lt; double, 2, 2 &gt;</type>
+        <definition>Matrix&lt;double, 2, 2&gt; floorContactForce::friction_partials_dfr_dx</definition>
+        <argsstring></argsstring>
+        <name>friction_partials_dfr_dx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="43" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1a9756a700d45bbf7776b940f94d80d127" prot="private" static="no" mutable="no">
+        <type>Vector&lt; double, 2 &gt;</type>
+        <definition>Vector&lt;double, 2&gt; floorContactForce::friction_partials_dfr_dfn</definition>
+        <argsstring></argsstring>
+        <name>friction_partials_dfr_dfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="44" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1ab1523cc581d05194c5d0b7218aea5368" prot="private" static="no" mutable="no">
+        <type>Vector&lt; double, 2 &gt;</type>
+        <definition>Vector&lt;double, 2&gt; floorContactForce::ffr</definition>
+        <argsstring></argsstring>
+        <name>ffr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="45" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1af56bf37d95fe5a1948a2bb0cd73fca68" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int floorContactForce::fric_jaco_type</definition>
+        <argsstring></argsstring>
+        <name>fric_jaco_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="46" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1ad5a4d2006edc7bff09fd8e4e218349d6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double floorContactForce::contact_stiffness</definition>
+        <argsstring></argsstring>
+        <name>contact_stiffness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="47" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1a03f09ae1272230e5209d8d328baa07bd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double floorContactForce::mu</definition>
+        <argsstring></argsstring>
+        <name>mu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="48" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1a9a414e2be7cdf7b3892946c1a4a91433" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double floorContactForce::delta</definition>
+        <argsstring></argsstring>
+        <name>delta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="49" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1a0272b8e75822586736beef8eb8e5f8e8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double floorContactForce::slipTol</definition>
+        <argsstring></argsstring>
+        <name>slipTol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="50" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1a230e1b0c1e3fa1191291b5e433bc3135" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double floorContactForce::orig_slip_tol</definition>
+        <argsstring></argsstring>
+        <name>orig_slip_tol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="51" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1a5a5e242a92a3ec028b9fce3d3c586ab1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double floorContactForce::K1</definition>
+        <argsstring></argsstring>
+        <name>K1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="52" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1aa77c79307a4a815bff078d861a2364ce" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double floorContactForce::K2</definition>
+        <argsstring></argsstring>
+        <name>K2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="53" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfloorContactForce_1a7f1b0b9110df5f47722873084798fc90" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double floorContactForce::floor_z</definition>
+        <argsstring></argsstring>
+        <name>floor_z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="54" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfloorContactForce_1a2954abaaea559a9e4c5ec565500bda14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>floorContactForce::floorContactForce</definition>
+        <argsstring>(const shared_ptr&lt; softRobots &gt; &amp;soft_robots, double floor_delta, double floor_slipTol, double mu, double floor_z)</argsstring>
+        <name>floorContactForce</name>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classsoftRobots" kindref="compound">softRobots</ref> &gt; &amp;</type>
+          <declname>soft_robots</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>floor_delta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>floor_slipTol</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>floor_z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="22" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp" bodystart="21" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classfloorContactForce_1a65b168b31c781ffb9cc5340b788b0220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>floorContactForce::~floorContactForce</definition>
+        <argsstring>() override</argsstring>
+        <name>~floorContactForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="24" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classfloorContactForce_1abc61668d52c4ffadcd4678404f4c3664" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void floorContactForce::computeForce</definition>
+        <argsstring>(double dt) override</argsstring>
+        <name>computeForce</name>
+        <reimplements refid="classbaseForce_1a95251104e68ce0cbdbe4450cdac9013a">computeForce</reimplements>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="26" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp" bodystart="65" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classfloorContactForce_1abba2e50f5c5b3880f85419a564da0602" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void floorContactForce::computeForceAndJacobian</definition>
+        <argsstring>(double dt) override</argsstring>
+        <name>computeForceAndJacobian</name>
+        <reimplements refid="classbaseForce_1ab889c81db9e1fef1274947c937096a25">computeForceAndJacobian</reimplements>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="27" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp" bodystart="104" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classfloorContactForce_1a805451e38d72c82693a7afb71cea6c93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void floorContactForce::updateMu</definition>
+        <argsstring>(double mu)</argsstring>
+        <name>updateMu</name>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="28" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classfloorContactForce_1a97238dbd46163a4db3ee2615cd7d59da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void floorContactForce::change_slip_tol</definition>
+        <argsstring>(double scale)</argsstring>
+        <name>change_slip_tol</name>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="33" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classfloorContactForce_1ab92ce9a29beee8d80de03403c592de02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void floorContactForce::reset_slip_tol</definition>
+        <argsstring>()</argsstring>
+        <name>reset_slip_tol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="34" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classfloorContactForce_1a050590ea4405fd7d551ca28b89a10f86" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void floorContactForce::computeFriction</definition>
+        <argsstring>(const Vector2d &amp;curr_node, const Vector2d &amp;pre_node, double fn, double dt)</argsstring>
+        <name>computeFriction</name>
+        <param>
+          <type>const Vector2d &amp;</type>
+          <declname>curr_node</declname>
+        </param>
+        <param>
+          <type>const Vector2d &amp;</type>
+          <declname>pre_node</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="37" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp" bodystart="174" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classfloorContactForce_1a767e6a134152c5d1acd3db534877778d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void floorContactForce::prepFrictionJacobianInput</definition>
+        <argsstring>(const Vector2d &amp;curr_node, const Vector2d &amp;pre_node, double fn, double dt)</argsstring>
+        <name>prepFrictionJacobianInput</name>
+        <param>
+          <type>const Vector2d &amp;</type>
+          <declname>curr_node</declname>
+        </param>
+        <param>
+          <type>const Vector2d &amp;</type>
+          <declname>pre_node</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="38" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp" bodystart="200" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>floorContactForce</label>
+        <link refid="classfloorContactForce"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>baseForce</label>
+        <link refid="classbaseForce"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>floorContactForce</label>
+        <link refid="classfloorContactForce"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>baseForce</label>
+        <link refid="classbaseForce"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" line="19" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h" bodystart="20" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classbaseForce_1a80e13df0453e912efc081176f3ace387" prot="public" virt="non-virtual"><scope>floorContactForce</scope><name>baseForce</name></member>
+      <member refid="classfloorContactForce_1a97238dbd46163a4db3ee2615cd7d59da" prot="public" virt="non-virtual"><scope>floorContactForce</scope><name>change_slip_tol</name></member>
+      <member refid="classfloorContactForce_1abc61668d52c4ffadcd4678404f4c3664" prot="public" virt="virtual"><scope>floorContactForce</scope><name>computeForce</name></member>
+      <member refid="classfloorContactForce_1abba2e50f5c5b3880f85419a564da0602" prot="public" virt="virtual"><scope>floorContactForce</scope><name>computeForceAndJacobian</name></member>
+      <member refid="classfloorContactForce_1a050590ea4405fd7d551ca28b89a10f86" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>computeFriction</name></member>
+      <member refid="classfloorContactForce_1a1532630197908e323dea581a7860d7e2" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>contact_input</name></member>
+      <member refid="classfloorContactForce_1ad5a4d2006edc7bff09fd8e4e218349d6" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>contact_stiffness</name></member>
+      <member refid="classfloorContactForce_1a9a414e2be7cdf7b3892946c1a4a91433" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>delta</name></member>
+      <member refid="classfloorContactForce_1ab1523cc581d05194c5d0b7218aea5368" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>ffr</name></member>
+      <member refid="classfloorContactForce_1a7f1b0b9110df5f47722873084798fc90" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>floor_z</name></member>
+      <member refid="classfloorContactForce_1a2954abaaea559a9e4c5ec565500bda14" prot="public" virt="non-virtual"><scope>floorContactForce</scope><name>floorContactForce</name></member>
+      <member refid="classfloorContactForce_1af56bf37d95fe5a1948a2bb0cd73fca68" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>fric_jaco_type</name></member>
+      <member refid="classfloorContactForce_1a5a443d97ae6810feed3c9df50249da04" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>fric_jacobian_input</name></member>
+      <member refid="classfloorContactForce_1a9756a700d45bbf7776b940f94d80d127" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>friction_partials_dfr_dfn</name></member>
+      <member refid="classfloorContactForce_1ade763515b7b82e9fb7a417130a97f967" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>friction_partials_dfr_dx</name></member>
+      <member refid="classfloorContactForce_1a5a5e242a92a3ec028b9fce3d3c586ab1" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>K1</name></member>
+      <member refid="classfloorContactForce_1aa77c79307a4a815bff078d861a2364ce" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>K2</name></member>
+      <member refid="classfloorContactForce_1ab63bf14b6a6820788c5c08b51d570783" prot="public" virt="non-virtual"><scope>floorContactForce</scope><name>min_dist</name></member>
+      <member refid="classfloorContactForce_1a03f09ae1272230e5209d8d328baa07bd" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>mu</name></member>
+      <member refid="classfloorContactForce_1a20f4973d5ab43370e079e1ec26d52a0e" prot="public" virt="non-virtual"><scope>floorContactForce</scope><name>num_contacts</name></member>
+      <member refid="classfloorContactForce_1a230e1b0c1e3fa1191291b5e433bc3135" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>orig_slip_tol</name></member>
+      <member refid="classfloorContactForce_1a767e6a134152c5d1acd3db534877778d" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>prepFrictionJacobianInput</name></member>
+      <member refid="classfloorContactForce_1ab92ce9a29beee8d80de03403c592de02" prot="public" virt="non-virtual"><scope>floorContactForce</scope><name>reset_slip_tol</name></member>
+      <member refid="classbaseForce_1a3dc2a0c4501ec0e1b89888c0be36b004" prot="public" virt="non-virtual"><scope>floorContactForce</scope><name>setTimeStepper</name></member>
+      <member refid="classfloorContactForce_1a0272b8e75822586736beef8eb8e5f8e8" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>slipTol</name></member>
+      <member refid="classbaseForce_1ad8e25879f53e6b8af2671afc9755e9b1" prot="protected" virt="non-virtual"><scope>floorContactForce</scope><name>soft_robots</name></member>
+      <member refid="classbaseForce_1a993b85a94508f4375d006bd07982002e" prot="protected" virt="non-virtual"><scope>floorContactForce</scope><name>stepper</name></member>
+      <member refid="classfloorContactForce_1acfe8f94f266f32d0e59dcb873e89c50d" prot="private" virt="non-virtual"><scope>floorContactForce</scope><name>sym_eqs</name></member>
+      <member refid="classfloorContactForce_1a805451e38d72c82693a7afb71cea6c93" prot="public" virt="non-virtual"><scope>floorContactForce</scope><name>updateMu</name></member>
+      <member refid="classbaseForce_1acb32c3384da0eb48617e93d9901ea548" prot="public" virt="pure-virtual"><scope>floorContactForce</scope><name>~baseForce</name></member>
+      <member refid="classfloorContactForce_1a65b168b31c781ffb9cc5340b788b0220" prot="public" virt="non-virtual"><scope>floorContactForce</scope><name>~floorContactForce</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

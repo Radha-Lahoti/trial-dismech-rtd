@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classrodOpenLoopFileController" kind="class" language="C++" prot="public">
+    <compoundname>rodOpenLoopFileController</compoundname>
+    <basecompoundref refid="classrodController" prot="public" virt="non-virtual">rodController</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrodOpenLoopFileController_1a36832b987c795ecb0c8f934912ad61b9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; shared_ptr&lt; <ref refid="classpwmPeripheral" kindref="compound">pwmPeripheral</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;shared_ptr&lt;pwmPeripheral&gt; &gt; rodOpenLoopFileController::pwm</definition>
+        <argsstring></argsstring>
+        <name>pwm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" line="54" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrodOpenLoopFileController_1af200f748e76b978f653cf0886d38762b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; rodOpenLoopFileController::time_pts</definition>
+        <argsstring></argsstring>
+        <name>time_pts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" line="58" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrodOpenLoopFileController_1ab9ba40a60c1fae7f32ad7bd770a9099d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; rodOpenLoopFileController::dutys</definition>
+        <argsstring></argsstring>
+        <name>dutys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" line="59" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrodOpenLoopFileController_1a565a8b09644aaf7a3a34f438c9e573b0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rodOpenLoopFileController::csv_header_lines</definition>
+        <argsstring></argsstring>
+        <name>csv_header_lines</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" line="62" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrodOpenLoopFileController_1a617dfac157f27a5fcb0d9833290621db" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rodOpenLoopFileController::prev_time_pt_idx</definition>
+        <argsstring></argsstring>
+        <name>prev_time_pt_idx</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" line="65" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrodOpenLoopFileController_1a1ba1a56d65d4838e5813999144dd9a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rodOpenLoopFileController::rodOpenLoopFileController</definition>
+        <argsstring>(int numAct, std::vector&lt; double &gt; m_periods, std::string m_filepath)</argsstring>
+        <name>rodOpenLoopFileController</name>
+        <param>
+          <type>int</type>
+          <declname>numAct</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>m_periods</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>m_filepath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor and destructor call parents, but now also pass in: <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m_periods</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector of the periods for all actuators. Must be dimension of numAct. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_filepath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to the .csv file that contains the duty cycle timepoints </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" line="35" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.cpp" bodystart="20" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classrodOpenLoopFileController_1a8d28103148be056877c7b6641e1cb9ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rodOpenLoopFileController::~rodOpenLoopFileController</definition>
+        <argsstring>()</argsstring>
+        <name>~rodOpenLoopFileController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" line="36" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.cpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classrodOpenLoopFileController_1aab556a91e22f7153471f941687aa1c2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; rodOpenLoopFileController::getU</definition>
+        <argsstring>(shared_ptr&lt; elasticRod &gt; rod_p)</argsstring>
+        <name>getU</name>
+        <param>
+          <type>shared_ptr&lt; <ref refid="classelasticRod" kindref="compound">elasticRod</ref> &gt;</type>
+          <declname>rod_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the desired control input, u(x). Now open loop so rod unused. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rod_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an <ref refid="classelasticRod" kindref="compound">elasticRod</ref> from which state feedback will occur. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" line="43" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.cpp" bodystart="145" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classrodOpenLoopFileController_1a433fc0cd5d9f58a89010f952f2e461e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rodOpenLoopFileController::updateTimestep</definition>
+        <argsstring>(double dt)</argsstring>
+        <name>updateTimestep</name>
+        <reimplements refid="classrodController_1af92635f674199de0bdd5178a7ba361b1">updateTimestep</reimplements>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" line="46" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.cpp" bodystart="103" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrodOpenLoopFileController_1abf3cdfec8fa9b4bb3d28c7db53d8a311" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rodOpenLoopFileController::parseActuationFile</definition>
+        <argsstring>(std::string csv_path)</argsstring>
+        <name>parseActuationFile</name>
+        <param>
+          <type>std::string</type>
+          <declname>csv_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" line="51" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.cpp" bodystart="52" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>rodOpenLoopFileController</label>
+        <link refid="classrodOpenLoopFileController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rodController</label>
+        <link refid="classrodController"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>rodOpenLoopFileController</label>
+        <link refid="classrodOpenLoopFileController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rodController</label>
+        <link refid="classrodController"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" line="25" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h" bodystart="26" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classrodOpenLoopFileController_1a565a8b09644aaf7a3a34f438c9e573b0" prot="private" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>csv_header_lines</name></member>
+      <member refid="classrodController_1a9025a4e10d652609e852241d7be6ce35" prot="protected" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>current_time</name></member>
+      <member refid="classrodOpenLoopFileController_1ab9ba40a60c1fae7f32ad7bd770a9099d" prot="private" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>dutys</name></member>
+      <member refid="classrodOpenLoopFileController_1aab556a91e22f7153471f941687aa1c2b" prot="public" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>getU</name></member>
+      <member refid="classrodController_1aff9fef552101dd94ca9bb5227074564f" prot="protected" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>limbs</name></member>
+      <member refid="classrodController_1a87e0b681a6b9586d9572d45f4430f478" prot="protected" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>num_actuators</name></member>
+      <member refid="classrodOpenLoopFileController_1abf3cdfec8fa9b4bb3d28c7db53d8a311" prot="private" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>parseActuationFile</name></member>
+      <member refid="classrodOpenLoopFileController_1a617dfac157f27a5fcb0d9833290621db" prot="private" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>prev_time_pt_idx</name></member>
+      <member refid="classrodOpenLoopFileController_1a36832b987c795ecb0c8f934912ad61b9" prot="private" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>pwm</name></member>
+      <member refid="classrodController_1a006f233e6b59b5eb275cd0475db27952" prot="public" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>rodController</name></member>
+      <member refid="classrodOpenLoopFileController_1a1ba1a56d65d4838e5813999144dd9a87" prot="public" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>rodOpenLoopFileController</name></member>
+      <member refid="classrodOpenLoopFileController_1af200f748e76b978f653cf0886d38762b" prot="private" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>time_pts</name></member>
+      <member refid="classrodOpenLoopFileController_1a433fc0cd5d9f58a89010f952f2e461e3" prot="public" virt="virtual"><scope>rodOpenLoopFileController</scope><name>updateTimestep</name></member>
+      <member refid="classrodController_1ac3db6de88446e6df61aa3f8e6ac0e83b" prot="public" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>~rodController</name></member>
+      <member refid="classrodOpenLoopFileController_1a8d28103148be056877c7b6641e1cb9ab" prot="public" virt="non-virtual"><scope>rodOpenLoopFileController</scope><name>~rodOpenLoopFileController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

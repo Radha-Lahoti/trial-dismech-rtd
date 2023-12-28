@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classheadlessDERSimulationEnvironment" kind="class" language="C++" prot="public">
+    <compoundname>headlessDERSimulationEnvironment</compoundname>
+    <basecompoundref refid="classderSimulationEnvironment" prot="public" virt="non-virtual">derSimulationEnvironment</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classheadlessDERSimulationEnvironment_1ab8b57303792341f68c7007a96f14cf34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>headlessDERSimulationEnvironment::headlessDERSimulationEnvironment</definition>
+        <argsstring>(const shared_ptr&lt; world &gt; &amp;m_world, const simParams &amp;sim_params, const shared_ptr&lt; worldLogger &gt; &amp;logger)</argsstring>
+        <name>headlessDERSimulationEnvironment</name>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classworld" kindref="compound">world</ref> &gt; &amp;</type>
+          <declname>m_world</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structsimParams" kindref="compound">simParams</ref> &amp;</type>
+          <declname>sim_params</declname>
+        </param>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classworldLogger" kindref="compound">worldLogger</ref> &gt; &amp;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.h" line="11" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classheadlessDERSimulationEnvironment_1a9a355a8bff9958a887cc7b6401eec4ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>headlessDERSimulationEnvironment::~headlessDERSimulationEnvironment</definition>
+        <argsstring>() override</argsstring>
+        <name>~headlessDERSimulationEnvironment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.h" line="13" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classheadlessDERSimulationEnvironment_1a4612efdd8794486b70fe369349860b95" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void headlessDERSimulationEnvironment::runSimulation</definition>
+        <argsstring>() override</argsstring>
+        <name>runSimulation</name>
+        <reimplements refid="classderSimulationEnvironment_1ab4eb8e1070783f3a36d36bcda1a59e06">runSimulation</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup function, called SEPARATELY, as needed according to specific environment Start the simulation! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.h" line="15" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.cpp" bodystart="16" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>headlessDERSimulationEnvironment</label>
+        <link refid="classheadlessDERSimulationEnvironment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>derSimulationEnvironment</label>
+        <link refid="classderSimulationEnvironment"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>headlessDERSimulationEnvironment</label>
+        <link refid="classheadlessDERSimulationEnvironment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>derSimulationEnvironment</label>
+        <link refid="classderSimulationEnvironment"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.h" line="7" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.h" bodystart="8" bodyend="16"/>
+    <listofallmembers>
+      <member refid="classderSimulationEnvironment_1a006ca4a54b1a7ed3a580e9d7008c9402" prot="protected" virt="non-virtual"><scope>headlessDERSimulationEnvironment</scope><name>cleanShutdown</name></member>
+      <member refid="classderSimulationEnvironment_1af5a56ef62f738d056d94eedf64cf7b13" prot="protected" virt="non-virtual"><scope>headlessDERSimulationEnvironment</scope><name>cleanShutdown</name></member>
+      <member refid="classderSimulationEnvironment_1a4d367c68c3dc0d9c473f5f9808380d5b" prot="protected" virt="non-virtual"><scope>headlessDERSimulationEnvironment</scope><name>cmdline_per</name></member>
+      <member refid="classderSimulationEnvironment_1ac9bb98231bb1f673be16c4ac7d352e3f" prot="protected" virt="non-virtual"><scope>headlessDERSimulationEnvironment</scope><name>cmdlineOutputHelper</name></member>
+      <member refid="classderSimulationEnvironment_1af766a98cd1cd96962cd343407001710d" prot="protected" virt="non-virtual"><scope>headlessDERSimulationEnvironment</scope><name>cmdlineOutputHelper</name></member>
+      <member refid="classderSimulationEnvironment_1a2bfcc28009c5880afca58be9c93e5df2" prot="public" virt="non-virtual"><scope>headlessDERSimulationEnvironment</scope><name>derSimulationEnvironment</name></member>
+      <member refid="classheadlessDERSimulationEnvironment_1ab8b57303792341f68c7007a96f14cf34" prot="public" virt="non-virtual"><scope>headlessDERSimulationEnvironment</scope><name>headlessDERSimulationEnvironment</name></member>
+      <member refid="classderSimulationEnvironment_1af77de1c4b0a71a7efabd3d4ea7f447fd" prot="protected" virt="non-virtual"><scope>headlessDERSimulationEnvironment</scope><name>is_logging</name></member>
+      <member refid="classderSimulationEnvironment_1afd697baa43415994f89264f3c810a2d5" prot="protected" virt="non-virtual"><scope>headlessDERSimulationEnvironment</scope><name>logger_p</name></member>
+      <member refid="classheadlessDERSimulationEnvironment_1a4612efdd8794486b70fe369349860b95" prot="public" virt="virtual"><scope>headlessDERSimulationEnvironment</scope><name>runSimulation</name></member>
+      <member refid="classderSimulationEnvironment_1ab7103171eaa674eba87d0f5914df715e" prot="protected" virt="non-virtual"><scope>headlessDERSimulationEnvironment</scope><name>w_p</name></member>
+      <member refid="classderSimulationEnvironment_1af4e363daff306e5ddde04a26f06ed430" prot="public" virt="virtual"><scope>headlessDERSimulationEnvironment</scope><name>~derSimulationEnvironment</name></member>
+      <member refid="classheadlessDERSimulationEnvironment_1a9a355a8bff9958a887cc7b6401eec4ab" prot="public" virt="non-virtual"><scope>headlessDERSimulationEnvironment</scope><name>~headlessDERSimulationEnvironment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

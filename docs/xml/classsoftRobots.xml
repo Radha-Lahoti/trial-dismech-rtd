@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsoftRobots" kind="class" language="C++" prot="public">
+    <compoundname>softRobots</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsoftRobots_1a06cbb25cf024d5fcb42cd2f2a80f2b1b" prot="public" static="no" mutable="no">
+        <type>vector&lt; shared_ptr&lt; <ref refid="classelasticRod" kindref="compound">elasticRod</ref> &gt; &gt;</type>
+        <definition>vector&lt;shared_ptr&lt;elasticRod&gt; &gt; softRobots::limbs</definition>
+        <argsstring></argsstring>
+        <name>limbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="42" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsoftRobots_1a25297084a587dc1d4e197e86a6d7c2d1" prot="public" static="no" mutable="no">
+        <type>vector&lt; shared_ptr&lt; <ref refid="classelasticJoint" kindref="compound">elasticJoint</ref> &gt; &gt;</type>
+        <definition>vector&lt;shared_ptr&lt;elasticJoint&gt; &gt; softRobots::joints</definition>
+        <argsstring></argsstring>
+        <name>joints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="43" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsoftRobots_1ae0912631cb2b1464cb886fd0a39039f0" prot="public" static="no" mutable="no">
+        <type>vector&lt; shared_ptr&lt; <ref refid="classrodController" kindref="compound">rodController</ref> &gt; &gt;</type>
+        <definition>vector&lt;shared_ptr&lt;rodController&gt; &gt; softRobots::controllers</definition>
+        <argsstring></argsstring>
+        <name>controllers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="44" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsoftRobots_1af5e309b6cbae0b9bdfcab81d4fc54bbc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int softRobots::num_limbs</definition>
+        <argsstring></argsstring>
+        <name>num_limbs</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="47" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsoftRobots_1a5a6ca05885c74c604313502e6a7c61a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>softRobots::softRobots</definition>
+        <argsstring>()</argsstring>
+        <name>softRobots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="24" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsoftRobots_1af55739713df95741b63c606fbda1ec15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>softRobots::~softRobots</definition>
+        <argsstring>()</argsstring>
+        <name>~softRobots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="25" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsoftRobots_1a88d5706cf364276900b221de19e117fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softRobots::addLimb</definition>
+        <argsstring>(const Vector3d &amp;start, const Vector3d &amp;end, int num_nodes, double rho, double rod_radius, double youngs_modulus, double poisson_ratio)</argsstring>
+        <name>addLimb</name>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_nodes</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rod_radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>youngs_modulus</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>poisson_ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="27" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.cpp" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classsoftRobots_1a71a88b9e6613dce804878ac0c47a7463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softRobots::addLimb</definition>
+        <argsstring>(const vector&lt; Vector3d &gt; &amp;nodes, double rho, double rod_radius, double youngs_modulus, double poisson_ratio)</argsstring>
+        <name>addLimb</name>
+        <param>
+          <type>const vector&lt; Vector3d &gt; &amp;</type>
+          <declname>nodes</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rod_radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>youngs_modulus</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>poisson_ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="29" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsoftRobots_1ad2314fb7e1b4f417e041a3fcee7ce197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softRobots::createJoint</definition>
+        <argsstring>(int limb_idx, int node_idx)</argsstring>
+        <name>createJoint</name>
+        <param>
+          <type>int</type>
+          <declname>limb_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>node_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="32" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.cpp" bodystart="34" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classsoftRobots_1aad467fc7079635b4e90dd78f8fa9f0b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softRobots::addToJoint</definition>
+        <argsstring>(int joint_idx, int limb_idx, int node_idx)</argsstring>
+        <name>addToJoint</name>
+        <param>
+          <type>int</type>
+          <declname>joint_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limb_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>node_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="33" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.cpp" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classsoftRobots_1a3c6283c20c1d3de7f4d55c86360b314b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softRobots::lockEdge</definition>
+        <argsstring>(int limb_idx, int edge_idx)</argsstring>
+        <name>lockEdge</name>
+        <param>
+          <type>int</type>
+          <declname>limb_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>edge_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="35" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.cpp" bodystart="52" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classsoftRobots_1aa9abcd6e967977d0c028735de3b31830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softRobots::applyInitialVelocities</definition>
+        <argsstring>(int limb_idx, const vector&lt; Vector3d &gt; &amp;velocities)</argsstring>
+        <name>applyInitialVelocities</name>
+        <param>
+          <type>int</type>
+          <declname>limb_idx</declname>
+        </param>
+        <param>
+          <type>const vector&lt; Vector3d &gt; &amp;</type>
+          <declname>velocities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="36" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.cpp" bodystart="60" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classsoftRobots_1a5545b60d72d816489f655352ec32f017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softRobots::setup</definition>
+        <argsstring>()</argsstring>
+        <name>setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="38" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.cpp" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classsoftRobots_1abf4a5b69c327e237bcfd7c9b60be86ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softRobots::addController</definition>
+        <argsstring>(const shared_ptr&lt; rodController &gt; &amp;controller)</argsstring>
+        <name>addController</name>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classrodController" kindref="compound">rodController</ref> &gt; &amp;</type>
+          <declname>controller</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="40" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.cpp" bodystart="79" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" line="21" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h" bodystart="22" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classsoftRobots_1abf4a5b69c327e237bcfd7c9b60be86ec" prot="public" virt="non-virtual"><scope>softRobots</scope><name>addController</name></member>
+      <member refid="classsoftRobots_1a88d5706cf364276900b221de19e117fd" prot="public" virt="non-virtual"><scope>softRobots</scope><name>addLimb</name></member>
+      <member refid="classsoftRobots_1a71a88b9e6613dce804878ac0c47a7463" prot="public" virt="non-virtual"><scope>softRobots</scope><name>addLimb</name></member>
+      <member refid="classsoftRobots_1aad467fc7079635b4e90dd78f8fa9f0b0" prot="public" virt="non-virtual"><scope>softRobots</scope><name>addToJoint</name></member>
+      <member refid="classsoftRobots_1aa9abcd6e967977d0c028735de3b31830" prot="public" virt="non-virtual"><scope>softRobots</scope><name>applyInitialVelocities</name></member>
+      <member refid="classsoftRobots_1ae0912631cb2b1464cb886fd0a39039f0" prot="public" virt="non-virtual"><scope>softRobots</scope><name>controllers</name></member>
+      <member refid="classsoftRobots_1ad2314fb7e1b4f417e041a3fcee7ce197" prot="public" virt="non-virtual"><scope>softRobots</scope><name>createJoint</name></member>
+      <member refid="classsoftRobots_1a25297084a587dc1d4e197e86a6d7c2d1" prot="public" virt="non-virtual"><scope>softRobots</scope><name>joints</name></member>
+      <member refid="classsoftRobots_1a06cbb25cf024d5fcb42cd2f2a80f2b1b" prot="public" virt="non-virtual"><scope>softRobots</scope><name>limbs</name></member>
+      <member refid="classsoftRobots_1a3c6283c20c1d3de7f4d55c86360b314b" prot="public" virt="non-virtual"><scope>softRobots</scope><name>lockEdge</name></member>
+      <member refid="classsoftRobots_1af5e309b6cbae0b9bdfcab81d4fc54bbc" prot="private" virt="non-virtual"><scope>softRobots</scope><name>num_limbs</name></member>
+      <member refid="classsoftRobots_1a5545b60d72d816489f655352ec32f017" prot="public" virt="non-virtual"><scope>softRobots</scope><name>setup</name></member>
+      <member refid="classsoftRobots_1a5a6ca05885c74c604313502e6a7c61a1" prot="public" virt="non-virtual"><scope>softRobots</scope><name>softRobots</name></member>
+      <member refid="classsoftRobots_1af55739713df95741b63c606fbda1ec15" prot="public" virt="non-virtual"><scope>softRobots</scope><name>~softRobots</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

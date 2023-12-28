@@ -1,0 +1,673 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classimplicitTimeStepper" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>implicitTimeStepper</compoundname>
+    <basecompoundref refid="classbaseTimeStepper" prot="public" virt="non-virtual">baseTimeStepper</basecompoundref>
+    <derivedcompoundref refid="classbackwardEuler" prot="public" virt="non-virtual">backwardEuler</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classimplicitTimeStepper_1a027e906c1fbd70766e03696b86e2c8be" prot="public" static="no" mutable="no">
+        <type>MKL_INT *</type>
+        <definition>MKL_INT* implicitTimeStepper::ia</definition>
+        <argsstring></argsstring>
+        <name>ia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="35" column="13" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1ae54fc9d5cabfd44f56f3daebf0f5de4c" prot="public" static="no" mutable="no">
+        <type>vector&lt; pair&lt; int, int &gt; &gt;</type>
+        <definition>vector&lt;pair&lt;int, int&gt; &gt; implicitTimeStepper::non_zero_elements</definition>
+        <argsstring></argsstring>
+        <name>non_zero_elements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="36" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1ace5cc3cb7879e772ac07a6b02313a584" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* implicitTimeStepper::dgbsv_jacobian</definition>
+        <argsstring></argsstring>
+        <name>dgbsv_jacobian</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="39" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1a982a890ebfad89203b315350511cc5c2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int implicitTimeStepper::kl</definition>
+        <argsstring></argsstring>
+        <name>kl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="40" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1a56cf2e10dbceb6003140edddf0f18a78" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int implicitTimeStepper::ku</definition>
+        <argsstring></argsstring>
+        <name>ku</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="40" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1af9db7e8949ac134f2496fd3f9b5298f2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int implicitTimeStepper::num_rows</definition>
+        <argsstring></argsstring>
+        <name>num_rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="40" column="15" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classimplicitTimeStepper_1a7caebce8c6e3c9394e654a0584a7c865" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double implicitTimeStepper::ftol</definition>
+        <argsstring></argsstring>
+        <name>ftol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="43" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1a00e9b55da16b116fd9a64adcda9a4520" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double implicitTimeStepper::dtol</definition>
+        <argsstring></argsstring>
+        <name>dtol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="44" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1a4f8f70dfb48e2e648d848f837b0d18c3" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int implicitTimeStepper::max_iter</definition>
+        <argsstring></argsstring>
+        <name>max_iter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="45" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1a2c7b4d7d808ddd210c7280ba03c99fcf" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool implicitTimeStepper::line_search</definition>
+        <argsstring></argsstring>
+        <name>line_search</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="46" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1a70962aef84e682a202dd10fa6eb3e251" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double implicitTimeStepper::orig_dt</definition>
+        <argsstring></argsstring>
+        <name>orig_dt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="47" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1a6f5ada5c0c658eee7e74fb8fdf9d11fb" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool implicitTimeStepper::adaptive_time_stepping</definition>
+        <argsstring></argsstring>
+        <name>adaptive_time_stepping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="48" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1ad783a87cd24f297b2b2bbfed0eaa4fa8" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int implicitTimeStepper::adaptive_time_stepping_threshold</definition>
+        <argsstring></argsstring>
+        <name>adaptive_time_stepping_threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="49" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classimplicitTimeStepper_1aff8270274c20d3462c110689c7fffa3a" prot="private" static="no" mutable="no">
+        <type>unique_ptr&lt; <ref refid="classbaseSolver" kindref="compound">baseSolver</ref> &gt;</type>
+        <definition>unique_ptr&lt;baseSolver&gt; implicitTimeStepper::solver</definition>
+        <argsstring></argsstring>
+        <name>solver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="56" column="16" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1a6a903e7d9043648524ef2eec91ac60e3" prot="private" static="no" mutable="no">
+        <type>solverType</type>
+        <definition>solverType implicitTimeStepper::solver_type</definition>
+        <argsstring></argsstring>
+        <name>solver_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="57" column="16" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimplicitTimeStepper_1ab5dcdba9da96dabd04024a03ebc6f5ad" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int implicitTimeStepper::dgbsv_jacobian_len</definition>
+        <argsstring></argsstring>
+        <name>dgbsv_jacobian_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="58" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classimplicitTimeStepper_1a7456f3275ec43cacef1852275d90f87d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>implicitTimeStepper::implicitTimeStepper</definition>
+        <argsstring>(const shared_ptr&lt; softRobots &gt; &amp;soft_robots, const shared_ptr&lt; forceContainer &gt; &amp;forces, const simParams &amp;sim_params, solverType solver_type)</argsstring>
+        <name>implicitTimeStepper</name>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classsoftRobots" kindref="compound">softRobots</ref> &gt; &amp;</type>
+          <declname>soft_robots</declname>
+        </param>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classforceContainer" kindref="compound">forceContainer</ref> &gt; &amp;</type>
+          <declname>forces</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structsimParams" kindref="compound">simParams</ref> &amp;</type>
+          <declname>sim_params</declname>
+        </param>
+        <param>
+          <type>solverType</type>
+          <declname>solver_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="14" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="7" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1a1a7b6c591152887c27907e22a923364c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>implicitTimeStepper::~implicitTimeStepper</definition>
+        <argsstring>() override</argsstring>
+        <name>~implicitTimeStepper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="18" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1a93a0c535049f1a6aeaa2cd015a24b2ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void implicitTimeStepper::addJacobian</definition>
+        <argsstring>(int ind1, int ind2, double p, int limb_idx) override</argsstring>
+        <name>addJacobian</name>
+        <reimplements refid="classbaseTimeStepper_1a39a0c1c22cf0c300d9e6228e4ce254a0">addJacobian</reimplements>
+        <param>
+          <type>int</type>
+          <declname>ind1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ind2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limb_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="20" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1aa3a719b5d15b53bf4319391f976194fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void implicitTimeStepper::addJacobian</definition>
+        <argsstring>(int ind1, int ind2, double p, int limb_idx1, int limb_idx2) override</argsstring>
+        <name>addJacobian</name>
+        <reimplements refid="classbaseTimeStepper_1a55de1556fda3ef5f10ed67a45b519d70">addJacobian</reimplements>
+        <param>
+          <type>int</type>
+          <declname>ind1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ind2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limb_idx1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limb_idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="21" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="125" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1a23479cf9d630e0cf9fa86dcc72407958" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void implicitTimeStepper::setZero</definition>
+        <argsstring>() override</argsstring>
+        <name>setZero</name>
+        <reimplements refid="classbaseTimeStepper_1a78dc32b812a9b51e9c58570a95bd72e6">setZero</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="22" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="137" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1a095d2b8ca1515d86bc2e704d22005fa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void implicitTimeStepper::update</definition>
+        <argsstring>() override</argsstring>
+        <name>update</name>
+        <reimplements refid="classbaseTimeStepper_1a6d5eb7b3c457d40db5c14b4c7504cbf9">update</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="23" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="155" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1aeae9e12b77b34391092b4738a83e9acf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void implicitTimeStepper::integrator</definition>
+        <argsstring>() override</argsstring>
+        <name>integrator</name>
+        <reimplements refid="classbaseTimeStepper_1a99edafe01330f427051b009c845d5c71">integrator</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="24" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1a3b8bc7a205dff04acfe42a8fdcd95e41" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void implicitTimeStepper::initStepper</definition>
+        <argsstring>() override</argsstring>
+        <name>initStepper</name>
+        <reimplements refid="classbaseTimeStepper_1a1588efef752ab97dfcb12489e4602ed4">initStepper</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="25" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="28" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1a8f7ea46c03682a47251918bdc6dfd1ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void implicitTimeStepper::prepSystemForIteration</definition>
+        <argsstring>() override</argsstring>
+        <name>prepSystemForIteration</name>
+        <reimplements refid="classbaseTimeStepper_1a3733517518f87a7673d978ae25890b0c">prepSystemForIteration</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="27" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1ad18412d7499bd842aac4d24a9958ae9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double implicitTimeStepper::newtonMethod</definition>
+        <argsstring>(double dt)=0</argsstring>
+        <name>newtonMethod</name>
+        <reimplementedby refid="classbackwardEuler_1af90032a8786a299097c67bacd1ad8d6d">newtonMethod</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="28" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1a28592beb3b86ec1b9d06b38c9380fbbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void implicitTimeStepper::lineSearch</definition>
+        <argsstring>(double dt)=0</argsstring>
+        <name>lineSearch</name>
+        <reimplementedby refid="classbackwardEuler_1a697e3b9ff239f415bf7659df60ee7aa1">lineSearch</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="29" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classimplicitTimeStepper_1a54cb6608536780e9424fedd1c98ea1eb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <templateparamlist>
+          <param>
+            <type>solverType</type>
+            <declname>solver_type</declname>
+            <defname>solver_type</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void implicitTimeStepper::addJacobian</definition>
+        <argsstring>(int ind1, int ind2, double p, int limb_idx1, int limb_idx2)</argsstring>
+        <name>addJacobian</name>
+        <reimplements refid="classbaseTimeStepper_1a55de1556fda3ef5f10ed67a45b519d70">addJacobian</reimplements>
+        <param>
+          <type>int</type>
+          <declname>ind1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ind2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limb_idx1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limb_idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1af32e55a7f8601d5e7384ed38f088dda6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void implicitTimeStepper::addJacobian</definition>
+        <argsstring>(int ind1, int ind2, double p, int limb_idx1, int limb_idx2)</argsstring>
+        <name>addJacobian</name>
+        <reimplements refid="classbaseTimeStepper_1a55de1556fda3ef5f10ed67a45b519d70">addJacobian</reimplements>
+        <param>
+          <type>int</type>
+          <declname>ind1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ind2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limb_idx1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limb_idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" line="61" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="61" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitTimeStepper_1af32e55a7f8601d5e7384ed38f088dda6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void implicitTimeStepper::addJacobian</definition>
+        <argsstring>(int ind1, int ind2, double p, int limb_idx1, int limb_idx2)</argsstring>
+        <name>addJacobian</name>
+        <reimplements refid="classbaseTimeStepper_1a55de1556fda3ef5f10ed67a45b519d70">addJacobian</reimplements>
+        <param>
+          <type>int</type>
+          <declname>ind1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ind2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limb_idx1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limb_idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" line="89" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="89" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classimplicitTimeStepper_1a45be37ba3758e54776f59665c0582f64" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>shared_ptr&lt; <ref refid="classimplicitTimeStepper" kindref="compound">implicitTimeStepper</ref> &gt;</type>
+        <definition>shared_ptr&lt; implicitTimeStepper &gt; implicitTimeStepper::shared_from_this</definition>
+        <argsstring>()</argsstring>
+        <name>shared_from_this</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="55" column="16" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>implicitTimeStepper</label>
+        <link refid="classimplicitTimeStepper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>backwardEuler</label>
+        <link refid="classbackwardEuler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>enable_shared_from_this&lt; baseTimeStepper &gt;</label>
+      </node>
+      <node id="2">
+        <label>baseTimeStepper</label>
+        <link refid="classbaseTimeStepper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>implicitMidpoint</label>
+        <link refid="classimplicitMidpoint"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>implicitTimeStepper</label>
+        <link refid="classimplicitTimeStepper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>enable_shared_from_this&lt; baseTimeStepper &gt;</label>
+      </node>
+      <node id="2">
+        <label>baseTimeStepper</label>
+        <link refid="classbaseTimeStepper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" line="11" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h" bodystart="12" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classimplicitTimeStepper_1a6f5ada5c0c658eee7e74fb8fdf9d11fb" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>adaptive_time_stepping</name></member>
+      <member refid="classimplicitTimeStepper_1ad783a87cd24f297b2b2bbfed0eaa4fa8" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>adaptive_time_stepping_threshold</name></member>
+      <member refid="classbaseTimeStepper_1aef09208da33c2b3ae89193628768585c" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>addForce</name></member>
+      <member refid="classimplicitTimeStepper_1a93a0c535049f1a6aeaa2cd015a24b2ac" prot="public" virt="virtual"><scope>implicitTimeStepper</scope><name>addJacobian</name></member>
+      <member refid="classimplicitTimeStepper_1aa3a719b5d15b53bf4319391f976194fb" prot="public" virt="virtual"><scope>implicitTimeStepper</scope><name>addJacobian</name></member>
+      <member refid="classimplicitTimeStepper_1a54cb6608536780e9424fedd1c98ea1eb" prot="protected" virt="virtual"><scope>implicitTimeStepper</scope><name>addJacobian</name></member>
+      <member refid="classimplicitTimeStepper_1af32e55a7f8601d5e7384ed38f088dda6" prot="protected" virt="virtual"><scope>implicitTimeStepper</scope><name>addJacobian</name></member>
+      <member refid="classimplicitTimeStepper_1af32e55a7f8601d5e7384ed38f088dda6" prot="protected" virt="virtual"><scope>implicitTimeStepper</scope><name>addJacobian</name></member>
+      <member refid="classbaseTimeStepper_1a7f1170cf8c7ed2f6de3cb6b2344447ff" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>alpha</name></member>
+      <member refid="classbaseTimeStepper_1a914e49f0499f95432de16cbbbf9efada" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>baseTimeStepper</name></member>
+      <member refid="classbaseTimeStepper_1aedd6fe19d1bdb47b8dfbd8ee6a14f148" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>controllers</name></member>
+      <member refid="classimplicitTimeStepper_1ace5cc3cb7879e772ac07a6b02313a584" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>dgbsv_jacobian</name></member>
+      <member refid="classimplicitTimeStepper_1ab5dcdba9da96dabd04024a03ebc6f5ad" prot="private" virt="non-virtual"><scope>implicitTimeStepper</scope><name>dgbsv_jacobian_len</name></member>
+      <member refid="classbaseTimeStepper_1aa0a9a5832257eccd49bad1358bdc2a8e" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>dt</name></member>
+      <member refid="classimplicitTimeStepper_1a00e9b55da16b116fd9a64adcda9a4520" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>dtol</name></member>
+      <member refid="classbaseTimeStepper_1ad002a7de3f5e936bb9005a764102344a" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>dx</name></member>
+      <member refid="classbaseTimeStepper_1a67caa8bb2cbc163a47768a6592fecbb0" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>DX</name></member>
+      <member refid="classbaseTimeStepper_1a0e95d2d5de20d2cb16261fe38e0a8924" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>force</name></member>
+      <member refid="classbaseTimeStepper_1a4b61514bdd20ea93ec25e611383eb576" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>Force</name></member>
+      <member refid="classbaseTimeStepper_1ad3de56819062000bbd109140442b340c" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>forces</name></member>
+      <member refid="classbaseTimeStepper_1aecbdeb9f539eca8105f5a9e81a858a41" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>freeDOF</name></member>
+      <member refid="classimplicitTimeStepper_1a7caebce8c6e3c9394e654a0584a7c865" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>ftol</name></member>
+      <member refid="classimplicitTimeStepper_1a027e906c1fbd70766e03696b86e2c8be" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>ia</name></member>
+      <member refid="classimplicitTimeStepper_1a7456f3275ec43cacef1852275d90f87d" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>implicitTimeStepper</name></member>
+      <member refid="classimplicitTimeStepper_1a3b8bc7a205dff04acfe42a8fdcd95e41" prot="public" virt="virtual"><scope>implicitTimeStepper</scope><name>initStepper</name></member>
+      <member refid="classimplicitTimeStepper_1aeae9e12b77b34391092b4738a83e9acf" prot="public" virt="virtual"><scope>implicitTimeStepper</scope><name>integrator</name></member>
+      <member refid="classbaseTimeStepper_1a8e4d9c7d71b7d22cd6dabc3c2a3babf3" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>iter</name></member>
+      <member refid="classbaseTimeStepper_1a20c3383c9fe32703b51fd8f40df51186" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>Jacobian</name></member>
+      <member refid="classbaseTimeStepper_1abc4b1a1d7880ef80f04acdc8fe87d474" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>joints</name></member>
+      <member refid="classimplicitTimeStepper_1a982a890ebfad89203b315350511cc5c2" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>kl</name></member>
+      <member refid="classimplicitTimeStepper_1a56cf2e10dbceb6003140edddf0f18a78" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>ku</name></member>
+      <member refid="classbaseTimeStepper_1a81054b98246fbbbb9da7c2568fc3fcfd" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>limbs</name></member>
+      <member refid="classimplicitTimeStepper_1a2c7b4d7d808ddd210c7280ba03c99fcf" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>line_search</name></member>
+      <member refid="classimplicitTimeStepper_1a28592beb3b86ec1b9d06b38c9380fbbd" prot="public" virt="pure-virtual"><scope>implicitTimeStepper</scope><name>lineSearch</name></member>
+      <member refid="classbaseTimeStepper_1ad5867c499fb4ff6bf67bb7c51e237343" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>mappedInd</name></member>
+      <member refid="classbaseTimeStepper_1aab4f904d670dadcf7259fda646cf44f9" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>mappedInd1</name></member>
+      <member refid="classbaseTimeStepper_1a75a7f7ee8a3bc2dbfac71906fd9383ad" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>mappedInd2</name></member>
+      <member refid="classimplicitTimeStepper_1a4f8f70dfb48e2e648d848f837b0d18c3" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>max_iter</name></member>
+      <member refid="classimplicitTimeStepper_1ad18412d7499bd842aac4d24a9958ae9e" prot="public" virt="pure-virtual"><scope>implicitTimeStepper</scope><name>newtonMethod</name></member>
+      <member refid="classimplicitTimeStepper_1ae54fc9d5cabfd44f56f3daebf0f5de4c" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>non_zero_elements</name></member>
+      <member refid="classimplicitTimeStepper_1af9db7e8949ac134f2496fd3f9b5298f2" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>num_rows</name></member>
+      <member refid="classbaseTimeStepper_1aa1a889e134f573b5aa5b33e76e6e07d3" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>offset</name></member>
+      <member refid="classbaseTimeStepper_1a60e3eec2dfd3bb7ed16b0970193bcab0" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>offsets</name></member>
+      <member refid="classimplicitTimeStepper_1a70962aef84e682a202dd10fa6eb3e251" prot="protected" virt="non-virtual"><scope>implicitTimeStepper</scope><name>orig_dt</name></member>
+      <member refid="classimplicitTimeStepper_1a8f7ea46c03682a47251918bdc6dfd1ec" prot="public" virt="virtual"><scope>implicitTimeStepper</scope><name>prepSystemForIteration</name></member>
+      <member refid="classimplicitTimeStepper_1a23479cf9d630e0cf9fa86dcc72407958" prot="public" virt="virtual"><scope>implicitTimeStepper</scope><name>setZero</name></member>
+      <member refid="classimplicitTimeStepper_1a45be37ba3758e54776f59665c0582f64" prot="private" virt="non-virtual"><scope>implicitTimeStepper</scope><name>shared_from_this</name></member>
+      <member refid="classimplicitTimeStepper_1aff8270274c20d3462c110689c7fffa3a" prot="private" virt="non-virtual"><scope>implicitTimeStepper</scope><name>solver</name></member>
+      <member refid="classimplicitTimeStepper_1a6a903e7d9043648524ef2eec91ac60e3" prot="private" virt="non-virtual"><scope>implicitTimeStepper</scope><name>solver_type</name></member>
+      <member refid="classbaseTimeStepper_1aed871888160bc2ba703d8854a242291d" prot="public" virt="pure-virtual"><scope>implicitTimeStepper</scope><name>stepForwardInTime</name></member>
+      <member refid="classimplicitTimeStepper_1a095d2b8ca1515d86bc2e704d22005fa9" prot="public" virt="virtual"><scope>implicitTimeStepper</scope><name>update</name></member>
+      <member refid="classbaseTimeStepper_1afdeb85e68f05fc9bae53d5ec8bc52749" prot="public" virt="pure-virtual"><scope>implicitTimeStepper</scope><name>updateSystemForNextTimeStep</name></member>
+      <member refid="classbaseTimeStepper_1a4c6acf40014805b12b483b439e38c3df" prot="public" virt="virtual"><scope>implicitTimeStepper</scope><name>~baseTimeStepper</name></member>
+      <member refid="classimplicitTimeStepper_1a1a7b6c591152887c27907e22a923364c" prot="public" virt="non-virtual"><scope>implicitTimeStepper</scope><name>~implicitTimeStepper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

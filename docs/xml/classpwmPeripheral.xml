@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classpwmPeripheral" kind="class" language="C++" prot="public">
+    <compoundname>pwmPeripheral</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpwmPeripheral_1a5f11b3afada23ccd55a7d3b8536c4858" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pwmPeripheral::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="79" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpwmPeripheral_1ab48a29c73bea4b30e2f767369530964e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pwmPeripheral::duty</definition>
+        <argsstring></argsstring>
+        <name>duty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="80" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpwmPeripheral_1a493c7bad625503e11b52523ce9b97cd5" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pwmPeripheral::next_period</definition>
+        <argsstring></argsstring>
+        <name>next_period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="84" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpwmPeripheral_1a8eed1931e2eaf6d34d8cf19e3de34047" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pwmPeripheral::next_duty</definition>
+        <argsstring></argsstring>
+        <name>next_duty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="85" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpwmPeripheral_1a8018151096a25912e6bb84149018e454" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pwmPeripheral::is_on</definition>
+        <argsstring></argsstring>
+        <name>is_on</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="88" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpwmPeripheral_1a15a7f3c0884fa585c4e049a1624ffc6a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pwmPeripheral::current_time</definition>
+        <argsstring></argsstring>
+        <name>current_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="91" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpwmPeripheral_1a5bd2aac34f81cca8972cb9bb2f7c753e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pwmPeripheral::dt_current_period</definition>
+        <argsstring></argsstring>
+        <name>dt_current_period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="93" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpwmPeripheral_1a83c75798cff1fb88406281f59229a48a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pwmPeripheral::last_start_time</definition>
+        <argsstring></argsstring>
+        <name>last_start_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="97" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpwmPeripheral_1a1a2852283fc604275ea10456a666f427" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pwmPeripheral::cc</definition>
+        <argsstring></argsstring>
+        <name>cc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="102" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpwmPeripheral_1a4cf65110775b7d023f4dd76561b8a6bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pwmPeripheral::pwmPeripheral</definition>
+        <argsstring>(double m_period, double m_duty)</argsstring>
+        <name>pwmPeripheral</name>
+        <param>
+          <type>double</type>
+          <declname>m_period</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m_duty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a <ref refid="classpwmPeripheral" kindref="compound">pwmPeripheral</ref>. Requires an initial period and duty cycle. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m_period</parametername>
+<parametername>expressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in seconds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_duty</parametername>
+<parametername>duty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cycle expressed as a percent. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>runtime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error if duty invalid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="37" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp" bodystart="15" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classpwmPeripheral_1afdf17be3c63d1fea10cb68da5ec0c1da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pwmPeripheral::~pwmPeripheral</definition>
+        <argsstring>()</argsstring>
+        <name>~pwmPeripheral</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="38" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classpwmPeripheral_1aa7b1e55431ed544aedb277f930d63699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pwmPeripheral::setOnOff</definition>
+        <argsstring>(bool onoff)</argsstring>
+        <name>setOnOff</name>
+        <param>
+          <type>bool</type>
+          <declname>onoff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable the pwm output. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>onoff</parametername>
+<parametername>1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>= on, 0 = off. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="44" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp" bodystart="58" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classpwmPeripheral_1a40a7b36de79d8ed3b3d8894d61586b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pwmPeripheral::isOn</definition>
+        <argsstring>()</argsstring>
+        <name>isOn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="47" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classpwmPeripheral_1ac3cdd8cd10997580d510df99efaaf6c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pwmPeripheral::setPeriod</definition>
+        <argsstring>(double m_period)</argsstring>
+        <name>setPeriod</name>
+        <param>
+          <type>double</type>
+          <declname>m_period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change the control parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="52" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp" bodystart="82" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classpwmPeripheral_1a25e1f02231e79659c0c5c2f1227e2f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pwmPeripheral::setDutyCycle</definition>
+        <argsstring>(double m_duty)</argsstring>
+        <name>setDutyCycle</name>
+        <param>
+          <type>double</type>
+          <declname>m_duty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="53" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classpwmPeripheral_1a12c9c59607742e2543ce37462a5bae0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pwmPeripheral::getHighLow</definition>
+        <argsstring>()</argsstring>
+        <name>getHighLow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the current state of the PWM. Abstracting away the magnitude, just 0 or 1. <simplesect kind="return"><para>highlow, the pulse output by the pwm. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="60" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp" bodystart="126" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classpwmPeripheral_1af520fa4d4fe210732fb2feeb991a7bba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pwmPeripheral::updateTimestep</definition>
+        <argsstring>(double dt)</argsstring>
+        <name>updateTimestep</name>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>It&apos;s required to timestep the PWM so it can update its local variables. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="65" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp" bodystart="95" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpwmPeripheral_1aa78f234b8d0ef449023a20606416fae7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pwmPeripheral::validatePeriod</definition>
+        <argsstring>(double per)</argsstring>
+        <name>validatePeriod</name>
+        <param>
+          <type>double</type>
+          <declname>per</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="71" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp" bodystart="33" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classpwmPeripheral_1aea9f27bbdd070a7e8ffbe636cec1ea34" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pwmPeripheral::validateDuty</definition>
+        <argsstring>(double dut)</argsstring>
+        <name>validateDuty</name>
+        <param>
+          <type>double</type>
+          <declname>dut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="72" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp" bodystart="49" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classpwmPeripheral_1af13852980298bbaea095026f1ac860f9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pwmPeripheral::reinit</definition>
+        <argsstring>()</argsstring>
+        <name>reinit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="76" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp" bodystart="111" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" line="26" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h" bodystart="27" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classpwmPeripheral_1a1a2852283fc604275ea10456a666f427" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>cc</name></member>
+      <member refid="classpwmPeripheral_1a15a7f3c0884fa585c4e049a1624ffc6a" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>current_time</name></member>
+      <member refid="classpwmPeripheral_1a5bd2aac34f81cca8972cb9bb2f7c753e" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>dt_current_period</name></member>
+      <member refid="classpwmPeripheral_1ab48a29c73bea4b30e2f767369530964e" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>duty</name></member>
+      <member refid="classpwmPeripheral_1a12c9c59607742e2543ce37462a5bae0a" prot="public" virt="non-virtual"><scope>pwmPeripheral</scope><name>getHighLow</name></member>
+      <member refid="classpwmPeripheral_1a8018151096a25912e6bb84149018e454" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>is_on</name></member>
+      <member refid="classpwmPeripheral_1a40a7b36de79d8ed3b3d8894d61586b86" prot="public" virt="non-virtual"><scope>pwmPeripheral</scope><name>isOn</name></member>
+      <member refid="classpwmPeripheral_1a83c75798cff1fb88406281f59229a48a" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>last_start_time</name></member>
+      <member refid="classpwmPeripheral_1a8eed1931e2eaf6d34d8cf19e3de34047" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>next_duty</name></member>
+      <member refid="classpwmPeripheral_1a493c7bad625503e11b52523ce9b97cd5" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>next_period</name></member>
+      <member refid="classpwmPeripheral_1a5f11b3afada23ccd55a7d3b8536c4858" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>period</name></member>
+      <member refid="classpwmPeripheral_1a4cf65110775b7d023f4dd76561b8a6bf" prot="public" virt="non-virtual"><scope>pwmPeripheral</scope><name>pwmPeripheral</name></member>
+      <member refid="classpwmPeripheral_1af13852980298bbaea095026f1ac860f9" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>reinit</name></member>
+      <member refid="classpwmPeripheral_1a25e1f02231e79659c0c5c2f1227e2f47" prot="public" virt="non-virtual"><scope>pwmPeripheral</scope><name>setDutyCycle</name></member>
+      <member refid="classpwmPeripheral_1aa7b1e55431ed544aedb277f930d63699" prot="public" virt="non-virtual"><scope>pwmPeripheral</scope><name>setOnOff</name></member>
+      <member refid="classpwmPeripheral_1ac3cdd8cd10997580d510df99efaaf6c3" prot="public" virt="non-virtual"><scope>pwmPeripheral</scope><name>setPeriod</name></member>
+      <member refid="classpwmPeripheral_1af520fa4d4fe210732fb2feeb991a7bba" prot="public" virt="non-virtual"><scope>pwmPeripheral</scope><name>updateTimestep</name></member>
+      <member refid="classpwmPeripheral_1aea9f27bbdd070a7e8ffbe636cec1ea34" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>validateDuty</name></member>
+      <member refid="classpwmPeripheral_1aa78f234b8d0ef449023a20606416fae7" prot="private" virt="non-virtual"><scope>pwmPeripheral</scope><name>validatePeriod</name></member>
+      <member refid="classpwmPeripheral_1afdf17be3c63d1fea10cb68da5ec0c1da" prot="public" virt="non-virtual"><scope>pwmPeripheral</scope><name>~pwmPeripheral</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

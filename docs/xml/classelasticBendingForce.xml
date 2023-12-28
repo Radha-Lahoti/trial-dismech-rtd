@@ -1,0 +1,1345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classelasticBendingForce" kind="class" language="C++" prot="public">
+    <compoundname>elasticBendingForce</compoundname>
+    <basecompoundref refid="classbaseForce" prot="public" virt="non-virtual">baseForce</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classelasticBendingForce_1a5e306195ea175a16702cbfcf937ceb63" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int elasticBendingForce::ci</definition>
+        <argsstring></argsstring>
+        <name>ci</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="29" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ab7b1247a9c60ab7f9e0ce9b011f16b99" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::chi</definition>
+        <argsstring></argsstring>
+        <name>chi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="30" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a098ceb0e24d2ae8c434d1f1325a82faa" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="31" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1aa88b3c5d5faa8ccec25590447b88c24c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::kappa1</definition>
+        <argsstring></argsstring>
+        <name>kappa1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="32" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a34b214420712165ba0e23e7d20b41c8b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::kappa2</definition>
+        <argsstring></argsstring>
+        <name>kappa2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="32" column="19" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ace7f98b45a17a255fc8bd40384eb56f9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::norm_e</definition>
+        <argsstring></argsstring>
+        <name>norm_e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="33" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a56af5fd896e6acfd33e70d7e2a4590cb" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::norm_f</definition>
+        <argsstring></argsstring>
+        <name>norm_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="33" column="19" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ac824f772c5f5d6fe109753703f9dc82a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::norm2_e</definition>
+        <argsstring></argsstring>
+        <name>norm2_e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="34" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a2b2c07bbe8ce5545f34e18cfa6c50f40" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::norm2_f</definition>
+        <argsstring></argsstring>
+        <name>norm2_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="34" column="20" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a843279730d90ca19f29340826ea157f0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::D2kappa1Dthetae2</definition>
+        <argsstring></argsstring>
+        <name>D2kappa1Dthetae2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="35" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ac34ec73f3c3341f363e5a66de27379ac" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::D2kappa1Dthetaf2</definition>
+        <argsstring></argsstring>
+        <name>D2kappa1Dthetaf2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="35" column="29" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a82c6f52cc6f721a089e376522a1983f7" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::D2kappa2Dthetae2</definition>
+        <argsstring></argsstring>
+        <name>D2kappa2Dthetae2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="35" column="46" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ad42ed537290d74981dfcf48847360515" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticBendingForce::D2kappa2Dthetaf2</definition>
+        <argsstring></argsstring>
+        <name>D2kappa2Dthetaf2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="35" column="63" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a9e931c119209d7d4e92c7a637bd5595e" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::t0</definition>
+        <argsstring></argsstring>
+        <name>t0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="37" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1aa3005059f09c4fd51c58e747caf67700" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::t1</definition>
+        <argsstring></argsstring>
+        <name>t1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="37" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ac267f84ce2d3944b82f26479353d7c1f" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::te</definition>
+        <argsstring></argsstring>
+        <name>te</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="38" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a8c49051520e762e02718148275e75212" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::tf</definition>
+        <argsstring></argsstring>
+        <name>tf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="38" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a78cd93564cf207e03ce48ab4cbf080e0" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::d1e</definition>
+        <argsstring></argsstring>
+        <name>d1e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="39" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a6aeafceff36ad80c5637b81fc8b8ea26" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::d1f</definition>
+        <argsstring></argsstring>
+        <name>d1f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="39" column="18" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1af7229527aa32b7dd2ac44f872ed25ba5" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::d2e</definition>
+        <argsstring></argsstring>
+        <name>d2e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="39" column="22" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1aca3b77b6a2bfba0b6d4cc15371bc9621" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::d2f</definition>
+        <argsstring></argsstring>
+        <name>d2f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="39" column="26" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ac1ab9515fd5893b3b034a203f2cdbddf" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::tilde_t</definition>
+        <argsstring></argsstring>
+        <name>tilde_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="40" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a74fc9d17f2fe2213afdf33852576f686" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::tilde_d1</definition>
+        <argsstring></argsstring>
+        <name>tilde_d1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="40" column="22" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a8760d20da34045c4393bed26f2abaf14" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::tilde_d2</definition>
+        <argsstring></argsstring>
+        <name>tilde_d2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="40" column="31" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a652812508c8e8ee3a1d5731aa18458f3" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::Dkappa1De</definition>
+        <argsstring></argsstring>
+        <name>Dkappa1De</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="41" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a40f06705a7c24e49ad6827bfe7e2719d" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::Dkappa1Df</definition>
+        <argsstring></argsstring>
+        <name>Dkappa1Df</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="41" column="24" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a5809d8dcf42cceeb55e54ab2ef6f06f6" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::Dkappa2De</definition>
+        <argsstring></argsstring>
+        <name>Dkappa2De</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="41" column="34" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1af36166afda0913d4c88ab6ed685f56da" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::Dkappa2Df</definition>
+        <argsstring></argsstring>
+        <name>Dkappa2Df</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="41" column="44" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a8dc8a3bd78f2427c588af766ac983cc4" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::kbLocal</definition>
+        <argsstring></argsstring>
+        <name>kbLocal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="42" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a856d1db7e686062ee25ff894be959fd1" prot="private" static="no" mutable="no">
+        <type>Vector2d</type>
+        <definition>Vector2d elasticBendingForce::kappaL</definition>
+        <argsstring></argsstring>
+        <name>kappaL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="43" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a9546adf8933ff6909a940df3d9de583c" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::tmp</definition>
+        <argsstring></argsstring>
+        <name>tmp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="44" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a2cf4445616a1604dff09594021a686e4" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::D2kappa1DeDthetae</definition>
+        <argsstring></argsstring>
+        <name>D2kappa1DeDthetae</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="45" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a4e36a909ce17006d62dd69101768e430" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::D2kappa1DeDthetaf</definition>
+        <argsstring></argsstring>
+        <name>D2kappa1DeDthetaf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="45" column="32" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1af363f1a1afec99381eb9ff0403c21364" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::D2kappa1DfDthetae</definition>
+        <argsstring></argsstring>
+        <name>D2kappa1DfDthetae</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="45" column="50" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a60631055e982b8282a17f11bfdd0debd" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::D2kappa1DfDthetaf</definition>
+        <argsstring></argsstring>
+        <name>D2kappa1DfDthetaf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="45" column="68" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a8817e47ea2adc516aff84089da5f40cc" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::D2kappa2DeDthetae</definition>
+        <argsstring></argsstring>
+        <name>D2kappa2DeDthetae</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="46" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a005ad73689a4f235251db8340df428d5" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::D2kappa2DeDthetaf</definition>
+        <argsstring></argsstring>
+        <name>D2kappa2DeDthetaf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="46" column="32" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a6156f26803d9062d4f3e1352789548a4" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::D2kappa2DfDthetae</definition>
+        <argsstring></argsstring>
+        <name>D2kappa2DfDthetae</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="46" column="50" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ac207f406ae84a65c7cc0db7f47457e40" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::D2kappa2DfDthetaf</definition>
+        <argsstring></argsstring>
+        <name>D2kappa2DfDthetaf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="46" column="68" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a4df71bd2a3f4abe0e848c000b7b201c8" prot="private" static="no" mutable="no">
+        <type>Vector2d</type>
+        <definition>Vector2d elasticBendingForce::temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="47" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a2d99977de7fa4a5ad405333870f737cd" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::m1e</definition>
+        <argsstring></argsstring>
+        <name>m1e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="48" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a20554700cf50869922f994d38499a8c2" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::m2e</definition>
+        <argsstring></argsstring>
+        <name>m2e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="48" column="18" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ad3d0961ad7707008c1aa1f31874289d4" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::m1f</definition>
+        <argsstring></argsstring>
+        <name>m1f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="48" column="22" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a8f95095195af815f9aa1c2882caac5f8" prot="private" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticBendingForce::m2f</definition>
+        <argsstring></argsstring>
+        <name>m2f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="48" column="26" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a706c6fdcc257ef9417726251c54421e5" prot="private" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticBendingForce::kappa11</definition>
+        <argsstring></argsstring>
+        <name>kappa11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="49" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a614238e0d388bb12d1b00b8089764e24" prot="private" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticBendingForce::kappa22</definition>
+        <argsstring></argsstring>
+        <name>kappa22</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="50" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1af6c086a1a66c46cfb0539cbac61bac59" prot="private" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticBendingForce::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="51" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a174bd52ab226e59aa38c232254c083c0" prot="private" static="no" mutable="no">
+        <type>vector&lt; shared_ptr&lt; MatrixXd &gt; &gt;</type>
+        <definition>vector&lt;shared_ptr&lt;MatrixXd&gt; &gt; elasticBendingForce::gradKappa1s</definition>
+        <argsstring></argsstring>
+        <name>gradKappa1s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="53" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a40eb6ba35af7f3a631d63dfb0aad7490" prot="private" static="no" mutable="no">
+        <type>vector&lt; shared_ptr&lt; MatrixXd &gt; &gt;</type>
+        <definition>vector&lt;shared_ptr&lt;MatrixXd&gt; &gt; elasticBendingForce::gradKappa2s</definition>
+        <argsstring></argsstring>
+        <name>gradKappa2s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="54" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a6407f1d365c5ea42fea5f74ec88298b5" prot="private" static="no" mutable="no">
+        <type>shared_ptr&lt; MatrixXd &gt;</type>
+        <definition>shared_ptr&lt;MatrixXd&gt; elasticBendingForce::gradKappa1</definition>
+        <argsstring></argsstring>
+        <name>gradKappa1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="56" column="16" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1afe1fd173cb7d012ed2e2f261f310d022" prot="private" static="no" mutable="no">
+        <type>shared_ptr&lt; MatrixXd &gt;</type>
+        <definition>shared_ptr&lt;MatrixXd&gt; elasticBendingForce::gradKappa2</definition>
+        <argsstring></argsstring>
+        <name>gradKappa2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="57" column="16" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a557aab0723d3f1d10e523f1188b3c1d3" prot="private" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticBendingForce::relevantPart</definition>
+        <argsstring></argsstring>
+        <name>relevantPart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="58" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a7903657bf0f306350703e98b4318d28e" prot="private" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticBendingForce::kappa</definition>
+        <argsstring></argsstring>
+        <name>kappa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="59" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ad1c87defd222e7c28cbd04235ae83f0c" prot="private" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticBendingForce::DDkappa1</definition>
+        <argsstring></argsstring>
+        <name>DDkappa1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="60" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a31cb59bd2368bd72750203a7df47a805" prot="private" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticBendingForce::DDkappa2</definition>
+        <argsstring></argsstring>
+        <name>DDkappa2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="60" column="23" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a75118a81005ecea21160d9e83bdcb5ce" prot="private" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticBendingForce::Jbb</definition>
+        <argsstring></argsstring>
+        <name>Jbb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="61" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1afc0b187cb923313865127e3b1a04ad6f" prot="private" static="no" mutable="no">
+        <type>vector&lt; Matrix2d &gt;</type>
+        <definition>vector&lt;Matrix2d&gt; elasticBendingForce::EIMatrices</definition>
+        <argsstring></argsstring>
+        <name>EIMatrices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="63" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a220b9d6202e67969a4bcd489ed292b76" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::Id3</definition>
+        <argsstring></argsstring>
+        <name>Id3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="64" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a9d5db39f0847c45b1b3c34fc739f2a1b" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::tt_o_tt</definition>
+        <argsstring></argsstring>
+        <name>tt_o_tt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="65" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a1d21f84f3d18eb2d39a49287bd69a6b4" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::tilde_d1_3d</definition>
+        <argsstring></argsstring>
+        <name>tilde_d1_3d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="66" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1aad2224c8bf9796a6a46f4efb168f6844" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::tilde_d2_3d</definition>
+        <argsstring></argsstring>
+        <name>tilde_d2_3d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="66" column="26" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a7523d59bc34d00cc8a47dd960973642c" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::tf_c_d2t_o_tt</definition>
+        <argsstring></argsstring>
+        <name>tf_c_d2t_o_tt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="67" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1acf325b34767eb740c0672ce99fc6d871" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::tt_o_tf_c_d2t</definition>
+        <argsstring></argsstring>
+        <name>tt_o_tf_c_d2t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="67" column="28" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a4b36b655f9c714dea415fc08a680c229" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::kb_o_d2e</definition>
+        <argsstring></argsstring>
+        <name>kb_o_d2e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="67" column="42" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1af4908bafc85b30ef62f85f71f1c5ac84" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::d2e_o_kb</definition>
+        <argsstring></argsstring>
+        <name>d2e_o_kb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="67" column="51" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ae68fee6dfe76898162788a336d6fe9f2" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::D2kappa1De2</definition>
+        <argsstring></argsstring>
+        <name>D2kappa1De2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="68" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a4af792bf133507dfbdeed9de17853b7d" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::te_c_d2t_o_tt</definition>
+        <argsstring></argsstring>
+        <name>te_c_d2t_o_tt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="69" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1aafb42f04de5dcc90bf82e2d65f8ab5d1" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::tt_o_te_c_d2t</definition>
+        <argsstring></argsstring>
+        <name>tt_o_te_c_d2t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="69" column="28" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a33fd58722ff21cd9eb5694585a612aa9" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::kb_o_d2f</definition>
+        <argsstring></argsstring>
+        <name>kb_o_d2f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="69" column="42" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a9eecbb49d0a23a40dac6d8eb33317202" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::d2f_o_kb</definition>
+        <argsstring></argsstring>
+        <name>d2f_o_kb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="69" column="51" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a4505dd718ec50fcb5c92edaa3daf2f87" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::D2kappa1Df2</definition>
+        <argsstring></argsstring>
+        <name>D2kappa1Df2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="70" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ac94e2ef8ab363df3cca305874b479661" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::D2kappa1DeDf</definition>
+        <argsstring></argsstring>
+        <name>D2kappa1DeDf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="71" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a4ca3946f66fc8dbd00dc4ee253a57c04" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::D2kappa1DfDe</definition>
+        <argsstring></argsstring>
+        <name>D2kappa1DfDe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="71" column="27" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1affa4428798b5fa7cd6220acc0481ec2a" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::tf_c_d1t_o_tt</definition>
+        <argsstring></argsstring>
+        <name>tf_c_d1t_o_tt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="72" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a24158a16e71bc724392a1c9ba7d00e4d" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::tt_o_tf_c_d1t</definition>
+        <argsstring></argsstring>
+        <name>tt_o_tf_c_d1t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="72" column="28" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ab5ffe2644162749463c4a120c2d85754" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::kb_o_d1e</definition>
+        <argsstring></argsstring>
+        <name>kb_o_d1e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="72" column="42" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a56d0cd3a69f6216be334babebf3a8282" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::d1e_o_kb</definition>
+        <argsstring></argsstring>
+        <name>d1e_o_kb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="72" column="51" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a8820d0c5181fa305ac9b5ca54e0f4085" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::D2kappa2De2</definition>
+        <argsstring></argsstring>
+        <name>D2kappa2De2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="73" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a7d7026f91e292c42908934a2021a10d6" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::te_c_d1t_o_tt</definition>
+        <argsstring></argsstring>
+        <name>te_c_d1t_o_tt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="74" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a926c40c63e13fae9ba218b88f2232267" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::tt_o_te_c_d1t</definition>
+        <argsstring></argsstring>
+        <name>tt_o_te_c_d1t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="74" column="28" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a93fc9cfed48870ffa41ab22a3cb75115" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::kb_o_d1f</definition>
+        <argsstring></argsstring>
+        <name>kb_o_d1f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="74" column="42" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a3433aad4a5c913f341416a454d34fc94" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::d1f_o_kb</definition>
+        <argsstring></argsstring>
+        <name>d1f_o_kb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="74" column="51" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a76138595a943febd2d13602e9b2c5f7b" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::D2kappa2Df2</definition>
+        <argsstring></argsstring>
+        <name>D2kappa2Df2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="75" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1a604f3f10abd788ab2ffc854ec45442f3" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::D2kappa2DeDf</definition>
+        <argsstring></argsstring>
+        <name>D2kappa2DeDf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="76" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticBendingForce_1ac264e3e68f40f0c40ecaca449cf49cf2" prot="private" static="no" mutable="no">
+        <type>Matrix3d</type>
+        <definition>Matrix3d elasticBendingForce::D2kappa2DfDe</definition>
+        <argsstring></argsstring>
+        <name>D2kappa2DfDe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="77" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classelasticBendingForce_1ac03ab0a61037b52ae4ced18f06f16df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>elasticBendingForce::elasticBendingForce</definition>
+        <argsstring>(const shared_ptr&lt; softRobots &gt; &amp;m_soft_robots)</argsstring>
+        <name>elasticBendingForce</name>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classsoftRobots" kindref="compound">softRobots</ref> &gt; &amp;</type>
+          <declname>m_soft_robots</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="21" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.cpp" bodystart="14" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticBendingForce_1ad87a083dae3b93ddaf6fc7a881f1364e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>elasticBendingForce::~elasticBendingForce</definition>
+        <argsstring>() override</argsstring>
+        <name>~elasticBendingForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="22" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticBendingForce_1a502769f31342481cdee67759800d92bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void elasticBendingForce::computeForce</definition>
+        <argsstring>(double dt) override</argsstring>
+        <name>computeForce</name>
+        <reimplements refid="classbaseForce_1a95251104e68ce0cbdbe4450cdac9013a">computeForce</reimplements>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="23" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.cpp" bodystart="58" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticBendingForce_1ac8c659d8c86c2374df26ee56f3e473eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void elasticBendingForce::computeForceAndJacobian</definition>
+        <argsstring>(double dt) override</argsstring>
+        <name>computeForceAndJacobian</name>
+        <reimplements refid="classbaseForce_1ab889c81db9e1fef1274947c937096a25">computeForceAndJacobian</reimplements>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="24" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.cpp" bodystart="240" bodyend="474"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classelasticBendingForce_1ab0e3a559290163c5d617a797c1d06e08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticBendingForce::JacobianComputation</definition>
+        <argsstring>()</argsstring>
+        <name>JacobianComputation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="27" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.cpp" bodystart="485" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticBendingForce_1a22268aaed70021da074dd94966ddf662" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticBendingForce::crossMat</definition>
+        <argsstring>(const Vector3d &amp;a, Matrix3d &amp;b)</argsstring>
+        <name>crossMat</name>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Matrix3d &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="79" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.cpp" bodystart="477" bodyend="482"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>elasticBendingForce</label>
+        <link refid="classelasticBendingForce"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>baseForce</label>
+        <link refid="classbaseForce"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>elasticBendingForce</label>
+        <link refid="classelasticBendingForce"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>baseForce</label>
+        <link refid="classbaseForce"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" line="18" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h" bodystart="19" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classbaseForce_1a80e13df0453e912efc081176f3ace387" prot="public" virt="non-virtual"><scope>elasticBendingForce</scope><name>baseForce</name></member>
+      <member refid="classelasticBendingForce_1ab7b1247a9c60ab7f9e0ce9b011f16b99" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>chi</name></member>
+      <member refid="classelasticBendingForce_1a5e306195ea175a16702cbfcf937ceb63" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>ci</name></member>
+      <member refid="classelasticBendingForce_1a502769f31342481cdee67759800d92bf" prot="public" virt="virtual"><scope>elasticBendingForce</scope><name>computeForce</name></member>
+      <member refid="classelasticBendingForce_1ac8c659d8c86c2374df26ee56f3e473eb" prot="public" virt="virtual"><scope>elasticBendingForce</scope><name>computeForceAndJacobian</name></member>
+      <member refid="classelasticBendingForce_1a22268aaed70021da074dd94966ddf662" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>crossMat</name></member>
+      <member refid="classelasticBendingForce_1a78cd93564cf207e03ce48ab4cbf080e0" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>d1e</name></member>
+      <member refid="classelasticBendingForce_1a56d0cd3a69f6216be334babebf3a8282" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>d1e_o_kb</name></member>
+      <member refid="classelasticBendingForce_1a6aeafceff36ad80c5637b81fc8b8ea26" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>d1f</name></member>
+      <member refid="classelasticBendingForce_1a3433aad4a5c913f341416a454d34fc94" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>d1f_o_kb</name></member>
+      <member refid="classelasticBendingForce_1af7229527aa32b7dd2ac44f872ed25ba5" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>d2e</name></member>
+      <member refid="classelasticBendingForce_1af4908bafc85b30ef62f85f71f1c5ac84" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>d2e_o_kb</name></member>
+      <member refid="classelasticBendingForce_1aca3b77b6a2bfba0b6d4cc15371bc9621" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>d2f</name></member>
+      <member refid="classelasticBendingForce_1a9eecbb49d0a23a40dac6d8eb33317202" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>d2f_o_kb</name></member>
+      <member refid="classelasticBendingForce_1ae68fee6dfe76898162788a336d6fe9f2" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa1De2</name></member>
+      <member refid="classelasticBendingForce_1ac94e2ef8ab363df3cca305874b479661" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa1DeDf</name></member>
+      <member refid="classelasticBendingForce_1a2cf4445616a1604dff09594021a686e4" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa1DeDthetae</name></member>
+      <member refid="classelasticBendingForce_1a4e36a909ce17006d62dd69101768e430" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa1DeDthetaf</name></member>
+      <member refid="classelasticBendingForce_1a4505dd718ec50fcb5c92edaa3daf2f87" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa1Df2</name></member>
+      <member refid="classelasticBendingForce_1a4ca3946f66fc8dbd00dc4ee253a57c04" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa1DfDe</name></member>
+      <member refid="classelasticBendingForce_1af363f1a1afec99381eb9ff0403c21364" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa1DfDthetae</name></member>
+      <member refid="classelasticBendingForce_1a60631055e982b8282a17f11bfdd0debd" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa1DfDthetaf</name></member>
+      <member refid="classelasticBendingForce_1a843279730d90ca19f29340826ea157f0" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa1Dthetae2</name></member>
+      <member refid="classelasticBendingForce_1ac34ec73f3c3341f363e5a66de27379ac" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa1Dthetaf2</name></member>
+      <member refid="classelasticBendingForce_1a8820d0c5181fa305ac9b5ca54e0f4085" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa2De2</name></member>
+      <member refid="classelasticBendingForce_1a604f3f10abd788ab2ffc854ec45442f3" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa2DeDf</name></member>
+      <member refid="classelasticBendingForce_1a8817e47ea2adc516aff84089da5f40cc" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa2DeDthetae</name></member>
+      <member refid="classelasticBendingForce_1a005ad73689a4f235251db8340df428d5" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa2DeDthetaf</name></member>
+      <member refid="classelasticBendingForce_1a76138595a943febd2d13602e9b2c5f7b" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa2Df2</name></member>
+      <member refid="classelasticBendingForce_1ac264e3e68f40f0c40ecaca449cf49cf2" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa2DfDe</name></member>
+      <member refid="classelasticBendingForce_1a6156f26803d9062d4f3e1352789548a4" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa2DfDthetae</name></member>
+      <member refid="classelasticBendingForce_1ac207f406ae84a65c7cc0db7f47457e40" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa2DfDthetaf</name></member>
+      <member refid="classelasticBendingForce_1a82c6f52cc6f721a089e376522a1983f7" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa2Dthetae2</name></member>
+      <member refid="classelasticBendingForce_1ad42ed537290d74981dfcf48847360515" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>D2kappa2Dthetaf2</name></member>
+      <member refid="classelasticBendingForce_1ad1c87defd222e7c28cbd04235ae83f0c" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>DDkappa1</name></member>
+      <member refid="classelasticBendingForce_1a31cb59bd2368bd72750203a7df47a805" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>DDkappa2</name></member>
+      <member refid="classelasticBendingForce_1a652812508c8e8ee3a1d5731aa18458f3" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>Dkappa1De</name></member>
+      <member refid="classelasticBendingForce_1a40f06705a7c24e49ad6827bfe7e2719d" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>Dkappa1Df</name></member>
+      <member refid="classelasticBendingForce_1a5809d8dcf42cceeb55e54ab2ef6f06f6" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>Dkappa2De</name></member>
+      <member refid="classelasticBendingForce_1af36166afda0913d4c88ab6ed685f56da" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>Dkappa2Df</name></member>
+      <member refid="classelasticBendingForce_1afc0b187cb923313865127e3b1a04ad6f" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>EIMatrices</name></member>
+      <member refid="classelasticBendingForce_1ac03ab0a61037b52ae4ced18f06f16df2" prot="public" virt="non-virtual"><scope>elasticBendingForce</scope><name>elasticBendingForce</name></member>
+      <member refid="classelasticBendingForce_1af6c086a1a66c46cfb0539cbac61bac59" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>f</name></member>
+      <member refid="classelasticBendingForce_1a6407f1d365c5ea42fea5f74ec88298b5" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>gradKappa1</name></member>
+      <member refid="classelasticBendingForce_1a174bd52ab226e59aa38c232254c083c0" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>gradKappa1s</name></member>
+      <member refid="classelasticBendingForce_1afe1fd173cb7d012ed2e2f261f310d022" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>gradKappa2</name></member>
+      <member refid="classelasticBendingForce_1a40eb6ba35af7f3a631d63dfb0aad7490" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>gradKappa2s</name></member>
+      <member refid="classelasticBendingForce_1a220b9d6202e67969a4bcd489ed292b76" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>Id3</name></member>
+      <member refid="classelasticBendingForce_1ab0e3a559290163c5d617a797c1d06e08" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>JacobianComputation</name></member>
+      <member refid="classelasticBendingForce_1a75118a81005ecea21160d9e83bdcb5ce" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>Jbb</name></member>
+      <member refid="classelasticBendingForce_1a7903657bf0f306350703e98b4318d28e" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>kappa</name></member>
+      <member refid="classelasticBendingForce_1aa88b3c5d5faa8ccec25590447b88c24c" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>kappa1</name></member>
+      <member refid="classelasticBendingForce_1a706c6fdcc257ef9417726251c54421e5" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>kappa11</name></member>
+      <member refid="classelasticBendingForce_1a34b214420712165ba0e23e7d20b41c8b" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>kappa2</name></member>
+      <member refid="classelasticBendingForce_1a614238e0d388bb12d1b00b8089764e24" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>kappa22</name></member>
+      <member refid="classelasticBendingForce_1a856d1db7e686062ee25ff894be959fd1" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>kappaL</name></member>
+      <member refid="classelasticBendingForce_1ab5ffe2644162749463c4a120c2d85754" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>kb_o_d1e</name></member>
+      <member refid="classelasticBendingForce_1a93fc9cfed48870ffa41ab22a3cb75115" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>kb_o_d1f</name></member>
+      <member refid="classelasticBendingForce_1a4b36b655f9c714dea415fc08a680c229" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>kb_o_d2e</name></member>
+      <member refid="classelasticBendingForce_1a33fd58722ff21cd9eb5694585a612aa9" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>kb_o_d2f</name></member>
+      <member refid="classelasticBendingForce_1a8dc8a3bd78f2427c588af766ac983cc4" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>kbLocal</name></member>
+      <member refid="classelasticBendingForce_1a098ceb0e24d2ae8c434d1f1325a82faa" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>len</name></member>
+      <member refid="classelasticBendingForce_1a2d99977de7fa4a5ad405333870f737cd" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>m1e</name></member>
+      <member refid="classelasticBendingForce_1ad3d0961ad7707008c1aa1f31874289d4" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>m1f</name></member>
+      <member refid="classelasticBendingForce_1a20554700cf50869922f994d38499a8c2" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>m2e</name></member>
+      <member refid="classelasticBendingForce_1a8f95095195af815f9aa1c2882caac5f8" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>m2f</name></member>
+      <member refid="classelasticBendingForce_1ac824f772c5f5d6fe109753703f9dc82a" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>norm2_e</name></member>
+      <member refid="classelasticBendingForce_1a2b2c07bbe8ce5545f34e18cfa6c50f40" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>norm2_f</name></member>
+      <member refid="classelasticBendingForce_1ace7f98b45a17a255fc8bd40384eb56f9" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>norm_e</name></member>
+      <member refid="classelasticBendingForce_1a56af5fd896e6acfd33e70d7e2a4590cb" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>norm_f</name></member>
+      <member refid="classelasticBendingForce_1a557aab0723d3f1d10e523f1188b3c1d3" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>relevantPart</name></member>
+      <member refid="classbaseForce_1a3dc2a0c4501ec0e1b89888c0be36b004" prot="public" virt="non-virtual"><scope>elasticBendingForce</scope><name>setTimeStepper</name></member>
+      <member refid="classbaseForce_1ad8e25879f53e6b8af2671afc9755e9b1" prot="protected" virt="non-virtual"><scope>elasticBendingForce</scope><name>soft_robots</name></member>
+      <member refid="classbaseForce_1a993b85a94508f4375d006bd07982002e" prot="protected" virt="non-virtual"><scope>elasticBendingForce</scope><name>stepper</name></member>
+      <member refid="classelasticBendingForce_1a9e931c119209d7d4e92c7a637bd5595e" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>t0</name></member>
+      <member refid="classelasticBendingForce_1aa3005059f09c4fd51c58e747caf67700" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>t1</name></member>
+      <member refid="classelasticBendingForce_1ac267f84ce2d3944b82f26479353d7c1f" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>te</name></member>
+      <member refid="classelasticBendingForce_1a7d7026f91e292c42908934a2021a10d6" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>te_c_d1t_o_tt</name></member>
+      <member refid="classelasticBendingForce_1a4af792bf133507dfbdeed9de17853b7d" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>te_c_d2t_o_tt</name></member>
+      <member refid="classelasticBendingForce_1a4df71bd2a3f4abe0e848c000b7b201c8" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>temp</name></member>
+      <member refid="classelasticBendingForce_1a8c49051520e762e02718148275e75212" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tf</name></member>
+      <member refid="classelasticBendingForce_1affa4428798b5fa7cd6220acc0481ec2a" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tf_c_d1t_o_tt</name></member>
+      <member refid="classelasticBendingForce_1a7523d59bc34d00cc8a47dd960973642c" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tf_c_d2t_o_tt</name></member>
+      <member refid="classelasticBendingForce_1a74fc9d17f2fe2213afdf33852576f686" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tilde_d1</name></member>
+      <member refid="classelasticBendingForce_1a1d21f84f3d18eb2d39a49287bd69a6b4" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tilde_d1_3d</name></member>
+      <member refid="classelasticBendingForce_1a8760d20da34045c4393bed26f2abaf14" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tilde_d2</name></member>
+      <member refid="classelasticBendingForce_1aad2224c8bf9796a6a46f4efb168f6844" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tilde_d2_3d</name></member>
+      <member refid="classelasticBendingForce_1ac1ab9515fd5893b3b034a203f2cdbddf" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tilde_t</name></member>
+      <member refid="classelasticBendingForce_1a9546adf8933ff6909a940df3d9de583c" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tmp</name></member>
+      <member refid="classelasticBendingForce_1a926c40c63e13fae9ba218b88f2232267" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tt_o_te_c_d1t</name></member>
+      <member refid="classelasticBendingForce_1aafb42f04de5dcc90bf82e2d65f8ab5d1" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tt_o_te_c_d2t</name></member>
+      <member refid="classelasticBendingForce_1a24158a16e71bc724392a1c9ba7d00e4d" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tt_o_tf_c_d1t</name></member>
+      <member refid="classelasticBendingForce_1acf325b34767eb740c0672ce99fc6d871" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tt_o_tf_c_d2t</name></member>
+      <member refid="classelasticBendingForce_1a9d5db39f0847c45b1b3c34fc739f2a1b" prot="private" virt="non-virtual"><scope>elasticBendingForce</scope><name>tt_o_tt</name></member>
+      <member refid="classbaseForce_1acb32c3384da0eb48617e93d9901ea548" prot="public" virt="pure-virtual"><scope>elasticBendingForce</scope><name>~baseForce</name></member>
+      <member refid="classelasticBendingForce_1ad87a083dae3b93ddaf6fc7a881f1364e" prot="public" virt="non-virtual"><scope>elasticBendingForce</scope><name>~elasticBendingForce</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

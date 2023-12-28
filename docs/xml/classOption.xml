@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOption" kind="class" language="C++" prot="public">
+    <compoundname>Option</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOption_1ab1ccd1400a3eb7bfa5b56279216b242e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Type</name>
+        <enumvalue id="classOption_1ab1ccd1400a3eb7bfa5b56279216b242ea1c800d30824427a294c154c936ec7dc4" prot="public">
+          <name>BOOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOption_1ab1ccd1400a3eb7bfa5b56279216b242eac13174c034679854412a0374463ca958" prot="public">
+          <name>INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOption_1ab1ccd1400a3eb7bfa5b56279216b242ea9915a7dfeec37cc574477aa570ee7cbb" prot="public">
+          <name>DOUBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOption_1ab1ccd1400a3eb7bfa5b56279216b242ea21002cf3c5847ded629e0e89bd70147b" prot="public">
+          <name>VEC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOption_1ab1ccd1400a3eb7bfa5b56279216b242ea2ffb4de27aec16cdbc7dbf943c651e50" prot="public">
+          <name>STRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="21" column="3" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOption_1a1876ae5d4655c241fcef18c032b09f60" prot="public" static="no">
+        <type>std::string</type>
+        <definition>typedef std::string Option::OptionKey</definition>
+        <argsstring></argsstring>
+        <name>OptionKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="22" column="23" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOption_1af4d889495ccb3ae1f42b8ac577ff301c" prot="public" static="no" mutable="no">
+        <type>OptionKey</type>
+        <definition>OptionKey Option::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="24" column="13" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOption_1ad15b654fba85483e1d7bad63b0b5baea" prot="public" static="no" mutable="no">
+        <type>Type</type>
+        <definition>Type Option::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="25" column="8" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOption_1aa5393d50389e0d78943a16a892cc2b81" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Option::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="26" column="8" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOption_1a22a7545a0167b50ccdb356c6febb156c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Option::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="27" column="7" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOption_1abd44ab56edddcd59f80ca5c60c9b66f0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Option::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="28" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOption_1a9026d2b5d056349741b904ce5ed84abe" prot="public" static="no" mutable="no">
+        <type>Vector3d</type>
+        <definition>Vector3d Option::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="29" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOption_1aabc687a889fd5bbb6099729b043e6f73" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Option::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="30" column="15" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOption_1a573e03e8edf7e071908261e074593462" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Option::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="31" column="15" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOption_1a9a219972fc101773e060977946b11b30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Option::Option</definition>
+        <argsstring>(const OptionKey &amp;opt_name, const std::string &amp;desc, const bool &amp;def)</argsstring>
+        <name>Option</name>
+        <param>
+          <type>const OptionKey &amp;</type>
+          <declname>opt_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>def</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="33" column="3" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classOption_1a1b6e540f11db083367e92fb24512bb6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Option::Option</definition>
+        <argsstring>(const OptionKey &amp;opt_name, const std::string &amp;desc, const int &amp;def)</argsstring>
+        <name>Option</name>
+        <param>
+          <type>const OptionKey &amp;</type>
+          <declname>opt_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>def</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="42" column="3" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="42" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classOption_1a9464d1a689dfa57ad9f1fb7f4b0461df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Option::Option</definition>
+        <argsstring>(const OptionKey &amp;opt_name, const std::string &amp;desc, const double &amp;def)</argsstring>
+        <name>Option</name>
+        <param>
+          <type>const OptionKey &amp;</type>
+          <declname>opt_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>def</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="51" column="3" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="51" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classOption_1aa28bb6c3cb2927178903e77043005630" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Option::Option</definition>
+        <argsstring>(const OptionKey &amp;opt_name, const std::string &amp;desc, const std::string &amp;def)</argsstring>
+        <name>Option</name>
+        <param>
+          <type>const OptionKey &amp;</type>
+          <declname>opt_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>def</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="60" column="3" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classOption_1aa2e3feccf97a7e8ed58616da67a4f40e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Option::Option</definition>
+        <argsstring>(const OptionKey &amp;opt_name, const std::string &amp;desc, const Vector3d &amp;def)</argsstring>
+        <name>Option</name>
+        <param>
+          <type>const OptionKey &amp;</type>
+          <declname>opt_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>def</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="70" column="3" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="70" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classOption_1af0e7b73061dcb3b5e0144e2922a988dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Option::Option</definition>
+        <argsstring>(const OptionKey &amp;opt_name, const std::string &amp;desc, const char *def)</argsstring>
+        <name>Option</name>
+        <param>
+          <type>const OptionKey &amp;</type>
+          <declname>opt_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>def</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="80" column="3" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="80" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" line="17" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/initialization/Option.h" bodystart="18" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classOption_1aa5393d50389e0d78943a16a892cc2b81" prot="public" virt="non-virtual"><scope>Option</scope><name>b</name></member>
+      <member refid="classOption_1ab1ccd1400a3eb7bfa5b56279216b242ea1c800d30824427a294c154c936ec7dc4" prot="public" virt="non-virtual"><scope>Option</scope><name>BOOL</name></member>
+      <member refid="classOption_1ab1ccd1400a3eb7bfa5b56279216b242ea9915a7dfeec37cc574477aa570ee7cbb" prot="public" virt="non-virtual"><scope>Option</scope><name>DOUBLE</name></member>
+      <member refid="classOption_1a22a7545a0167b50ccdb356c6febb156c" prot="public" virt="non-virtual"><scope>Option</scope><name>i</name></member>
+      <member refid="classOption_1ab1ccd1400a3eb7bfa5b56279216b242eac13174c034679854412a0374463ca958" prot="public" virt="non-virtual"><scope>Option</scope><name>INT</name></member>
+      <member refid="classOption_1a573e03e8edf7e071908261e074593462" prot="public" virt="non-virtual"><scope>Option</scope><name>label</name></member>
+      <member refid="classOption_1af4d889495ccb3ae1f42b8ac577ff301c" prot="public" virt="non-virtual"><scope>Option</scope><name>name</name></member>
+      <member refid="classOption_1a9a219972fc101773e060977946b11b30" prot="public" virt="non-virtual"><scope>Option</scope><name>Option</name></member>
+      <member refid="classOption_1a1b6e540f11db083367e92fb24512bb6d" prot="public" virt="non-virtual"><scope>Option</scope><name>Option</name></member>
+      <member refid="classOption_1a9464d1a689dfa57ad9f1fb7f4b0461df" prot="public" virt="non-virtual"><scope>Option</scope><name>Option</name></member>
+      <member refid="classOption_1aa28bb6c3cb2927178903e77043005630" prot="public" virt="non-virtual"><scope>Option</scope><name>Option</name></member>
+      <member refid="classOption_1aa2e3feccf97a7e8ed58616da67a4f40e" prot="public" virt="non-virtual"><scope>Option</scope><name>Option</name></member>
+      <member refid="classOption_1af0e7b73061dcb3b5e0144e2922a988dd" prot="public" virt="non-virtual"><scope>Option</scope><name>Option</name></member>
+      <member refid="classOption_1a1876ae5d4655c241fcef18c032b09f60" prot="public" virt="non-virtual"><scope>Option</scope><name>OptionKey</name></member>
+      <member refid="classOption_1abd44ab56edddcd59f80ca5c60c9b66f0" prot="public" virt="non-virtual"><scope>Option</scope><name>r</name></member>
+      <member refid="classOption_1aabc687a889fd5bbb6099729b043e6f73" prot="public" virt="non-virtual"><scope>Option</scope><name>s</name></member>
+      <member refid="classOption_1ab1ccd1400a3eb7bfa5b56279216b242ea2ffb4de27aec16cdbc7dbf943c651e50" prot="public" virt="non-virtual"><scope>Option</scope><name>STRING</name></member>
+      <member refid="classOption_1ab1ccd1400a3eb7bfa5b56279216b242e" prot="public" virt="non-virtual"><scope>Option</scope><name>Type</name></member>
+      <member refid="classOption_1ad15b654fba85483e1d7bad63b0b5baea" prot="public" virt="non-virtual"><scope>Option</scope><name>type</name></member>
+      <member refid="classOption_1a9026d2b5d056349741b904ce5ed84abe" prot="public" virt="non-virtual"><scope>Option</scope><name>v</name></member>
+      <member refid="classOption_1ab1ccd1400a3eb7bfa5b56279216b242ea21002cf3c5847ded629e0e89bd70147b" prot="public" virt="non-virtual"><scope>Option</scope><name>VEC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classdgbsvSolver" kind="class" language="C++" prot="public">
+    <compoundname>dgbsvSolver</compoundname>
+    <basecompoundref refid="classbaseSolver" prot="public" virt="non-virtual">baseSolver</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdgbsvSolver_1a2fdee8362d587bb73076fc1441e8b619" prot="public" static="no" mutable="no">
+        <type>MKL_INT</type>
+        <definition>MKL_INT dgbsvSolver::kl</definition>
+        <argsstring></argsstring>
+        <name>kl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" line="15" column="13" bodyfile="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdgbsvSolver_1a63fc11cfe148ca9823f822b95cffff6c" prot="public" static="no" mutable="no">
+        <type>MKL_INT</type>
+        <definition>MKL_INT dgbsvSolver::ku</definition>
+        <argsstring></argsstring>
+        <name>ku</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" line="16" column="13" bodyfile="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdgbsvSolver_1a688ce4875311c1636f42fcbc21140d02" prot="public" static="no" mutable="no">
+        <type>MKL_INT</type>
+        <definition>MKL_INT dgbsvSolver::NUMROWS</definition>
+        <argsstring></argsstring>
+        <name>NUMROWS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" line="17" column="13" bodyfile="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdgbsvSolver_1a25ddffd4fb160882a60e163b1765fb4c" prot="private" static="no" mutable="no">
+        <type>MKL_INT</type>
+        <definition>MKL_INT dgbsvSolver::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" line="19" column="13" bodyfile="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdgbsvSolver_1aeee6b5afa35b33b7a17d4c57f3ba8e54" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dgbsvSolver::dgbsvSolver</definition>
+        <argsstring>(shared_ptr&lt; implicitTimeStepper &gt; stepper)</argsstring>
+        <name>dgbsvSolver</name>
+        <param>
+          <type>shared_ptr&lt; <ref refid="classimplicitTimeStepper" kindref="compound">implicitTimeStepper</ref> &gt;</type>
+          <declname>stepper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" line="10" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.cpp" bodystart="6" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdgbsvSolver_1a921cea48467688f6da2531b1eac3f86d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dgbsvSolver::~dgbsvSolver</definition>
+        <argsstring>() override</argsstring>
+        <name>~dgbsvSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" line="11" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdgbsvSolver_1aa9679f6c117ef12183659569a28f37d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void dgbsvSolver::integrator</definition>
+        <argsstring>() override</argsstring>
+        <name>integrator</name>
+        <reimplements refid="classbaseSolver_1aec2413f534666cbf609795deec7e16dc">integrator</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" line="13" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.cpp" bodystart="21" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dgbsvSolver</label>
+        <link refid="classdgbsvSolver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>baseSolver</label>
+        <link refid="classbaseSolver"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dgbsvSolver</label>
+        <link refid="classdgbsvSolver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>baseSolver</label>
+        <link refid="classbaseSolver"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" line="7" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h" bodystart="8" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classbaseSolver_1a79351308f4f64a379346693890b6ee07" prot="public" virt="non-virtual"><scope>dgbsvSolver</scope><name>baseSolver</name></member>
+      <member refid="classdgbsvSolver_1aeee6b5afa35b33b7a17d4c57f3ba8e54" prot="public" virt="non-virtual"><scope>dgbsvSolver</scope><name>dgbsvSolver</name></member>
+      <member refid="classbaseSolver_1aa5a78c24dfc1ada48047f4097caf1eb3" prot="public" virt="non-virtual"><scope>dgbsvSolver</scope><name>getSolverType</name></member>
+      <member refid="classdgbsvSolver_1a25ddffd4fb160882a60e163b1765fb4c" prot="private" virt="non-virtual"><scope>dgbsvSolver</scope><name>info</name></member>
+      <member refid="classdgbsvSolver_1aa9679f6c117ef12183659569a28f37d3" prot="public" virt="virtual"><scope>dgbsvSolver</scope><name>integrator</name></member>
+      <member refid="classdgbsvSolver_1a2fdee8362d587bb73076fc1441e8b619" prot="public" virt="non-virtual"><scope>dgbsvSolver</scope><name>kl</name></member>
+      <member refid="classdgbsvSolver_1a63fc11cfe148ca9823f822b95cffff6c" prot="public" virt="non-virtual"><scope>dgbsvSolver</scope><name>ku</name></member>
+      <member refid="classbaseSolver_1af1a7ecfb397389383bcbfd8d95685b05" prot="protected" virt="non-virtual"><scope>dgbsvSolver</scope><name>nrhs</name></member>
+      <member refid="classdgbsvSolver_1a688ce4875311c1636f42fcbc21140d02" prot="public" virt="non-virtual"><scope>dgbsvSolver</scope><name>NUMROWS</name></member>
+      <member refid="classbaseSolver_1a1ae36af220b5a4c8cfb4badd646b2644" prot="protected" virt="non-virtual"><scope>dgbsvSolver</scope><name>stepper</name></member>
+      <member refid="classbaseSolver_1a813ec689d19a8f7f0f7a7c94cd48e19d" prot="public" virt="virtual"><scope>dgbsvSolver</scope><name>~baseSolver</name></member>
+      <member refid="classdgbsvSolver_1a921cea48467688f6da2531b1eac3f86d" prot="public" virt="non-virtual"><scope>dgbsvSolver</scope><name>~dgbsvSolver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

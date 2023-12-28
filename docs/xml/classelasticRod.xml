@@ -1,0 +1,1495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classelasticRod" kind="class" language="C++" prot="public">
+    <compoundname>elasticRod</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classelasticRod_1a94e47f3a02b1a369a5fb611151308194" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int elasticRod::limb_idx</definition>
+        <argsstring></argsstring>
+        <name>limb_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="33" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a8b33601ed3c1b632c738ee3b5b945bd7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::poisson_ratio</definition>
+        <argsstring></argsstring>
+        <name>poisson_ratio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="44" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a2fea9ae4cbc3269e41f288ea57f9e037" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::youngM</definition>
+        <argsstring></argsstring>
+        <name>youngM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="45" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a0a7b557a9063c666b0a34ed51582f796" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::shearM</definition>
+        <argsstring></argsstring>
+        <name>shearM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="45" column="19" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1afc939a405d595045e14a3443c804a30a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::EA</definition>
+        <argsstring></argsstring>
+        <name>EA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="46" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1ae54b62eb34458383f8d04bc89591e834" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::EI</definition>
+        <argsstring></argsstring>
+        <name>EI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="47" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1ad9b0f4046dcb60dfb9fac7067cbd9993" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::GJ</definition>
+        <argsstring></argsstring>
+        <name>GJ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="48" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aea2594d38626f02794da8b7e250342ec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int elasticRod::nv</definition>
+        <argsstring></argsstring>
+        <name>nv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="50" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a70758d34b691961314c96c8c95fc42ab" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int elasticRod::ne</definition>
+        <argsstring></argsstring>
+        <name>ne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="51" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a849e33b09d725a40c07d31b2327d5952" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int elasticRod::ndof</definition>
+        <argsstring></argsstring>
+        <name>ndof</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="52" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a3d7aabdfe10e3e3b2440c43968f2db89" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int elasticRod::ncons</definition>
+        <argsstring></argsstring>
+        <name>ncons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="53" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a05602901f08bd58d55a14dbee2d7531a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int elasticRod::uncons</definition>
+        <argsstring></argsstring>
+        <name>uncons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="54" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aa9a289543113f76f19b17637429c0e68" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::rho</definition>
+        <argsstring></argsstring>
+        <name>rho</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="55" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a43b390b174fc9793343e1e94168d392e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::rod_radius</definition>
+        <argsstring></argsstring>
+        <name>rod_radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="56" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aedef16c18cf42b48a52977e9a3130a6f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::cross_sectional_area</definition>
+        <argsstring></argsstring>
+        <name>cross_sectional_area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="57" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a94c49c04192aeaf829cd7a0da387e2b9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::dm</definition>
+        <argsstring></argsstring>
+        <name>dm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="58" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aa0a4068ff79aed16dfe917f13171d8da" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::rod_length</definition>
+        <argsstring></argsstring>
+        <name>rod_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="61" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a6c6803a4398c73c327bebf62ea2c3465" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::phi1</definition>
+        <argsstring></argsstring>
+        <name>phi1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="63" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1ab8b1fe880913e713678dbda4f1ba35f4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double elasticRod::phi2</definition>
+        <argsstring></argsstring>
+        <name>phi2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="64" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a64a048fea12cb4826cda4968ef88b9ed" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool elasticRod::actuated</definition>
+        <argsstring></argsstring>
+        <name>actuated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="65" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a812cb3e1771d6be891c8f13b115e5b36" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double elasticRod::PI</definition>
+        <argsstring></argsstring>
+        <name>PI</name>
+        <initializer>=  3.14159265358979323846264</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="68" column="18" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a0a424ff2b2b4d90c1e6edebe42830cbc" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::edge_len</definition>
+        <argsstring></argsstring>
+        <name>edge_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="70" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aadb4553e09ad72891ff3fd81522f0f70" prot="public" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticRod::kb</definition>
+        <argsstring></argsstring>
+        <name>kb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="72" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a1db0b95d4ed690e556aca3197d521f1a" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::ref_len</definition>
+        <argsstring></argsstring>
+        <name>ref_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="74" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1af3e4e90d796a1c56047e278e09f7b748" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::voronoi_len</definition>
+        <argsstring></argsstring>
+        <name>voronoi_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="76" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1ab99d9716cf7540974d7ee89c3ffc7d11" prot="public" static="no" mutable="no">
+        <type>vector&lt; Vector3d &gt;</type>
+        <definition>vector&lt;Vector3d&gt; elasticRod::all_nodes</definition>
+        <argsstring></argsstring>
+        <name>all_nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="78" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a546c36c8513cb01c9f51db7989870e4e" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::x0</definition>
+        <argsstring></argsstring>
+        <name>x0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="81" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aab89ee06904da2f3e8708bd0f3ec29ed" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="83" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a7c246f171dc195d93018f5c79ccd953f" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::x_ls</definition>
+        <argsstring></argsstring>
+        <name>x_ls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="85" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a367eeef3ebaf0105a57a72f64b452081" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="87" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aa63356aba958fc4e100fa51257beab10" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::u0</definition>
+        <argsstring></argsstring>
+        <name>u0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="88" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a51d95563183c3cfa79cbcc75d419db77" prot="public" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticRod::d1</definition>
+        <argsstring></argsstring>
+        <name>d1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="91" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aa8c602711ebdcfa5491eeb44396047eb" prot="public" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticRod::d2</definition>
+        <argsstring></argsstring>
+        <name>d2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="92" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a3e37be1ef2420b3c67ff1e7b07c33826" prot="public" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticRod::d1_old</definition>
+        <argsstring></argsstring>
+        <name>d1_old</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="93" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a3d7f6c110f43ea8eee26be35447b23af" prot="public" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticRod::d2_old</definition>
+        <argsstring></argsstring>
+        <name>d2_old</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="94" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aa0235392fe6ebe3d963e78223ed6aa2e" prot="public" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticRod::m1</definition>
+        <argsstring></argsstring>
+        <name>m1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="96" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1ad2bf70a1b732a30e30fd2f85a1b1769f" prot="public" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticRod::m2</definition>
+        <argsstring></argsstring>
+        <name>m2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="97" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1ac4308aebf05cba09aa78b449831c777b" prot="public" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticRod::tangent</definition>
+        <argsstring></argsstring>
+        <name>tangent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="99" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a2c26c2a2fa134d0a800d7c0348042962" prot="public" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticRod::tangent_old</definition>
+        <argsstring></argsstring>
+        <name>tangent_old</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="100" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1ad451a0e3564a482d37519ada002e0a43" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::ref_twist</definition>
+        <argsstring></argsstring>
+        <name>ref_twist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="102" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1afa740eee5164688b1893aa7ed6bbb1b7" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::ref_twist_old</definition>
+        <argsstring></argsstring>
+        <name>ref_twist_old</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="103" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1ab0a03f4f5af980f26a0519608dc9fa1c" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::twist_bar</definition>
+        <argsstring></argsstring>
+        <name>twist_bar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="105" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aef289bc80c1211ceb4990d3e1bee7ead" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::mass_array</definition>
+        <argsstring></argsstring>
+        <name>mass_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="107" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a4ec09cd9d14e645cf3abc00e5108ffe4" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::mUncons</definition>
+        <argsstring></argsstring>
+        <name>mUncons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="109" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1ab09dc4329cc35202d9c907f258da56e8" prot="public" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticRod::kappa</definition>
+        <argsstring></argsstring>
+        <name>kappa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="111" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a10096cd88867db1652959d3d9581c399" prot="public" static="no" mutable="no">
+        <type>MatrixXd</type>
+        <definition>MatrixXd elasticRod::kappa_bar</definition>
+        <argsstring></argsstring>
+        <name>kappa_bar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="113" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aaf8e2ad6efcb5f699f1ba9345f7743a8" prot="public" static="no" mutable="no">
+        <type>VectorXd</type>
+        <definition>VectorXd elasticRod::theta</definition>
+        <argsstring></argsstring>
+        <name>theta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="115" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a5bb3c6e7f973c72aa6bd970dd50de127" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* elasticRod::isConstrained</definition>
+        <argsstring></argsstring>
+        <name>isConstrained</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="118" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a1ec129d640ea13a34b3392c159a42f5b" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* elasticRod::unconstrainedMap</definition>
+        <argsstring></argsstring>
+        <name>unconstrainedMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="120" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a025a82a29431d8ecb0ea96b95ffbb651" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* elasticRod::fullToUnconsMap</definition>
+        <argsstring></argsstring>
+        <name>fullToUnconsMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="121" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1aeb286394ccb75125dd8c0231a81f1696" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int elasticRod::unique_dof</definition>
+        <argsstring></argsstring>
+        <name>unique_dof</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="128" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1adcc1b53ccaad06b64dc20a94451e759b" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* elasticRod::isDOFJoint</definition>
+        <argsstring></argsstring>
+        <name>isDOFJoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="129" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a5954c044352bbcd83f18cb62021b71df" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* elasticRod::isNodeJoint</definition>
+        <argsstring></argsstring>
+        <name>isNodeJoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="130" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1ab27090e68a07565c7a6e80d2c8e4cfd4" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* elasticRod::isEdgeJoint</definition>
+        <argsstring></argsstring>
+        <name>isEdgeJoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="131" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1abecfa6834102b78ef8684866ad13c8e2" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* elasticRod::DOFoffsets</definition>
+        <argsstring></argsstring>
+        <name>DOFoffsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="132" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classelasticRod_1a8419a54d59b9803bfe2875dcd623040c" prot="public" static="no" mutable="no">
+        <type>vector&lt; pair&lt; int, int &gt; &gt;</type>
+        <definition>vector&lt;pair&lt;int, int&gt; &gt; elasticRod::joint_ids</definition>
+        <argsstring></argsstring>
+        <name>joint_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="133" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classelasticRod_1a89435c781d8a27ffc42de9e7fd8f7020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>elasticRod::elasticRod</definition>
+        <argsstring>(int limb_idx, const Vector3d &amp;start, const Vector3d &amp;end, int num_nodes, double rho, double rod_radius, double youngs_modulus, double poisson_ratio)</argsstring>
+        <name>elasticRod</name>
+        <param>
+          <type>int</type>
+          <declname>limb_idx</declname>
+        </param>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_nodes</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rod_radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>youngs_modulus</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>poisson_ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="20" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="13" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a5ed1ebb252864160e28abf8d77fbf6fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>elasticRod::elasticRod</definition>
+        <argsstring>(int limb_idx, const vector&lt; Vector3d &gt; &amp;nodes, double rho, double rod_radius, double youngs_modulus, double poisson_ratio)</argsstring>
+        <name>elasticRod</name>
+        <param>
+          <type>int</type>
+          <declname>limb_idx</declname>
+        </param>
+        <param>
+          <type>const vector&lt; Vector3d &gt; &amp;</type>
+          <declname>nodes</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rod_radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>youngs_modulus</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>poisson_ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="22" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="30" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a02f5abb3371e312716d132d48628221c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>elasticRod::~elasticRod</definition>
+        <argsstring>()</argsstring>
+        <name>~elasticRod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="24" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="252" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a918d290be6d15b0ed62226b12d54d93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::setVertexBoundaryCondition</definition>
+        <argsstring>(Vector3d position, int k)</argsstring>
+        <name>setVertexBoundaryCondition</name>
+        <param>
+          <type>Vector3d</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="26" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="234" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a6617380c37764150fd50d1ef55140481" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::setThetaBoundaryCondition</definition>
+        <argsstring>(double desired_theta, int k)</argsstring>
+        <name>setThetaBoundaryCondition</name>
+        <param>
+          <type>double</type>
+          <declname>desired_theta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="27" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="246" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1ad7af253b3157dbd2836b4034e9b1a62d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::prepareForIteration</definition>
+        <argsstring>()</argsstring>
+        <name>prepareForIteration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="28" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="570" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1aebf67b455c55d0bc967122e6141df6e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double elasticRod::updateNewtonX</definition>
+        <argsstring>(double *dx, int offset, double alpha=1.0)</argsstring>
+        <name>updateNewtonX</name>
+        <param>
+          <type>double *</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="29" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="582" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a9f8416b3c6619377660b926bd561e8a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::updateGuess</definition>
+        <argsstring>(double weight, double dt)</argsstring>
+        <name>updateGuess</name>
+        <param>
+          <type>double</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="30" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="603" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a35e89281ff4027715b0a46c44595fd68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::enable2DSim</definition>
+        <argsstring>() const</argsstring>
+        <name>enable2DSim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="31" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="613" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a0f2dbad176beb638342b210c8a13b92b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticRod::getVertex</definition>
+        <argsstring>(int k)</argsstring>
+        <name>getVertex</name>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="36" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="316" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a5910c094af350fb7ffc75e313159c493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticRod::getPreVertex</definition>
+        <argsstring>(int k)</argsstring>
+        <name>getPreVertex</name>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="37" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="321" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1ae5ac80c47d741bf2a61ed83284c63109" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticRod::getVelocity</definition>
+        <argsstring>(int k)</argsstring>
+        <name>getVelocity</name>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="38" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="326" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1aaee2d25ba531412cb7344642f95a622f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector3d</type>
+        <definition>Vector3d elasticRod::getTangent</definition>
+        <argsstring>(int k)</argsstring>
+        <name>getTangent</name>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="39" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="331" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a9583a820c41973d0f53fbfb8850f8896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double elasticRod::getTheta</definition>
+        <argsstring>(int k)</argsstring>
+        <name>getTheta</name>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="40" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="336" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a507a36f84f7a2e17d6707d5a6e8fae56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::updatePhis</definition>
+        <argsstring>(double phi1, double phi2)</argsstring>
+        <name>updatePhis</name>
+        <param>
+          <type>double</type>
+          <declname>phi1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>phi2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="41" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="460" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1aca546d47771df5c35aca082acae09a66" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int elasticRod::getIfConstrained</definition>
+        <argsstring>(int k) const</argsstring>
+        <name>getIfConstrained</name>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="119" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="263" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a110e0a8ee8e12a83a3b94f0da13165be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::updateMap</definition>
+        <argsstring>()</argsstring>
+        <name>updateMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="123" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="204" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a3595ae2d397ec219c1339cd28737a23a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::freeVertexBoundaryCondition</definition>
+        <argsstring>(int k)</argsstring>
+        <name>freeVertexBoundaryCondition</name>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="125" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="225" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a9f82ef660966ff8e70da291df78b17a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::addJoint</definition>
+        <argsstring>(int node_num, bool remove_dof, int joint_node, int joint_limb)</argsstring>
+        <name>addJoint</name>
+        <param>
+          <type>int</type>
+          <declname>node_num</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>remove_dof</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>joint_node</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>joint_limb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="127" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="146" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classelasticRod_1a9dc9d362d8d0db6178a38ac262ac92a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::setupMap</definition>
+        <argsstring>()</argsstring>
+        <name>setupMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="136" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="548" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a64bb51d60dbef0f582f41b21a16e664c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::setup</definition>
+        <argsstring>()</argsstring>
+        <name>setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="139" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="44" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1af48f8a30b0c7c22ec5c38b812c154ab1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::computeElasticStiffness</definition>
+        <argsstring>()</argsstring>
+        <name>computeElasticStiffness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="140" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="562" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1ad20a1b2ce7e54e152e7a4c0de1447462" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::setMass</definition>
+        <argsstring>()</argsstring>
+        <name>setMass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="141" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="268" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a7ef47f7f6436c036cabdc62112f48e72" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::setReferenceLength</definition>
+        <argsstring>()</argsstring>
+        <name>setReferenceLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="142" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="295" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1ac19a422249bd1d50bbf3b1d0548706c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::computeTimeParallel</definition>
+        <argsstring>()</argsstring>
+        <name>computeTimeParallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="143" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="341" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a288c73defdee2a9bec12f9923f6734d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::computeTangent</definition>
+        <argsstring>()</argsstring>
+        <name>computeTangent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="144" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="357" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a4c08d84e4c61d7d7a632bce7fe7e4995" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::computeSpaceParallel</definition>
+        <argsstring>()</argsstring>
+        <name>computeSpaceParallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="145" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="391" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1ad964cd6f297c737e690a83cad0324c04" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::computeMaterialDirector</definition>
+        <argsstring>()</argsstring>
+        <name>computeMaterialDirector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="146" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="421" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1acbd0b92268e9caf2e3864ae2f697a5a6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::computeKappa</definition>
+        <argsstring>()</argsstring>
+        <name>computeKappa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="147" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="436" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a69c5c69e67879fa9a94986fc8daf81ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::computeAngle2KappaBar</definition>
+        <argsstring>()</argsstring>
+        <name>computeAngle2KappaBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="148" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="467" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a9f6d1f87259657315bf56df6fd4ef791" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::computeTwistBar</definition>
+        <argsstring>()</argsstring>
+        <name>computeTwistBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="149" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="506" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1ac9d57d5a3dcf85450ec07052eaaf6781" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::computeEdgeLen</definition>
+        <argsstring>()</argsstring>
+        <name>computeEdgeLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="150" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="517" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a1cff242ffbc0c76c4b4e93b2b1c4aefd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::getRefTwist</definition>
+        <argsstring>()</argsstring>
+        <name>getRefTwist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="151" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="486" bodyend="504"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classelasticRod_1ab7f52e85971928bf9d9d7059ab95ea22" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::parallelTransport</definition>
+        <argsstring>(const Vector3d &amp;d1_1, const Vector3d &amp;t1, const Vector3d &amp;t2, Vector3d &amp;d1_2)</argsstring>
+        <name>parallelTransport</name>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>d1_1</declname>
+        </param>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>Vector3d &amp;</type>
+          <declname>d1_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="152" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="366" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1ae5a4a8f6c215cf466d6555d6f9d3fd06" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void elasticRod::rotateAxisAngle</definition>
+        <argsstring>(Vector3d &amp;v, const Vector3d &amp;z, const double &amp;theta)</argsstring>
+        <name>rotateAxisAngle</name>
+        <param>
+          <type>Vector3d &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="153" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="536" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="classelasticRod_1a1f8a4f784d348e9896574b42df941f82" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double elasticRod::signedAngle</definition>
+        <argsstring>(const Vector3d &amp;u, const Vector3d &amp;v, const Vector3d &amp;n)</argsstring>
+        <name>signedAngle</name>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="154" column="19" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.cpp" bodystart="525" bodyend="534"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" line="16" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/elasticRod.h" bodystart="17" bodyend="155"/>
+    <listofallmembers>
+      <member refid="classelasticRod_1a64a048fea12cb4826cda4968ef88b9ed" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>actuated</name></member>
+      <member refid="classelasticRod_1a9f82ef660966ff8e70da291df78b17a8" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>addJoint</name></member>
+      <member refid="classelasticRod_1ab99d9716cf7540974d7ee89c3ffc7d11" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>all_nodes</name></member>
+      <member refid="classelasticRod_1a69c5c69e67879fa9a94986fc8daf81ff" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>computeAngle2KappaBar</name></member>
+      <member refid="classelasticRod_1ac9d57d5a3dcf85450ec07052eaaf6781" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>computeEdgeLen</name></member>
+      <member refid="classelasticRod_1af48f8a30b0c7c22ec5c38b812c154ab1" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>computeElasticStiffness</name></member>
+      <member refid="classelasticRod_1acbd0b92268e9caf2e3864ae2f697a5a6" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>computeKappa</name></member>
+      <member refid="classelasticRod_1ad964cd6f297c737e690a83cad0324c04" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>computeMaterialDirector</name></member>
+      <member refid="classelasticRod_1a4c08d84e4c61d7d7a632bce7fe7e4995" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>computeSpaceParallel</name></member>
+      <member refid="classelasticRod_1a288c73defdee2a9bec12f9923f6734d1" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>computeTangent</name></member>
+      <member refid="classelasticRod_1ac19a422249bd1d50bbf3b1d0548706c3" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>computeTimeParallel</name></member>
+      <member refid="classelasticRod_1a9f6d1f87259657315bf56df6fd4ef791" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>computeTwistBar</name></member>
+      <member refid="classelasticRod_1aedef16c18cf42b48a52977e9a3130a6f" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>cross_sectional_area</name></member>
+      <member refid="classelasticRod_1a51d95563183c3cfa79cbcc75d419db77" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>d1</name></member>
+      <member refid="classelasticRod_1a3e37be1ef2420b3c67ff1e7b07c33826" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>d1_old</name></member>
+      <member refid="classelasticRod_1aa8c602711ebdcfa5491eeb44396047eb" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>d2</name></member>
+      <member refid="classelasticRod_1a3d7f6c110f43ea8eee26be35447b23af" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>d2_old</name></member>
+      <member refid="classelasticRod_1a94c49c04192aeaf829cd7a0da387e2b9" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>dm</name></member>
+      <member refid="classelasticRod_1abecfa6834102b78ef8684866ad13c8e2" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>DOFoffsets</name></member>
+      <member refid="classelasticRod_1afc939a405d595045e14a3443c804a30a" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>EA</name></member>
+      <member refid="classelasticRod_1a0a424ff2b2b4d90c1e6edebe42830cbc" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>edge_len</name></member>
+      <member refid="classelasticRod_1ae54b62eb34458383f8d04bc89591e834" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>EI</name></member>
+      <member refid="classelasticRod_1a89435c781d8a27ffc42de9e7fd8f7020" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>elasticRod</name></member>
+      <member refid="classelasticRod_1a5ed1ebb252864160e28abf8d77fbf6fa" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>elasticRod</name></member>
+      <member refid="classelasticRod_1a35e89281ff4027715b0a46c44595fd68" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>enable2DSim</name></member>
+      <member refid="classelasticRod_1a3595ae2d397ec219c1339cd28737a23a" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>freeVertexBoundaryCondition</name></member>
+      <member refid="classelasticRod_1a025a82a29431d8ecb0ea96b95ffbb651" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>fullToUnconsMap</name></member>
+      <member refid="classelasticRod_1aca546d47771df5c35aca082acae09a66" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>getIfConstrained</name></member>
+      <member refid="classelasticRod_1a5910c094af350fb7ffc75e313159c493" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>getPreVertex</name></member>
+      <member refid="classelasticRod_1a1cff242ffbc0c76c4b4e93b2b1c4aefd" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>getRefTwist</name></member>
+      <member refid="classelasticRod_1aaee2d25ba531412cb7344642f95a622f" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>getTangent</name></member>
+      <member refid="classelasticRod_1a9583a820c41973d0f53fbfb8850f8896" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>getTheta</name></member>
+      <member refid="classelasticRod_1ae5ac80c47d741bf2a61ed83284c63109" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>getVelocity</name></member>
+      <member refid="classelasticRod_1a0f2dbad176beb638342b210c8a13b92b" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>getVertex</name></member>
+      <member refid="classelasticRod_1ad9b0f4046dcb60dfb9fac7067cbd9993" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>GJ</name></member>
+      <member refid="classelasticRod_1a5bb3c6e7f973c72aa6bd970dd50de127" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>isConstrained</name></member>
+      <member refid="classelasticRod_1adcc1b53ccaad06b64dc20a94451e759b" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>isDOFJoint</name></member>
+      <member refid="classelasticRod_1ab27090e68a07565c7a6e80d2c8e4cfd4" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>isEdgeJoint</name></member>
+      <member refid="classelasticRod_1a5954c044352bbcd83f18cb62021b71df" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>isNodeJoint</name></member>
+      <member refid="classelasticRod_1a8419a54d59b9803bfe2875dcd623040c" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>joint_ids</name></member>
+      <member refid="classelasticRod_1ab09dc4329cc35202d9c907f258da56e8" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>kappa</name></member>
+      <member refid="classelasticRod_1a10096cd88867db1652959d3d9581c399" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>kappa_bar</name></member>
+      <member refid="classelasticRod_1aadb4553e09ad72891ff3fd81522f0f70" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>kb</name></member>
+      <member refid="classelasticRod_1a94e47f3a02b1a369a5fb611151308194" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>limb_idx</name></member>
+      <member refid="classelasticRod_1aa0235392fe6ebe3d963e78223ed6aa2e" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>m1</name></member>
+      <member refid="classelasticRod_1ad2bf70a1b732a30e30fd2f85a1b1769f" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>m2</name></member>
+      <member refid="classelasticRod_1aef289bc80c1211ceb4990d3e1bee7ead" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>mass_array</name></member>
+      <member refid="classelasticRod_1a4ec09cd9d14e645cf3abc00e5108ffe4" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>mUncons</name></member>
+      <member refid="classelasticRod_1a3d7aabdfe10e3e3b2440c43968f2db89" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>ncons</name></member>
+      <member refid="classelasticRod_1a849e33b09d725a40c07d31b2327d5952" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>ndof</name></member>
+      <member refid="classelasticRod_1a70758d34b691961314c96c8c95fc42ab" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>ne</name></member>
+      <member refid="classelasticRod_1aea2594d38626f02794da8b7e250342ec" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>nv</name></member>
+      <member refid="classelasticRod_1ab7f52e85971928bf9d9d7059ab95ea22" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>parallelTransport</name></member>
+      <member refid="classelasticRod_1a6c6803a4398c73c327bebf62ea2c3465" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>phi1</name></member>
+      <member refid="classelasticRod_1ab8b1fe880913e713678dbda4f1ba35f4" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>phi2</name></member>
+      <member refid="classelasticRod_1a812cb3e1771d6be891c8f13b115e5b36" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>PI</name></member>
+      <member refid="classelasticRod_1a8b33601ed3c1b632c738ee3b5b945bd7" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>poisson_ratio</name></member>
+      <member refid="classelasticRod_1ad7af253b3157dbd2836b4034e9b1a62d" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>prepareForIteration</name></member>
+      <member refid="classelasticRod_1a1db0b95d4ed690e556aca3197d521f1a" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>ref_len</name></member>
+      <member refid="classelasticRod_1ad451a0e3564a482d37519ada002e0a43" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>ref_twist</name></member>
+      <member refid="classelasticRod_1afa740eee5164688b1893aa7ed6bbb1b7" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>ref_twist_old</name></member>
+      <member refid="classelasticRod_1aa9a289543113f76f19b17637429c0e68" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>rho</name></member>
+      <member refid="classelasticRod_1aa0a4068ff79aed16dfe917f13171d8da" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>rod_length</name></member>
+      <member refid="classelasticRod_1a43b390b174fc9793343e1e94168d392e" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>rod_radius</name></member>
+      <member refid="classelasticRod_1ae5a4a8f6c215cf466d6555d6f9d3fd06" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>rotateAxisAngle</name></member>
+      <member refid="classelasticRod_1ad20a1b2ce7e54e152e7a4c0de1447462" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>setMass</name></member>
+      <member refid="classelasticRod_1a7ef47f7f6436c036cabdc62112f48e72" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>setReferenceLength</name></member>
+      <member refid="classelasticRod_1a6617380c37764150fd50d1ef55140481" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>setThetaBoundaryCondition</name></member>
+      <member refid="classelasticRod_1a64bb51d60dbef0f582f41b21a16e664c" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>setup</name></member>
+      <member refid="classelasticRod_1a9dc9d362d8d0db6178a38ac262ac92a8" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>setupMap</name></member>
+      <member refid="classelasticRod_1a918d290be6d15b0ed62226b12d54d93d" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>setVertexBoundaryCondition</name></member>
+      <member refid="classelasticRod_1a0a7b557a9063c666b0a34ed51582f796" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>shearM</name></member>
+      <member refid="classelasticRod_1a1f8a4f784d348e9896574b42df941f82" prot="private" virt="non-virtual"><scope>elasticRod</scope><name>signedAngle</name></member>
+      <member refid="classelasticRod_1ac4308aebf05cba09aa78b449831c777b" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>tangent</name></member>
+      <member refid="classelasticRod_1a2c26c2a2fa134d0a800d7c0348042962" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>tangent_old</name></member>
+      <member refid="classelasticRod_1aaf8e2ad6efcb5f699f1ba9345f7743a8" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>theta</name></member>
+      <member refid="classelasticRod_1ab0a03f4f5af980f26a0519608dc9fa1c" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>twist_bar</name></member>
+      <member refid="classelasticRod_1a367eeef3ebaf0105a57a72f64b452081" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>u</name></member>
+      <member refid="classelasticRod_1aa63356aba958fc4e100fa51257beab10" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>u0</name></member>
+      <member refid="classelasticRod_1a05602901f08bd58d55a14dbee2d7531a" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>uncons</name></member>
+      <member refid="classelasticRod_1a1ec129d640ea13a34b3392c159a42f5b" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>unconstrainedMap</name></member>
+      <member refid="classelasticRod_1aeb286394ccb75125dd8c0231a81f1696" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>unique_dof</name></member>
+      <member refid="classelasticRod_1a9f8416b3c6619377660b926bd561e8a3" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>updateGuess</name></member>
+      <member refid="classelasticRod_1a110e0a8ee8e12a83a3b94f0da13165be" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>updateMap</name></member>
+      <member refid="classelasticRod_1aebf67b455c55d0bc967122e6141df6e2" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>updateNewtonX</name></member>
+      <member refid="classelasticRod_1a507a36f84f7a2e17d6707d5a6e8fae56" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>updatePhis</name></member>
+      <member refid="classelasticRod_1af3e4e90d796a1c56047e278e09f7b748" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>voronoi_len</name></member>
+      <member refid="classelasticRod_1aab89ee06904da2f3e8708bd0f3ec29ed" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>x</name></member>
+      <member refid="classelasticRod_1a546c36c8513cb01c9f51db7989870e4e" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>x0</name></member>
+      <member refid="classelasticRod_1a7c246f171dc195d93018f5c79ccd953f" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>x_ls</name></member>
+      <member refid="classelasticRod_1a2fea9ae4cbc3269e41f288ea57f9e037" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>youngM</name></member>
+      <member refid="classelasticRod_1a02f5abb3371e312716d132d48628221c" prot="public" virt="non-virtual"><scope>elasticRod</scope><name>~elasticRod</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classuniformConstantForce" kind="class" language="C++" prot="public">
+    <compoundname>uniformConstantForce</compoundname>
+    <basecompoundref refid="classbaseForce" prot="public" virt="non-virtual">baseForce</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classuniformConstantForce_1a87917b72ccc587001c6edcf6fa654c19" prot="private" static="no" mutable="no">
+        <type>vector&lt; pair&lt; int, Vector3d &gt; &gt;</type>
+        <definition>vector&lt;pair&lt;int, Vector3d&gt; &gt; uniformConstantForce::limb_force_pairs</definition>
+        <argsstring></argsstring>
+        <name>limb_force_pairs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.h" line="30" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classuniformConstantForce_1afcfec8ab6e116f4b0f5e0ab2288eeacc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>uniformConstantForce::uniformConstantForce</definition>
+        <argsstring>(const shared_ptr&lt; softRobots &gt; &amp;m_soft_robots)</argsstring>
+        <name>uniformConstantForce</name>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classsoftRobots" kindref="compound">softRobots</ref> &gt; &amp;</type>
+          <declname>m_soft_robots</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.h" line="21" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classuniformConstantForce_1abbf9f1b31c5516795c00d7bd9b7b5600" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>uniformConstantForce::~uniformConstantForce</definition>
+        <argsstring>() override</argsstring>
+        <name>~uniformConstantForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.h" line="22" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classuniformConstantForce_1a59ab8254261a77b7fbc97eb1ab1fa4ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void uniformConstantForce::add_force_to_limb</definition>
+        <argsstring>(int limb_idx, const Vector3d &amp;force)</argsstring>
+        <name>add_force_to_limb</name>
+        <param>
+          <type>int</type>
+          <declname>limb_idx</declname>
+        </param>
+        <param>
+          <type>const Vector3d &amp;</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.h" line="24" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classuniformConstantForce_1a81535d6681c98a0e39a37aa02c112f45" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void uniformConstantForce::computeForce</definition>
+        <argsstring>(double dt) override</argsstring>
+        <name>computeForce</name>
+        <reimplements refid="classbaseForce_1a95251104e68ce0cbdbe4450cdac9013a">computeForce</reimplements>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.h" line="26" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.cpp" bodystart="25" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classuniformConstantForce_1adbdc6fad4882b5447b66d2cc9c5f2f7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void uniformConstantForce::computeForceAndJacobian</definition>
+        <argsstring>(double dt) override</argsstring>
+        <name>computeForceAndJacobian</name>
+        <reimplements refid="classbaseForce_1ab889c81db9e1fef1274947c937096a25">computeForceAndJacobian</reimplements>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.h" line="27" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.cpp" bodystart="71" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>baseForce</label>
+        <link refid="classbaseForce"/>
+      </node>
+      <node id="1">
+        <label>uniformConstantForce</label>
+        <link refid="classuniformConstantForce"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>baseForce</label>
+        <link refid="classbaseForce"/>
+      </node>
+      <node id="1">
+        <label>uniformConstantForce</label>
+        <link refid="classuniformConstantForce"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.h" line="18" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.h" bodystart="19" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classuniformConstantForce_1a59ab8254261a77b7fbc97eb1ab1fa4ac" prot="public" virt="non-virtual"><scope>uniformConstantForce</scope><name>add_force_to_limb</name></member>
+      <member refid="classbaseForce_1a80e13df0453e912efc081176f3ace387" prot="public" virt="non-virtual"><scope>uniformConstantForce</scope><name>baseForce</name></member>
+      <member refid="classuniformConstantForce_1a81535d6681c98a0e39a37aa02c112f45" prot="public" virt="virtual"><scope>uniformConstantForce</scope><name>computeForce</name></member>
+      <member refid="classuniformConstantForce_1adbdc6fad4882b5447b66d2cc9c5f2f7d" prot="public" virt="virtual"><scope>uniformConstantForce</scope><name>computeForceAndJacobian</name></member>
+      <member refid="classuniformConstantForce_1a87917b72ccc587001c6edcf6fa654c19" prot="private" virt="non-virtual"><scope>uniformConstantForce</scope><name>limb_force_pairs</name></member>
+      <member refid="classbaseForce_1a3dc2a0c4501ec0e1b89888c0be36b004" prot="public" virt="non-virtual"><scope>uniformConstantForce</scope><name>setTimeStepper</name></member>
+      <member refid="classbaseForce_1ad8e25879f53e6b8af2671afc9755e9b1" prot="protected" virt="non-virtual"><scope>uniformConstantForce</scope><name>soft_robots</name></member>
+      <member refid="classbaseForce_1a993b85a94508f4375d006bd07982002e" prot="protected" virt="non-virtual"><scope>uniformConstantForce</scope><name>stepper</name></member>
+      <member refid="classuniformConstantForce_1afcfec8ab6e116f4b0f5e0ab2288eeacc" prot="public" virt="non-virtual"><scope>uniformConstantForce</scope><name>uniformConstantForce</name></member>
+      <member refid="classbaseForce_1acb32c3384da0eb48617e93d9901ea548" prot="public" virt="pure-virtual"><scope>uniformConstantForce</scope><name>~baseForce</name></member>
+      <member refid="classuniformConstantForce_1abbf9f1b31c5516795c00d7bd9b7b5600" prot="public" virt="non-virtual"><scope>uniformConstantForce</scope><name>~uniformConstantForce</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

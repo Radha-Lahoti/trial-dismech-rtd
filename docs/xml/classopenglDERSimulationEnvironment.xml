@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classopenglDERSimulationEnvironment" kind="class" language="C++" prot="public">
+    <compoundname>openglDERSimulationEnvironment</compoundname>
+    <basecompoundref refid="classderSimulationEnvironment" prot="public" virt="non-virtual">derSimulationEnvironment</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classopenglDERSimulationEnvironment_1a7941fe47df9a24d34c387fb299f9388e" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool openglDERSimulationEnvironment::show_mat_frames</definition>
+        <argsstring></argsstring>
+        <name>show_mat_frames</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" line="34" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classopenglDERSimulationEnvironment_1a6c0b63771687e82d447fbe40b58d9973" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double openglDERSimulationEnvironment::render_scale</definition>
+        <argsstring></argsstring>
+        <name>render_scale</name>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" line="35" column="19" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classopenglDERSimulationEnvironment_1a981e43e4b394b329c57ec4fcd0e3d18f" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int openglDERSimulationEnvironment::argc_main</definition>
+        <argsstring></argsstring>
+        <name>argc_main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" line="50" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classopenglDERSimulationEnvironment_1a863b33b2fbba09ca67217d98458d96c9" prot="protected" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** openglDERSimulationEnvironment::argv_main</definition>
+        <argsstring></argsstring>
+        <name>argv_main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" line="51" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classopenglDERSimulationEnvironment_1a97f18bc57e688a0c3803cfe092ad3490" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openglDERSimulationEnvironment::openglDERSimulationEnvironment</definition>
+        <argsstring>(const shared_ptr&lt; world &gt; &amp;m_world, const simParams &amp;sim_params, const shared_ptr&lt; worldLogger &gt; &amp;logger, int argc, char **argv)</argsstring>
+        <name>openglDERSimulationEnvironment</name>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classworld" kindref="compound">world</ref> &gt; &amp;</type>
+          <declname>m_world</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structsimParams" kindref="compound">simParams</ref> &amp;</type>
+          <declname>sim_params</declname>
+        </param>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classworldLogger" kindref="compound">worldLogger</ref> &gt; &amp;</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" line="21" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.cpp" bodystart="16" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classopenglDERSimulationEnvironment_1a1a0c9b7dc33dccb640575644af5f3ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openglDERSimulationEnvironment::~openglDERSimulationEnvironment</definition>
+        <argsstring>() override</argsstring>
+        <name>~openglDERSimulationEnvironment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" line="23" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classopenglDERSimulationEnvironment_1afe834052121b721eb2dc126f3d3ae56c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void openglDERSimulationEnvironment::runSimulation</definition>
+        <argsstring>()</argsstring>
+        <name>runSimulation</name>
+        <reimplements refid="classderSimulationEnvironment_1ab4eb8e1070783f3a36d36bcda1a59e06">runSimulation</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup function, called SEPARATELY. Start the simulation! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" line="33" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.cpp" bodystart="221" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classopenglDERSimulationEnvironment_1a8386f8d22fd0461cba21cac3ee20b438" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openglDERSimulationEnvironment::initGL</definition>
+        <argsstring>()</argsstring>
+        <name>initGL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" line="40" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.cpp" bodystart="35" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classopenglDERSimulationEnvironment_1af332da52fc4d087e82112da38fa95c40" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openglDERSimulationEnvironment::derOpenGLDisplay</definition>
+        <argsstring>()</argsstring>
+        <name>derOpenGLDisplay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" line="47" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.cpp" bodystart="69" bodyend="218"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>openglDERSimulationEnvironment</label>
+        <link refid="classopenglDERSimulationEnvironment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>derSimulationEnvironment</label>
+        <link refid="classderSimulationEnvironment"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>openglDERSimulationEnvironment</label>
+        <link refid="classopenglDERSimulationEnvironment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>derSimulationEnvironment</label>
+        <link refid="classderSimulationEnvironment"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" line="18" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h" bodystart="19" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classopenglDERSimulationEnvironment_1a981e43e4b394b329c57ec4fcd0e3d18f" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>argc_main</name></member>
+      <member refid="classopenglDERSimulationEnvironment_1a863b33b2fbba09ca67217d98458d96c9" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>argv_main</name></member>
+      <member refid="classderSimulationEnvironment_1a006ca4a54b1a7ed3a580e9d7008c9402" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>cleanShutdown</name></member>
+      <member refid="classderSimulationEnvironment_1af5a56ef62f738d056d94eedf64cf7b13" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>cleanShutdown</name></member>
+      <member refid="classderSimulationEnvironment_1a4d367c68c3dc0d9c473f5f9808380d5b" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>cmdline_per</name></member>
+      <member refid="classderSimulationEnvironment_1ac9bb98231bb1f673be16c4ac7d352e3f" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>cmdlineOutputHelper</name></member>
+      <member refid="classderSimulationEnvironment_1af766a98cd1cd96962cd343407001710d" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>cmdlineOutputHelper</name></member>
+      <member refid="classopenglDERSimulationEnvironment_1af332da52fc4d087e82112da38fa95c40" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>derOpenGLDisplay</name></member>
+      <member refid="classderSimulationEnvironment_1a2bfcc28009c5880afca58be9c93e5df2" prot="public" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>derSimulationEnvironment</name></member>
+      <member refid="classopenglDERSimulationEnvironment_1a8386f8d22fd0461cba21cac3ee20b438" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>initGL</name></member>
+      <member refid="classderSimulationEnvironment_1af77de1c4b0a71a7efabd3d4ea7f447fd" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>is_logging</name></member>
+      <member refid="classderSimulationEnvironment_1afd697baa43415994f89264f3c810a2d5" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>logger_p</name></member>
+      <member refid="classopenglDERSimulationEnvironment_1a97f18bc57e688a0c3803cfe092ad3490" prot="public" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>openglDERSimulationEnvironment</name></member>
+      <member refid="classopenglDERSimulationEnvironment_1a6c0b63771687e82d447fbe40b58d9973" prot="public" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>render_scale</name></member>
+      <member refid="classopenglDERSimulationEnvironment_1afe834052121b721eb2dc126f3d3ae56c" prot="public" virt="virtual"><scope>openglDERSimulationEnvironment</scope><name>runSimulation</name></member>
+      <member refid="classopenglDERSimulationEnvironment_1a7941fe47df9a24d34c387fb299f9388e" prot="public" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>show_mat_frames</name></member>
+      <member refid="classderSimulationEnvironment_1ab7103171eaa674eba87d0f5914df715e" prot="protected" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>w_p</name></member>
+      <member refid="classderSimulationEnvironment_1af4e363daff306e5ddde04a26f06ed430" prot="public" virt="virtual"><scope>openglDERSimulationEnvironment</scope><name>~derSimulationEnvironment</name></member>
+      <member refid="classopenglDERSimulationEnvironment_1a1a0c9b7dc33dccb640575644af5f3ada" prot="public" virt="non-virtual"><scope>openglDERSimulationEnvironment</scope><name>~openglDERSimulationEnvironment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

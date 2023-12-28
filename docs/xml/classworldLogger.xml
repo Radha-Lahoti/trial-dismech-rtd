@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classworldLogger" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>worldLogger</compoundname>
+    <derivedcompoundref refid="classrodNodeLogger" prot="public" virt="non-virtual">rodNodeLogger</derivedcompoundref>
+    <derivedcompoundref refid="classvelocityLogger" prot="public" virt="non-virtual">velocityLogger</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classworldLogger_1af58f4f9c36c29d242a1f2c2dbf6aed5d" prot="public" static="no" mutable="no">
+        <type>shared_ptr&lt; <ref refid="classworld" kindref="compound">world</ref> &gt;</type>
+        <definition>shared_ptr&lt;world&gt; worldLogger::world_ptr</definition>
+        <argsstring></argsstring>
+        <name>world_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="51" column="16" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classworldLogger_1a7c4868c5c33b950e001c801b1ec34de1" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int worldLogger::num_lines_header</definition>
+        <argsstring></argsstring>
+        <name>num_lines_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="93" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworldLogger_1af82c83d139cad4fe039c6bd197512a7b" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string worldLogger::m_fileName</definition>
+        <argsstring></argsstring>
+        <name>m_fileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="97" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworldLogger_1a3b17e67401090e1801133c0cce5ab4d9" prot="protected" static="no" mutable="no">
+        <type>std::ofstream &amp;</type>
+        <definition>std::ofstream&amp; worldLogger::m_dataFile</definition>
+        <argsstring></argsstring>
+        <name>m_dataFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="108" column="19" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworldLogger_1a7395c197a5cba2ed3e1945994a0bcf1c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int worldLogger::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="111" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classworldLogger_1a472662b205f96c35a885f19f6ff52b94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>worldLogger::worldLogger</definition>
+        <argsstring>(std::string fileNamePrefix, std::string logfile_base, std::ofstream &amp;df, int per)</argsstring>
+        <name>worldLogger</name>
+        <param>
+          <type>std::string</type>
+          <declname>fileNamePrefix</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>logfile_base</declname>
+        </param>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>df</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>per</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for a <ref refid="classworldLogger" kindref="compound">worldLogger</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileNamePrefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string to prepend to the file name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>logfile_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the base folder for the logs (actual folder will be organized by year, month, day) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>df</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ref to an ofstream to use to write to the data file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>per</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer, period to write to log file (only once per this many samples) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="40" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp" bodystart="23" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classworldLogger_1ae894b5b80d5dfa05a685751ef8dcf5da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>worldLogger::worldLogger</definition>
+        <argsstring>(std::string fileNamePrefix, std::string file_name_suffix, std::string logfile_base, std::ofstream &amp;df, int per)</argsstring>
+        <name>worldLogger</name>
+        <param>
+          <type>std::string</type>
+          <declname>fileNamePrefix</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>file_name_suffix</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>logfile_base</declname>
+        </param>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>df</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>per</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="41" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp" bodystart="86" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classworldLogger_1ab6f89d806c270d78566aaf89c09abf61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>worldLogger::~worldLogger</definition>
+        <argsstring>()</argsstring>
+        <name>~worldLogger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="42" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classworldLogger_1a03580c58b07584f5dda1a74f975d4af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void worldLogger::setup</definition>
+        <argsstring>()</argsstring>
+        <name>setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup function, separate from constructor, for various tasks that are prevented from taking place before construction, e.g. init-ing the log file. Note, calls a secondary (abstract) function for the children to do whatever else they&apos;d need </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="49" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp" bodystart="147" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classworldLogger_1a18d0a61fe011912101bc06404342b7c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void worldLogger::logWorldData</definition>
+        <argsstring>()</argsstring>
+        <name>logWorldData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Log data, used by the caller. Writes to file according to getLogData at period. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="57" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp" bodystart="195" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classworldLogger_1a8080b85f207ce73015dded5bf0237016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void worldLogger::pruneEmptyLog</definition>
+        <argsstring>()</argsstring>
+        <name>pruneEmptyLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For a clean shutdown upon convergence issues, remove a log file that has no data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="63" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp" bodystart="259" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classworldLogger_1a75d1dc493f00d2ec676fbe8c0f4d5c88" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void worldLogger::initLogFile</definition>
+        <argsstring>()</argsstring>
+        <name>initLogFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A helper for initializing the file, so that we can get dynamic binding to functions in the classes which inherit from this. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="71" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp" bodystart="161" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classworldLogger_1a35346a2e14e33a3cda6bd19f981fa310" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void worldLogger::setupHelper</definition>
+        <argsstring>()</argsstring>
+        <name>setupHelper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An setup function, to be overridden by childen if desired. Called by setup. Virtual so that derived classes can override. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="77" column="18" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classworldLogger_1aec32bb56c21070127cbe729799202029" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string worldLogger::getLogHeader</definition>
+        <argsstring>()=0</argsstring>
+        <name>getLogHeader</name>
+        <reimplementedby refid="classrodNodeLogger_1a1ceb9646ca7d7de4dc914f9a6c63a619">getLogHeader</reimplementedby>
+        <reimplementedby refid="classvelocityLogger_1a126680f757bbf13f268bc1fd580ef8cd">getLogHeader</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="82" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classworldLogger_1a86c1f47a862eabac1df27f53d74aee3c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string worldLogger::getLogData</definition>
+        <argsstring>()=0</argsstring>
+        <name>getLogData</name>
+        <reimplementedby refid="classrodNodeLogger_1a0208abbb48c907df488f86b009941fd6">getLogData</reimplementedby>
+        <reimplementedby refid="classvelocityLogger_1a3970376a63c957efe59e611993e49531">getLogData</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="88" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classworldLogger_1aa30e8d7af1dbd8b591c227eabcc22c6c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int worldLogger::countLinesInLog</definition>
+        <argsstring>()</argsstring>
+        <name>countLinesInLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="92" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp" bodystart="180" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classworldLogger_1aaeaea2b6cae9a50bcbf6d15582b5d368" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string worldLogger::getTimestamp</definition>
+        <argsstring>()</argsstring>
+        <name>getTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="100" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp" bodystart="209" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classworldLogger_1ac1fedfb9ced272a7b0e78f5c92f41998" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string worldLogger::getTimeDateFolderPath</definition>
+        <argsstring>()</argsstring>
+        <name>getTimeDateFolderPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="105" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp" bodystart="232" bodyend="255"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>rodNodeLogger</label>
+        <link refid="classrodNodeLogger"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>velocityLogger</label>
+        <link refid="classvelocityLogger"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>worldLogger</label>
+        <link refid="classworldLogger"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" line="29" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h" bodystart="30" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classworldLogger_1aa30e8d7af1dbd8b591c227eabcc22c6c" prot="protected" virt="non-virtual"><scope>worldLogger</scope><name>countLinesInLog</name></member>
+      <member refid="classworldLogger_1a86c1f47a862eabac1df27f53d74aee3c" prot="protected" virt="pure-virtual"><scope>worldLogger</scope><name>getLogData</name></member>
+      <member refid="classworldLogger_1aec32bb56c21070127cbe729799202029" prot="protected" virt="pure-virtual"><scope>worldLogger</scope><name>getLogHeader</name></member>
+      <member refid="classworldLogger_1ac1fedfb9ced272a7b0e78f5c92f41998" prot="protected" virt="non-virtual"><scope>worldLogger</scope><name>getTimeDateFolderPath</name></member>
+      <member refid="classworldLogger_1aaeaea2b6cae9a50bcbf6d15582b5d368" prot="protected" virt="non-virtual"><scope>worldLogger</scope><name>getTimestamp</name></member>
+      <member refid="classworldLogger_1a75d1dc493f00d2ec676fbe8c0f4d5c88" prot="protected" virt="non-virtual"><scope>worldLogger</scope><name>initLogFile</name></member>
+      <member refid="classworldLogger_1a18d0a61fe011912101bc06404342b7c5" prot="public" virt="non-virtual"><scope>worldLogger</scope><name>logWorldData</name></member>
+      <member refid="classworldLogger_1a3b17e67401090e1801133c0cce5ab4d9" prot="protected" virt="non-virtual"><scope>worldLogger</scope><name>m_dataFile</name></member>
+      <member refid="classworldLogger_1af82c83d139cad4fe039c6bd197512a7b" prot="protected" virt="non-virtual"><scope>worldLogger</scope><name>m_fileName</name></member>
+      <member refid="classworldLogger_1a7c4868c5c33b950e001c801b1ec34de1" prot="protected" virt="non-virtual"><scope>worldLogger</scope><name>num_lines_header</name></member>
+      <member refid="classworldLogger_1a7395c197a5cba2ed3e1945994a0bcf1c" prot="protected" virt="non-virtual"><scope>worldLogger</scope><name>period</name></member>
+      <member refid="classworldLogger_1a8080b85f207ce73015dded5bf0237016" prot="public" virt="non-virtual"><scope>worldLogger</scope><name>pruneEmptyLog</name></member>
+      <member refid="classworldLogger_1a03580c58b07584f5dda1a74f975d4af4" prot="public" virt="non-virtual"><scope>worldLogger</scope><name>setup</name></member>
+      <member refid="classworldLogger_1a35346a2e14e33a3cda6bd19f981fa310" prot="protected" virt="virtual"><scope>worldLogger</scope><name>setupHelper</name></member>
+      <member refid="classworldLogger_1af58f4f9c36c29d242a1f2c2dbf6aed5d" prot="public" virt="non-virtual"><scope>worldLogger</scope><name>world_ptr</name></member>
+      <member refid="classworldLogger_1a472662b205f96c35a885f19f6ff52b94" prot="public" virt="non-virtual"><scope>worldLogger</scope><name>worldLogger</name></member>
+      <member refid="classworldLogger_1ae894b5b80d5dfa05a685751ef8dcf5da" prot="public" virt="non-virtual"><scope>worldLogger</scope><name>worldLogger</name></member>
+      <member refid="classworldLogger_1ab6f89d806c270d78566aaf89c09abf61" prot="public" virt="non-virtual"><scope>worldLogger</scope><name>~worldLogger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

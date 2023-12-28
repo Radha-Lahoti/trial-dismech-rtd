@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classimplicitMidpoint" kind="class" language="C++" prot="public">
+    <compoundname>implicitMidpoint</compoundname>
+    <basecompoundref refid="classbackwardEuler" prot="public" virt="non-virtual">backwardEuler</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classimplicitMidpoint_1a33ee5333fab3c87043471e2443d58718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>implicitMidpoint::implicitMidpoint</definition>
+        <argsstring>(const shared_ptr&lt; softRobots &gt; &amp;soft_robots, const shared_ptr&lt; forceContainer &gt; &amp;forces, const simParams &amp;sim_params, solverType solver_type)</argsstring>
+        <name>implicitMidpoint</name>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classsoftRobots" kindref="compound">softRobots</ref> &gt; &amp;</type>
+          <declname>soft_robots</declname>
+        </param>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classforceContainer" kindref="compound">forceContainer</ref> &gt; &amp;</type>
+          <declname>forces</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structsimParams" kindref="compound">simParams</ref> &amp;</type>
+          <declname>sim_params</declname>
+        </param>
+        <param>
+          <type>solverType</type>
+          <declname>solver_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitMidpoint.h" line="9" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitMidpoint.cpp" bodystart="3" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitMidpoint_1a32cdee51dd86649800840f2c7035d6f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>implicitMidpoint::~implicitMidpoint</definition>
+        <argsstring>() override</argsstring>
+        <name>~implicitMidpoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitMidpoint.h" line="12" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classimplicitMidpoint_1a5fbca2c8651c062ff213f9607bb0db24" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double implicitMidpoint::stepForwardInTime</definition>
+        <argsstring>() override</argsstring>
+        <name>stepForwardInTime</name>
+        <reimplements refid="classbackwardEuler_1a20ab8b9fd93f0d368bfa4f488124a5cf">stepForwardInTime</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitMidpoint.h" line="14" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitMidpoint.cpp" bodystart="13" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>implicitTimeStepper</label>
+        <link refid="classimplicitTimeStepper"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>backwardEuler</label>
+        <link refid="classbackwardEuler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>enable_shared_from_this&lt; baseTimeStepper &gt;</label>
+      </node>
+      <node id="4">
+        <label>baseTimeStepper</label>
+        <link refid="classbaseTimeStepper"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>implicitMidpoint</label>
+        <link refid="classimplicitMidpoint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>implicitTimeStepper</label>
+        <link refid="classimplicitTimeStepper"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>backwardEuler</label>
+        <link refid="classbackwardEuler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>enable_shared_from_this&lt; baseTimeStepper &gt;</label>
+      </node>
+      <node id="4">
+        <label>baseTimeStepper</label>
+        <link refid="classbaseTimeStepper"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>implicitMidpoint</label>
+        <link refid="classimplicitMidpoint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitMidpoint.h" line="6" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitMidpoint.h" bodystart="7" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classimplicitTimeStepper_1a6f5ada5c0c658eee7e74fb8fdf9d11fb" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>adaptive_time_stepping</name></member>
+      <member refid="classimplicitTimeStepper_1ad783a87cd24f297b2b2bbfed0eaa4fa8" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>adaptive_time_stepping_threshold</name></member>
+      <member refid="classbaseTimeStepper_1aef09208da33c2b3ae89193628768585c" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>addForce</name></member>
+      <member refid="classimplicitTimeStepper_1a93a0c535049f1a6aeaa2cd015a24b2ac" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>addJacobian</name></member>
+      <member refid="classimplicitTimeStepper_1aa3a719b5d15b53bf4319391f976194fb" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>addJacobian</name></member>
+      <member refid="classimplicitTimeStepper_1a54cb6608536780e9424fedd1c98ea1eb" prot="protected" virt="virtual"><scope>implicitMidpoint</scope><name>addJacobian</name></member>
+      <member refid="classimplicitTimeStepper_1af32e55a7f8601d5e7384ed38f088dda6" prot="protected" virt="virtual"><scope>implicitMidpoint</scope><name>addJacobian</name></member>
+      <member refid="classimplicitTimeStepper_1af32e55a7f8601d5e7384ed38f088dda6" prot="protected" virt="virtual"><scope>implicitMidpoint</scope><name>addJacobian</name></member>
+      <member refid="classbaseTimeStepper_1a7f1170cf8c7ed2f6de3cb6b2344447ff" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>alpha</name></member>
+      <member refid="classbackwardEuler_1a43b081506c6e011a4f79f98934f835d8" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>backwardEuler</name></member>
+      <member refid="classbaseTimeStepper_1a914e49f0499f95432de16cbbbf9efada" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>baseTimeStepper</name></member>
+      <member refid="classbaseTimeStepper_1aedd6fe19d1bdb47b8dfbd8ee6a14f148" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>controllers</name></member>
+      <member refid="classimplicitTimeStepper_1ace5cc3cb7879e772ac07a6b02313a584" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>dgbsv_jacobian</name></member>
+      <member refid="classbaseTimeStepper_1aa0a9a5832257eccd49bad1358bdc2a8e" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>dt</name></member>
+      <member refid="classimplicitTimeStepper_1a00e9b55da16b116fd9a64adcda9a4520" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>dtol</name></member>
+      <member refid="classbaseTimeStepper_1a67caa8bb2cbc163a47768a6592fecbb0" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>DX</name></member>
+      <member refid="classbaseTimeStepper_1ad002a7de3f5e936bb9005a764102344a" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>dx</name></member>
+      <member refid="classbaseTimeStepper_1a4b61514bdd20ea93ec25e611383eb576" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>Force</name></member>
+      <member refid="classbaseTimeStepper_1a0e95d2d5de20d2cb16261fe38e0a8924" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>force</name></member>
+      <member refid="classbaseTimeStepper_1ad3de56819062000bbd109140442b340c" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>forces</name></member>
+      <member refid="classbaseTimeStepper_1aecbdeb9f539eca8105f5a9e81a858a41" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>freeDOF</name></member>
+      <member refid="classimplicitTimeStepper_1a7caebce8c6e3c9394e654a0584a7c865" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>ftol</name></member>
+      <member refid="classimplicitTimeStepper_1a027e906c1fbd70766e03696b86e2c8be" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>ia</name></member>
+      <member refid="classimplicitMidpoint_1a33ee5333fab3c87043471e2443d58718" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>implicitMidpoint</name></member>
+      <member refid="classimplicitTimeStepper_1a7456f3275ec43cacef1852275d90f87d" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>implicitTimeStepper</name></member>
+      <member refid="classimplicitTimeStepper_1a3b8bc7a205dff04acfe42a8fdcd95e41" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>initStepper</name></member>
+      <member refid="classimplicitTimeStepper_1aeae9e12b77b34391092b4738a83e9acf" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>integrator</name></member>
+      <member refid="classbaseTimeStepper_1a8e4d9c7d71b7d22cd6dabc3c2a3babf3" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>iter</name></member>
+      <member refid="classbaseTimeStepper_1a20c3383c9fe32703b51fd8f40df51186" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>Jacobian</name></member>
+      <member refid="classbaseTimeStepper_1abc4b1a1d7880ef80f04acdc8fe87d474" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>joints</name></member>
+      <member refid="classimplicitTimeStepper_1a982a890ebfad89203b315350511cc5c2" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>kl</name></member>
+      <member refid="classimplicitTimeStepper_1a56cf2e10dbceb6003140edddf0f18a78" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>ku</name></member>
+      <member refid="classbaseTimeStepper_1a81054b98246fbbbb9da7c2568fc3fcfd" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>limbs</name></member>
+      <member refid="classimplicitTimeStepper_1a2c7b4d7d808ddd210c7280ba03c99fcf" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>line_search</name></member>
+      <member refid="classbackwardEuler_1a697e3b9ff239f415bf7659df60ee7aa1" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>lineSearch</name></member>
+      <member refid="classbaseTimeStepper_1ad5867c499fb4ff6bf67bb7c51e237343" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>mappedInd</name></member>
+      <member refid="classbaseTimeStepper_1aab4f904d670dadcf7259fda646cf44f9" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>mappedInd1</name></member>
+      <member refid="classbaseTimeStepper_1a75a7f7ee8a3bc2dbfac71906fd9383ad" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>mappedInd2</name></member>
+      <member refid="classimplicitTimeStepper_1a4f8f70dfb48e2e648d848f837b0d18c3" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>max_iter</name></member>
+      <member refid="classbackwardEuler_1af90032a8786a299097c67bacd1ad8d6d" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>newtonMethod</name></member>
+      <member refid="classimplicitTimeStepper_1ae54fc9d5cabfd44f56f3daebf0f5de4c" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>non_zero_elements</name></member>
+      <member refid="classimplicitTimeStepper_1af9db7e8949ac134f2496fd3f9b5298f2" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>num_rows</name></member>
+      <member refid="classbaseTimeStepper_1aa1a889e134f573b5aa5b33e76e6e07d3" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>offset</name></member>
+      <member refid="classbaseTimeStepper_1a60e3eec2dfd3bb7ed16b0970193bcab0" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>offsets</name></member>
+      <member refid="classimplicitTimeStepper_1a70962aef84e682a202dd10fa6eb3e251" prot="protected" virt="non-virtual"><scope>implicitMidpoint</scope><name>orig_dt</name></member>
+      <member refid="classimplicitTimeStepper_1a8f7ea46c03682a47251918bdc6dfd1ec" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>prepSystemForIteration</name></member>
+      <member refid="classimplicitTimeStepper_1a23479cf9d630e0cf9fa86dcc72407958" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>setZero</name></member>
+      <member refid="classimplicitMidpoint_1a5fbca2c8651c062ff213f9607bb0db24" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>stepForwardInTime</name></member>
+      <member refid="classimplicitTimeStepper_1a095d2b8ca1515d86bc2e704d22005fa9" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>update</name></member>
+      <member refid="classbackwardEuler_1a08c0fca7fd169c9a67e957dbedcf8f5d" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>updateSystemForNextTimeStep</name></member>
+      <member refid="classbackwardEuler_1a5c9fe46bec125b67e666a0b26982730e" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>~backwardEuler</name></member>
+      <member refid="classbaseTimeStepper_1a4c6acf40014805b12b483b439e38c3df" prot="public" virt="virtual"><scope>implicitMidpoint</scope><name>~baseTimeStepper</name></member>
+      <member refid="classimplicitMidpoint_1a32cdee51dd86649800840f2c7035d6f1" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>~implicitMidpoint</name></member>
+      <member refid="classimplicitTimeStepper_1a1a7b6c591152887c27907e22a923364c" prot="public" virt="non-virtual"><scope>implicitMidpoint</scope><name>~implicitTimeStepper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

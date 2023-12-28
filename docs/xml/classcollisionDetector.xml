@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classcollisionDetector" kind="class" language="C++" prot="public">
+    <compoundname>collisionDetector</compoundname>
+    <innerclass refid="structcollisionDetector_1_1contact__pair" prot="public">collisionDetector::contact_pair</innerclass>
+    <innerclass refid="structcollisionDetector_1_1limb__edge__info" prot="public">collisionDetector::limb_edge_info</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcollisionDetector_1aaff5b114571d5950f7f8cc76d88114b7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int collisionDetector::num_collisions</definition>
+        <argsstring></argsstring>
+        <name>num_collisions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="41" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcollisionDetector_1a2afecf7599d6051500ea94448d7a34a7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double collisionDetector::min_dist</definition>
+        <argsstring></argsstring>
+        <name>min_dist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="42" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcollisionDetector_1a2c50fd05c6f81e8263cca93be4b0d268" prot="public" static="no" mutable="no">
+        <type>vector&lt; <ref refid="structcollisionDetector_1_1contact__pair" kindref="compound">contact_pair</ref> &gt;</type>
+        <definition>vector&lt;contact_pair&gt; collisionDetector::broad_phase_collision_set</definition>
+        <argsstring></argsstring>
+        <name>broad_phase_collision_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="43" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcollisionDetector_1a3cea0f998520b38e98ccf61aefe42c30" prot="public" static="no" mutable="no">
+        <type>vector&lt; Eigen::Vector&lt; int, 8 &gt; &gt;</type>
+        <definition>vector&lt;Eigen::Vector&lt;int, 8&gt; &gt; collisionDetector::contact_ids</definition>
+        <argsstring></argsstring>
+        <name>contact_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="46" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcollisionDetector_1a117c406a0692b2179f0b71dc67131c76" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double collisionDetector::delta</definition>
+        <argsstring></argsstring>
+        <name>delta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="49" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcollisionDetector_1a70e77b5f5c8b7fb4dc68283c8d35f300" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double collisionDetector::col_limit</definition>
+        <argsstring></argsstring>
+        <name>col_limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="50" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcollisionDetector_1a24061361ecdccd76db4eea4211f5e1b4" prot="private" static="no" mutable="no">
+        <type>shared_ptr&lt; <ref refid="classsoftRobots" kindref="compound">softRobots</ref> &gt;</type>
+        <definition>shared_ptr&lt;softRobots&gt; collisionDetector::soft_robots</definition>
+        <argsstring></argsstring>
+        <name>soft_robots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="51" column="16" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcollisionDetector_1aac528854581914cd27d7c5855e773ac1" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; <ref refid="structcollisionDetector_1_1limb__edge__info" kindref="compound">limb_edge_info</ref> &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;limb_edge_info&gt; &gt; collisionDetector::limb_edge_ids</definition>
+        <argsstring></argsstring>
+        <name>limb_edge_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="53" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcollisionDetector_1a0439151864325f1d09cca9110b7866d5" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; fcl::CollisionObjectf * &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;fcl::CollisionObjectf*&gt; &gt; collisionDetector::cylinders</definition>
+        <argsstring></argsstring>
+        <name>cylinders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="54" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcollisionDetector_1a14ffad7435cc74e4852d8c72109aa497" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3f</type>
+        <definition>Eigen::Vector3f collisionDetector::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="57" column="21" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcollisionDetector_1ae16949cbb3c492a036c9b9778c17047d" prot="private" static="no" mutable="no">
+        <type>Eigen::Matrix3f</type>
+        <definition>Eigen::Matrix3f collisionDetector::rot_mat</definition>
+        <argsstring></argsstring>
+        <name>rot_mat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="58" column="21" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcollisionDetector_1a02385e97d054c1e43744a4b36af274b0" prot="private" static="no" mutable="no">
+        <type>vector&lt; fcl::BroadPhaseCollisionManagerf * &gt;</type>
+        <definition>vector&lt;fcl::BroadPhaseCollisionManagerf*&gt; collisionDetector::collision_managers</definition>
+        <argsstring></argsstring>
+        <name>collision_managers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="60" column="12" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcollisionDetector_1a06f02e537e0322135aea59a87b9d648a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>collisionDetector::collisionDetector</definition>
+        <argsstring>(const shared_ptr&lt; softRobots &gt; &amp;m_soft_robots, double m_col_limit, double m_delta)</argsstring>
+        <name>collisionDetector</name>
+        <param>
+          <type>const shared_ptr&lt; <ref refid="classsoftRobots" kindref="compound">softRobots</ref> &gt; &amp;</type>
+          <declname>m_soft_robots</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m_col_limit</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m_delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="24" column="14" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.cpp" bodystart="23" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classcollisionDetector_1aec88d800ae657b5c0711abd848de8efa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void collisionDetector::broadPhaseCollisionDetection</definition>
+        <argsstring>()</argsstring>
+        <name>broadPhaseCollisionDetection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="44" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.cpp" bodystart="121" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classcollisionDetector_1a9ba41c66846e1bf47aa954155de01f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void collisionDetector::narrowPhaseCollisionDetection</definition>
+        <argsstring>()</argsstring>
+        <name>narrowPhaseCollisionDetection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="45" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.cpp" bodystart="290" bodyend="326"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcollisionDetector_1a1df40e6df9b0826ab36107d5f4627a1a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void collisionDetector::prepCylinders</definition>
+        <argsstring>()</argsstring>
+        <name>prepCylinders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="55" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.cpp" bodystart="67" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classcollisionDetector_1a2ac0020b310ae41190ff775b736cba04" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void collisionDetector::getRotMat</definition>
+        <argsstring>(Eigen::Vector3f &amp;b)</argsstring>
+        <name>getRotMat</name>
+        <param>
+          <type>Eigen::Vector3f &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="59" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.cpp" bodystart="97" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classcollisionDetector_1a2f6189b85fe1041480693ccc9353afb3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void collisionDetector::lumelskyMinDist</definition>
+        <argsstring>(int &amp;idx1, int &amp;idx2, int &amp;idx3, int &amp;idx4, int &amp;idx5, int &amp;idx6, double &amp;dist, ConstraintType &amp;constraint_type)</argsstring>
+        <name>lumelskyMinDist</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>idx1</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>idx2</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>idx3</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>idx4</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>idx5</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>idx6</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>ConstraintType &amp;</type>
+          <declname>constraint_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="63" column="10" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.cpp" bodystart="189" bodyend="286"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcollisionDetector_1a491cd9292fe0102701972133a80eb737" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collisionDetector::fixBound</definition>
+        <argsstring>(double &amp;x)</argsstring>
+        <name>fixBound</name>
+        <param>
+          <type>double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="62" column="17" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.cpp" bodystart="176" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="21" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="22" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classcollisionDetector_1a14ffad7435cc74e4852d8c72109aa497" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>a</name></member>
+      <member refid="classcollisionDetector_1a2c50fd05c6f81e8263cca93be4b0d268" prot="public" virt="non-virtual"><scope>collisionDetector</scope><name>broad_phase_collision_set</name></member>
+      <member refid="classcollisionDetector_1aec88d800ae657b5c0711abd848de8efa" prot="public" virt="non-virtual"><scope>collisionDetector</scope><name>broadPhaseCollisionDetection</name></member>
+      <member refid="classcollisionDetector_1a70e77b5f5c8b7fb4dc68283c8d35f300" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>col_limit</name></member>
+      <member refid="classcollisionDetector_1a02385e97d054c1e43744a4b36af274b0" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>collision_managers</name></member>
+      <member refid="classcollisionDetector_1a06f02e537e0322135aea59a87b9d648a" prot="public" virt="non-virtual"><scope>collisionDetector</scope><name>collisionDetector</name></member>
+      <member refid="classcollisionDetector_1a3cea0f998520b38e98ccf61aefe42c30" prot="public" virt="non-virtual"><scope>collisionDetector</scope><name>contact_ids</name></member>
+      <member refid="classcollisionDetector_1a0439151864325f1d09cca9110b7866d5" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>cylinders</name></member>
+      <member refid="classcollisionDetector_1a117c406a0692b2179f0b71dc67131c76" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>delta</name></member>
+      <member refid="classcollisionDetector_1a491cd9292fe0102701972133a80eb737" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>fixBound</name></member>
+      <member refid="classcollisionDetector_1a2ac0020b310ae41190ff775b736cba04" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>getRotMat</name></member>
+      <member refid="classcollisionDetector_1aac528854581914cd27d7c5855e773ac1" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>limb_edge_ids</name></member>
+      <member refid="classcollisionDetector_1a2f6189b85fe1041480693ccc9353afb3" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>lumelskyMinDist</name></member>
+      <member refid="classcollisionDetector_1a2afecf7599d6051500ea94448d7a34a7" prot="public" virt="non-virtual"><scope>collisionDetector</scope><name>min_dist</name></member>
+      <member refid="classcollisionDetector_1a9ba41c66846e1bf47aa954155de01f2b" prot="public" virt="non-virtual"><scope>collisionDetector</scope><name>narrowPhaseCollisionDetection</name></member>
+      <member refid="classcollisionDetector_1aaff5b114571d5950f7f8cc76d88114b7" prot="public" virt="non-virtual"><scope>collisionDetector</scope><name>num_collisions</name></member>
+      <member refid="classcollisionDetector_1a1df40e6df9b0826ab36107d5f4627a1a" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>prepCylinders</name></member>
+      <member refid="classcollisionDetector_1ae16949cbb3c492a036c9b9778c17047d" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>rot_mat</name></member>
+      <member refid="classcollisionDetector_1a24061361ecdccd76db4eea4211f5e1b4" prot="private" virt="non-virtual"><scope>collisionDetector</scope><name>soft_robots</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
