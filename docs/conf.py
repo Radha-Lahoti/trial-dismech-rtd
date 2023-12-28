@@ -22,7 +22,7 @@ def configureDoxyfile(input_dir, output_dir):
     filedata = filedata.replace('@DOXYGEN_INPUT_DIR@', input_dir)
     filedata = filedata.replace('@DOXYGEN_OUTPUT_DIR@', output_dir)
 
-    with open('Doxyfile', 'w') as file:
+    with open('Doxyfile.in', 'w') as file:
         file.write(filedata)
 
 # Check if we're running on Read the Docs' servers
