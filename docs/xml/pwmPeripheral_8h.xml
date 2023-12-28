@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="pwmPeripheral_8h" kind="file" language="C++">
+    <compoundname>pwmPeripheral.h</compoundname>
+    <includes refid="global__const_8h" local="yes">../global_const.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">exception</includes>
+    <includedby refid="pwmPeripheral_8cpp" local="yes">/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp</includedby>
+    <includedby refid="rodOpenLoopFileController_8h" local="yes">/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h</label>
+        <link refid="pwmPeripheral_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>exception</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>../global_const.h</label>
+        <link refid="global__const_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.cpp</label>
+        <link refid="rodOpenLoopFileController_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h</label>
+        <link refid="pwmPeripheral_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h</label>
+        <link refid="rodOpenLoopFileController_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.cpp</label>
+        <link refid="pwmPeripheral_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classpwmPeripheral" prot="public">pwmPeripheral</innerclass>
+    <briefdescription>
+<para>Declarations for the class <ref refid="classpwmPeripheral" kindref="compound">pwmPeripheral</ref>. The &quot;Peripheral&quot; implementation of a PWM block is motivated by Nordic&apos;s physical peripheral on a microcontroller. Updates to frequency or period do not get applied until the start of the following cycle (c.f., bit bang.) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Andrew </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-12-27</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright 2020 Andrew P. Sabelhaus and Soft Machines Lab at CMU </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PWM_PERIPHERAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWM_PERIPHERAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Some<sp/>constants<sp/>used<sp/>throughout<sp/>this<sp/>program</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../global_const.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>i/o</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>for<sp/>error<sp/>handling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classpwmPeripheral" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpwmPeripheral" kindref="compound">pwmPeripheral</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpwmPeripheral_1a4cf65110775b7d023f4dd76561b8a6bf" kindref="member">pwmPeripheral</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_period,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_duty);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classpwmPeripheral" kindref="compound">pwmPeripheral</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpwmPeripheral_1aa7b1e55431ed544aedb277f930d63699" kindref="member">setOnOff</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>onoff);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>and<sp/>a<sp/>getter<sp/>for<sp/>state.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isOn();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpwmPeripheral_1ac3cdd8cd10997580d510df99efaaf6c3" kindref="member">setPeriod</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_period);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setDutyCycle(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_duty);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classpwmPeripheral_1a12c9c59607742e2543ce37462a5bae0a" kindref="member">getHighLow</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpwmPeripheral_1af520fa4d4fe210732fb2feeb991a7bba" kindref="member">updateTimestep</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>functions<sp/>to<sp/>validate<sp/>various<sp/>things<sp/>passed<sp/>in.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>@throws<sp/>runtime<sp/>errors<sp/>as<sp/>appropriate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>validatePeriod(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>per);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>validateDuty(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dut);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>a<sp/>small<sp/>initialization<sp/>function.<sp/>Used<sp/>both<sp/>when<sp/>turning<sp/>on<sp/>and<sp/>when<sp/>completing<sp/>a<sp/>cycle,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>both<sp/>cases<sp/>where<sp/>a<sp/>new<sp/>cycle<sp/>starts.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reinit();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pwm<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>period;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>duty;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>implementation<sp/>does<sp/>not<sp/>update<sp/>its<sp/>parameters<sp/>until<sp/>the<sp/>next<sp/>cycle,<sp/>so<sp/>what<sp/>we&apos;ll<sp/>do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>is<sp/>just<sp/>store<sp/>the<sp/>next<sp/>value<sp/>to<sp/>be<sp/>used,<sp/>which<sp/>will<sp/>be<sp/>what<sp/>the<sp/>set<sp/>functions<sp/>actually<sp/>modify.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>next_period;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>next_duty;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>PWM<sp/>block<sp/>knows<sp/>if<sp/>it<sp/>should<sp/>output<sp/>something<sp/>or<sp/>nothing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_on;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Track<sp/>the<sp/>total<sp/>time<sp/>since<sp/>the<sp/>simulation<sp/>began.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>current_time;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>and<sp/>a<sp/>local<sp/>variable<sp/>for<sp/>the<sp/>dt<sp/>between<sp/>last<sp/>period<sp/>start<sp/>and<sp/>current<sp/>time,<sp/>for<sp/>fewer<sp/>computations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt_current_period;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Tracking<sp/>the<sp/>duty<sp/>cycle<sp/>requires<sp/>the<sp/>last<sp/>time<sp/>a<sp/>cycle<sp/>started</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>has<sp/>no<sp/>meaning<sp/>if<sp/>the<sp/>pwm<sp/>is<sp/>off!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>last_start_time;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>it&apos;s<sp/>useful<sp/>to<sp/>store<sp/>a<sp/>local<sp/>variable<sp/>which<sp/>determines<sp/>when<sp/>to<sp/>be<sp/>low<sp/>during<sp/>this<sp/>cycle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>microcontrollers<sp/>call<sp/>this<sp/>a<sp/>capture/compare<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>has<sp/>no<sp/>meaining<sp/>if<sp/>the<sp/>pwm<sp/>is<sp/>off!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cc;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PWM_PERIPHERAL_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/pwmPeripheral.h"/>
+  </compounddef>
+</doxygen>

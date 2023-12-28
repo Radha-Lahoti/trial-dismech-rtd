@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacephi__csv__creator" kind="namespace" language="Python">
+    <compoundname>phi_csv_creator</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="phi__csv__creator_8py_1a1ec24a7cddb3a40471598a2c2c212eca" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>phi_csv_creator.files</definition>
+        <argsstring></argsstring>
+        <name>files</name>
+        <initializer>=  os.listdir()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" line="6" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="phi__csv__creator_8py_1a6d16504595ed099fb908824075bbd725" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>phi_csv_creator.key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" line="9" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="phi__csv__creator_8py_1a4ddb45bdeb86ffef99aa45ae190371ea" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>phi_csv_creator.phis</definition>
+        <argsstring></argsstring>
+        <name>phis</name>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" line="11" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="phi__csv__creator_8py_1afdf98b10a74afb595c5b86fb08a066c9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>phi_csv_creator.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>=  np.zeros((phis.shape[0], 5))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" line="16" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="phi__csv__creator_8py_1a463f88ff18cb044a9a6063f7e68ca3ee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>phi_csv_creator.index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" line="28" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="phi__csv__creator_8py_1a0cfae7967f29370ac4fd273a514d7bd7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>phi_csv_creator.False</definition>
+        <argsstring></argsstring>
+        <name>False</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" line="28" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="phi__csv__creator_8py_1a8f8c8bda9c5377fe9d88544a53c96b8c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>phi_csv_creator.lineterminator</definition>
+        <argsstring></argsstring>
+        <name>lineterminator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" line="28" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis/phi_csv_creator.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

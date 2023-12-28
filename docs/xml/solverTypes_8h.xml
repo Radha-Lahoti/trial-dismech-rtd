@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="solverTypes_8h" kind="file" language="C++">
+    <compoundname>solverTypes.h</compoundname>
+    <includedby refid="baseSolver_8h" local="yes">/home/radha/Desktop/dismech-rods-main/src/solvers/baseSolver.h</includedby>
+    <includedby refid="implicitTimeStepper_8h" local="yes">/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h</includedby>
+    <invincdepgraph>
+      <node id="15">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h</label>
+        <link refid="openglDERSimulationEnvironment_8h_source"/>
+      </node>
+      <node id="7">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitMidpoint.h</label>
+        <link refid="implicitMidpoint_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/derSimulationEnvironment.cpp</label>
+        <link refid="derSimulationEnvironment_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/radha/Desktop/dismech-rods-main/src/solvers/dgbsvSolver.h</label>
+        <link refid="dgbsvSolver_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/solvers/solverTypes.h</label>
+        <link refid="solverTypes_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/rodNodeLogger.cpp</label>
+        <link refid="rodNodeLogger_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/radha/Desktop/dismech-rods-main/src/world.h</label>
+        <link refid="world_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/radha/Desktop/dismech-rods-main/src/solvers/baseSolver.h</label>
+        <link refid="baseSolver_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/velocityLogger.cpp</label>
+        <link refid="velocityLogger_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp</label>
+        <link refid="worldLogger_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/radha/Desktop/dismech-rods-main/src/solvers/pardisoSolver.h</label>
+        <link refid="pardisoSolver_8h_source"/>
+      </node>
+      <node id="5">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h</label>
+        <link refid="implicitTimeStepper_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.h</label>
+        <link refid="headlessDERSimulationEnvironment_8h_source"/>
+      </node>
+      <node id="12">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/derSimulationEnvironment.h</label>
+        <link refid="derSimulationEnvironment_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/backwardEuler.h</label>
+        <link refid="backwardEuler_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="solverTypes_8h_1af9b91ff85151bf21233a4ede60896cec" prot="public" static="no" strong="no">
+        <type></type>
+        <name>solverType</name>
+        <enumvalue id="solverTypes_8h_1af9b91ff85151bf21233a4ede60896ceca2690e8715df031662d85dac4cb1873e9" prot="public">
+          <name>PARDISO_SOLVER</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="solverTypes_8h_1af9b91ff85151bf21233a4ede60896ceca59a4cd1705ec23f92835433adfb74cb6" prot="public">
+          <name>DGBSV_SOLVER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/solvers/solverTypes.h" line="4" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/src/solvers/solverTypes.h" bodystart="4" bodyend="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SOLVERTYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SOLVERTYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>solverType<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>PARDISO_SOLVER<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>DGBSV_SOLVER</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/solvers/solverTypes.h"/>
+  </compounddef>
+</doxygen>

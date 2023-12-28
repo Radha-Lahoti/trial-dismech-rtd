@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_d28a4824dc47e487b107a5db32ef43c4" kind="dir">
+    <compoundname>/home/radha/Desktop/dismech-rods-main/examples</compoundname>
+    <innerdir refid="dir_3509a29f934d2e7f345296fab8e82cb5">/home/radha/Desktop/dismech-rods-main/examples/cantilever_case</innerdir>
+    <innerdir refid="dir_d7017fbc5cf6ecef111f7936f7a9c619">/home/radha/Desktop/dismech-rods-main/examples/friction_case</innerdir>
+    <innerdir refid="dir_01305e039d48cc7559ab3fc7dd7624bf">/home/radha/Desktop/dismech-rods-main/examples/helix_case</innerdir>
+    <innerdir refid="dir_f1d1d7c49529beaa79e675ef473f74a9">/home/radha/Desktop/dismech-rods-main/examples/horton_case</innerdir>
+    <innerdir refid="dir_4d9558e0313b269159576bd887b7a5b9">/home/radha/Desktop/dismech-rods-main/examples/real2sim_case</innerdir>
+    <innerdir refid="dir_61f92635b3e9bd642dc0c277cd85371d">/home/radha/Desktop/dismech-rods-main/examples/spider_case</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/examples/"/>
+  </compounddef>
+</doxygen>

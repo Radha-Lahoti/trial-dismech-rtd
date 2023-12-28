@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="rodOpenLoopFileKappabarSetter_8h" kind="file" language="C++">
+    <compoundname>rodOpenLoopFileKappabarSetter.h</compoundname>
+    <includes refid="rodController_8h" local="yes">rodController.h</includes>
+    <includedby refid="rodOpenLoopFileKappabarSetter_8cpp" local="yes">/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileKappabarSetter.cpp</includedby>
+    <includedby refid="softRobots_8h" local="yes">/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="14">
+        <label>sys/mman.h</label>
+      </node>
+      <node id="6">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="2">
+        <label>rodController.h</label>
+        <link refid="rodController_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>fcntl.h</label>
+      </node>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileKappabarSetter.h</label>
+        <link refid="rodOpenLoopFileKappabarSetter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>eigenIncludes.h</label>
+        <link refid="eigenIncludes_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Eigen/Sparse</label>
+      </node>
+      <node id="5">
+        <label>Eigen/Dense</label>
+      </node>
+      <node id="9">
+        <label>unistd.h</label>
+      </node>
+      <node id="11">
+        <label>cstdlib</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>csignal</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h</label>
+        <link refid="openglDERSimulationEnvironment_8h_source"/>
+      </node>
+      <node id="40">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticStretchingForce.h</label>
+        <link refid="elasticStretchingForce_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/baseTimeStepper.h</label>
+        <link refid="baseTimeStepper_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/verletPosition.h</label>
+        <link refid="verletPosition_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitMidpoint.h</label>
+        <link refid="implicitMidpoint_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/gravityForce.h</label>
+        <link refid="gravityForce_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/derSimulationEnvironment.cpp</label>
+        <link refid="derSimulationEnvironment_8cpp"/>
+      </node>
+      <node id="30">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/baseForce.h</label>
+        <link refid="baseForce_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/gravityForce.cpp</label>
+        <link refid="gravityForce_8cpp"/>
+      </node>
+      <node id="44">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.cpp</label>
+        <link refid="collisionDetector_8cpp"/>
+      </node>
+      <node id="15">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.cpp</label>
+        <link refid="uniformConstantForce_8cpp"/>
+      </node>
+      <node id="41">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticTwistingForce.h</label>
+        <link refid="elasticTwistingForce_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileKappabarSetter.cpp</label>
+        <link refid="rodOpenLoopFileKappabarSetter_8cpp"/>
+      </node>
+      <node id="45">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.cpp</label>
+        <link refid="softRobots_8cpp"/>
+      </node>
+      <node id="38">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.h</label>
+        <link refid="uniformConstantForce_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/dampingForce.cpp</label>
+        <link refid="dampingForce_8cpp"/>
+      </node>
+      <node id="16">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.cpp</label>
+        <link refid="elasticBendingForce_8cpp"/>
+      </node>
+      <node id="23">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/rodNodeLogger.cpp</label>
+        <link refid="rodNodeLogger_8cpp"/>
+      </node>
+      <node id="18">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticTwistingForce.cpp</label>
+        <link refid="elasticTwistingForce_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileKappabarSetter.h</label>
+        <link refid="rodOpenLoopFileKappabarSetter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/home/radha/Desktop/dismech-rods-main/src/world.h</label>
+        <link refid="world_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/softRobots.h</label>
+        <link refid="softRobots_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h</label>
+        <link refid="floorContactForce_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/velocityLogger.cpp</label>
+        <link refid="velocityLogger_8cpp"/>
+      </node>
+      <node id="42">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/inertialForce.h</label>
+        <link refid="inertialForce_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/explicitTimeStepper.h</label>
+        <link refid="explicitTimeStepper_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp</label>
+        <link refid="worldLogger_8cpp"/>
+      </node>
+      <node id="35">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/dampingForce.h</label>
+        <link refid="dampingForce_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/forceContainer.h</label>
+        <link refid="forceContainer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/contactForce.h</label>
+        <link refid="contactForce_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/inertialForce.cpp</label>
+        <link refid="inertialForce_8cpp"/>
+      </node>
+      <node id="43">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h</label>
+        <link refid="collisionDetector_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h</label>
+        <link refid="implicitTimeStepper_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/radha/Desktop/dismech-rods-main/robotDescription.cpp</label>
+        <link refid="robotDescription_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.h</label>
+        <link refid="headlessDERSimulationEnvironment_8h_source"/>
+      </node>
+      <node id="6">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/derSimulationEnvironment.h</label>
+        <link refid="derSimulationEnvironment_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/baseForce.cpp</label>
+        <link refid="baseForce_8cpp"/>
+      </node>
+      <node id="21">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/forwardEuler.h</label>
+        <link refid="forwardEuler_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticStretchingForce.cpp</label>
+        <link refid="elasticStretchingForce_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/contactForce.cpp</label>
+        <link refid="contactForce_8cpp"/>
+      </node>
+      <node id="13">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp</label>
+        <link refid="floorContactForce_8cpp"/>
+      </node>
+      <node id="39">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.h</label>
+        <link refid="elasticBendingForce_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/forceContainer.cpp</label>
+        <link refid="forceContainer_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/radha/Desktop/dismech-rods-main/src/robotDescription.h</label>
+        <link refid="robotDescription_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/backwardEuler.h</label>
+        <link refid="backwardEuler_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classrodOpenLoopFileKappabarSetter" prot="public">rodOpenLoopFileKappabarSetter</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Andrew </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-12-27</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ROD_OPEN_LOOP_FILE_KAPPABAR_SETTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROD_OPEN_LOOP_FILE_KAPPABAR_SETTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rodController_8h" kindref="compound">rodController.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsoftRobots" kindref="compound">softRobots</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classrodOpenLoopFileKappabarSetter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrodOpenLoopFileKappabarSetter" kindref="compound">rodOpenLoopFileKappabarSetter</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classrodController" kindref="compound">rodController</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrodOpenLoopFileKappabarSetter" kindref="compound">rodOpenLoopFileKappabarSetter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>shared_ptr&lt;softRobots&gt;&amp;<sp/>soft_robots,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>file_path);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classrodOpenLoopFileKappabarSetter" kindref="compound">rodOpenLoopFileKappabarSetter</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>redefine<sp/>the<sp/>base<sp/>class&apos;<sp/>timestepping<sp/>function<sp/>to<sp/>also<sp/>include<sp/>the<sp/>PWMs.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateTimestep(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>helper<sp/>to<sp/>parse<sp/>the<sp/>csv<sp/>file.<sp/>Writes<sp/>data<sp/>into<sp/>time_pts<sp/>and<sp/>dutys.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>parseActuationFile(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>csv_path);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updatePhies();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Store<sp/>the<sp/>timepoints<sp/>for<sp/>desired<sp/>kappabar<sp/>(2by1<sp/>vector<sp/>for<sp/>a<sp/>rod)<sp/>values<sp/>for<sp/>all<sp/>rods.<sp/>We&apos;ll<sp/>assume<sp/>index<sp/>alignment<sp/>between<sp/>these<sp/>two</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>time_pts;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>desired_phies_profile;<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>desired_phi_list;<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>CSV<sp/>file<sp/>will<sp/>have<sp/>a<sp/>certain<sp/>number<sp/>of<sp/>lines<sp/>as<sp/>a<sp/>header.<sp/>We&apos;ll<sp/>need<sp/>to<sp/>remove<sp/>them.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>csv_header_lines<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>debugging,<sp/>if<sp/>desired:<sp/>detect<sp/>when<sp/>we&apos;ve<sp/>change<sp/>to<sp/>the<sp/>next<sp/>timepoint,<sp/>so<sp/>we<sp/>can<sp/>pause<sp/>and<sp/>inspect<sp/>the<sp/>gait.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prev_time_pt_idx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>ROD_OPEN_LOOP_FILE_KAPPABAR_SETTER_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileKappabarSetter.h"/>
+  </compounddef>
+</doxygen>

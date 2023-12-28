@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacecantilever__deflection__plotter" kind="namespace" language="Python">
+    <compoundname>cantilever_deflection_plotter</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="cantilever__deflection__plotter_8py_1aaad36c39ca1719963c61c727651106d0" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cantilever_deflection_plotter.fn</definition>
+        <argsstring></argsstring>
+        <name>fn</name>
+        <initializer>=  &quot;log_files/cantilever/node_1.00e+05.csv&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="6" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cantilever__deflection__plotter_8py_1a7c78e94159898710ddbc2a0915556ece" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cantilever_deflection_plotter.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>=  np.loadtxt(fn, delimiter=&quot;,&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="8" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cantilever__deflection__plotter_8py_1a6321e029e23a56632f6af0f293f1a451" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cantilever_deflection_plotter.gt</definition>
+        <argsstring></argsstring>
+        <name>gt</name>
+        <initializer>=  np.loadtxt(&quot;examples/cantilever_case/euler_bernoulli_data_E=1e5_T=100s.txt&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="10" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cantilever__deflection__plotter_8py_1a73dd342573e8fabb409872ddafd0b0a1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cantilever_deflection_plotter.fig</definition>
+        <argsstring></argsstring>
+        <name>fig</name>
+        <initializer>=  plt.figure(figsize=(15, 5), frameon=True, dpi=150)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="13" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cantilever__deflection__plotter_8py_1a36a78d02fa694b4464dae1b911efa583" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cantilever_deflection_plotter.ax</definition>
+        <argsstring></argsstring>
+        <name>ax</name>
+        <initializer>=  fig.add_subplot(111)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="14" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cantilever__deflection__plotter_8py_1aa61147255cc549579c00bcd8e5ce7ab6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cantilever_deflection_plotter.lw</definition>
+        <argsstring></argsstring>
+        <name>lw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="15" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cantilever__deflection__plotter_8py_1a1e0c0ae3bf5bcff975db74f412494483" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cantilever_deflection_plotter.label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="15" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cantilever__deflection__plotter_8py_1ad910f3d206bcc72bb088be5665e30793" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cantilever_deflection_plotter.fontsize</definition>
+        <argsstring></argsstring>
+        <name>fontsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="17" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cantilever__deflection__plotter_8py_1a812aab60a4ad84dd224645b9cee4d0bd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cantilever_deflection_plotter.which</definition>
+        <argsstring></argsstring>
+        <name>which</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="19" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cantilever__deflection__plotter_8py_1af7ad4ed36c38e827324c4d0c09b4506c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cantilever_deflection_plotter.color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="19" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cantilever__deflection__plotter_8py_1ae5b57339715528615afb6e3cfb6976b5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cantilever_deflection_plotter.linestyle</definition>
+        <argsstring></argsstring>
+        <name>linestyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="19" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/examples/cantilever_case/cantilever_deflection_plotter.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

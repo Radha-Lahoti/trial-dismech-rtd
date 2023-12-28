@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacefriction__runner" kind="namespace" language="Python">
+    <compoundname>friction_runner</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="friction__runner_8py_1ae207b3fc6b446e65ac6759f8c0965271" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>friction_runner.force</definition>
+        <argsstring></argsstring>
+        <name>force</name>
+        <initializer>=  list([float(x) / 10.0 for x in range(0, 110, 5)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/friction_case/friction_runner.py" line="16" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/friction_case/friction_runner.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="friction__runner_8py_1a20d3999db7ea953eaa75a99bbf685fb3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>friction_runner.start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <initializer>=  time()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/friction_case/friction_runner.py" line="20" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/friction_case/friction_runner.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="friction__runner_8py_1aa4f52d3d9bb9d68fd35d3a51dd88ab47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def friction_runner.run_fric_test</definition>
+        <argsstring>(force)</argsstring>
+        <name>run_fric_test</name>
+        <param>
+          <type>force</type>
+          <defname>force</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/friction_case/friction_runner.py" line="7" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/friction_case/friction_runner.py" bodystart="7" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/examples/friction_case/friction_runner.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

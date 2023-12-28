@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="kinetic__energy__plotter_8py" kind="file" language="Python">
+    <compoundname>kinetic_energy_plotter.py</compoundname>
+    <innernamespace refid="namespacekinetic__energy__plotter">kinetic_energy_plotter</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>matplotlib.pyplot<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>plt</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Plot<sp/>theoretical<sp/>results</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">fig<sp/>=<sp/>plt.figure(figsize=(12,<sp/>6))</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">u<sp/>=<sp/>np.linspace(-10.6,<sp/>10.5,<sp/>100)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">af<sp/>=<sp/>1**2<sp/>/<sp/>2<sp/>*<sp/>(np.abs(u)<sp/>-<sp/>0.4<sp/>*<sp/>9.8)**2</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">mask<sp/>=<sp/>(np.abs(u)<sp/>-<sp/>0.4<sp/>*<sp/>9.8)<sp/>&lt;<sp/>0</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">af[mask]<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">plt.plot(u,<sp/>af,<sp/>linewidth=2,<sp/>label=</highlight><highlight class="stringliteral">&quot;theoretical&quot;</highlight><highlight class="normal">,<sp/>zorder=0)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Construct<sp/>Mass<sp/>Array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">ne<sp/>=<sp/>25</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">#<sp/>rod<sp/>length<sp/>*<sp/>pi<sp/>*<sp/>rod<sp/>radius^2<sp/>*<sp/>rho</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">mass<sp/>=<sp/>1<sp/>*<sp/>np.pi<sp/>*<sp/>0.025**2<sp/>*<sp/>509.2985</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">dm<sp/>=<sp/>mass<sp/>/<sp/>ne</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">mass_array<sp/>=<sp/>np.zeros((ne+1,<sp/>1))</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">mass_array[1:-1]<sp/>=<sp/>dm</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">mass_array[[0,<sp/>-1]]<sp/>=<sp/>0.5<sp/>*<sp/>dm</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Compute<sp/>kinetic<sp/>energies<sp/>from<sp/>simulation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">pull_force_kes<sp/>=<sp/>{}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">data_directory<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;log_files/friction_case&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>f<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>os.listdir(data_directory):</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Grab<sp/>the<sp/>external<sp/>force<sp/>value<sp/>from<sp/>file<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>force<sp/>=<sp/>(f.split(</highlight><highlight class="stringliteral">&quot;.csv&quot;</highlight><highlight class="normal">)[0]).split(</highlight><highlight class="stringliteral">&quot;velocities_&quot;</highlight><highlight class="normal">)[1]</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Grab<sp/>the<sp/>x<sp/>velocities<sp/>for<sp/>the<sp/>last<sp/>time<sp/>step</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>u<sp/>=<sp/>np.loadtxt(data_directory<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"><sp/>+<sp/>f,<sp/>delimiter=</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">)[-1,<sp/>1:][0::3].reshape((-1,<sp/>1))</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>ke<sp/>=<sp/>0.5<sp/>*<sp/>mass_array<sp/>*<sp/>u**2</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>pull_force_kes[float(force)]<sp/>=<sp/>ke.sum()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Plot<sp/>the<sp/>results</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">plt.scatter(pull_force_kes.keys(),<sp/>pull_force_kes.values(),<sp/>c=</highlight><highlight class="stringliteral">&quot;#ff7f0e&quot;</highlight><highlight class="normal">,<sp/>s=100,<sp/>marker=</highlight><highlight class="stringliteral">&quot;*&quot;</highlight><highlight class="normal">,<sp/>label=</highlight><highlight class="stringliteral">&quot;dismech&quot;</highlight><highlight class="normal">,<sp/>zorder=1)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">plt.xlabel(</highlight><highlight class="stringliteral">&quot;Pull<sp/>Force<sp/>[N]&quot;</highlight><highlight class="normal">,<sp/>fontsize=18)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">plt.ylabel(</highlight><highlight class="stringliteral">&quot;Kinetic<sp/>Energy<sp/>[J]&quot;</highlight><highlight class="normal">,<sp/>fontsize=18)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">plt.legend(fontsize=18)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">plt.show()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">#<sp/>plt.savefig(&quot;friction_example.png&quot;,<sp/>bbox_inches=&quot;tight&quot;,<sp/>pad_inches=0,<sp/>dpi=300)</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/radha/Desktop/dismech-rods-main/examples/friction_case/kinetic_energy_plotter.py"/>
+  </compounddef>
+</doxygen>

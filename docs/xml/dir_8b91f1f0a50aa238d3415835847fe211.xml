@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_8b91f1f0a50aa238d3415835847fe211" kind="dir">
+    <compoundname>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics</compoundname>
+    <innerdir refid="dir_873363fea0c8735fb72fdb11fe8e1dad">/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces</innerdir>
+    <innerdir refid="dir_31a8ae55a5b771dc44087c7635289c56">/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces</innerdir>
+    <innerfile refid="baseForce_8cpp">baseForce.cpp</innerfile>
+    <innerfile refid="baseForce_8h">baseForce.h</innerfile>
+    <innerfile refid="elasticJoint_8cpp">elasticJoint.cpp</innerfile>
+    <innerfile refid="elasticJoint_8h">elasticJoint.h</innerfile>
+    <innerfile refid="elasticRod_8cpp">elasticRod.cpp</innerfile>
+    <innerfile refid="elasticRod_8h">elasticRod.h</innerfile>
+    <innerfile refid="forceContainer_8cpp">forceContainer.cpp</innerfile>
+    <innerfile refid="forceContainer_8h">forceContainer.h</innerfile>
+    <innerfile refid="softRobots_8cpp">softRobots.cpp</innerfile>
+    <innerfile refid="softRobots_8h">softRobots.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/"/>
+  </compounddef>
+</doxygen>

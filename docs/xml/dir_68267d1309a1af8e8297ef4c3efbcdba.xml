@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>/home/radha/Desktop/dismech-rods-main/src</compoundname>
+    <innerdir refid="dir_bbd6674d859f4cefaacb708974cac240">/home/radha/Desktop/dismech-rods-main/src/controllers</innerdir>
+    <innerdir refid="dir_80d9a72a764e34362c8238d6d43b55a0">/home/radha/Desktop/dismech-rods-main/src/initialization</innerdir>
+    <innerdir refid="dir_b3320b59a4aa4a7431bc8488b87009bf">/home/radha/Desktop/dismech-rods-main/src/logging</innerdir>
+    <innerdir refid="dir_8b91f1f0a50aa238d3415835847fe211">/home/radha/Desktop/dismech-rods-main/src/rod_mechanics</innerdir>
+    <innerdir refid="dir_fa877c5c18ce9ce94a97822202bfd881">/home/radha/Desktop/dismech-rods-main/src/simulation_environments</innerdir>
+    <innerdir refid="dir_19373f467389307dc54ab8a6e9e19559">/home/radha/Desktop/dismech-rods-main/src/solvers</innerdir>
+    <innerdir refid="dir_165618d44c370043b61a820333d2d826">/home/radha/Desktop/dismech-rods-main/src/time_steppers</innerdir>
+    <innerdir refid="dir_313caf1132e152dd9b58bea13a4052ca">/home/radha/Desktop/dismech-rods-main/src/utils</innerdir>
+    <innerfile refid="eigenIncludes_8h">eigenIncludes.h</innerfile>
+    <innerfile refid="global__const_8h">global_const.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="robotDescription_8h">robotDescription.h</innerfile>
+    <innerfile refid="world_8cpp">world.cpp</innerfile>
+    <innerfile refid="world_8h">world.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/"/>
+  </compounddef>
+</doxygen>

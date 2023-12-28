@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="symbolicEquations_8h" kind="file" language="C++">
+    <compoundname>symbolicEquations.h</compoundname>
+    <includes local="no">symengine/llvm_double.h</includes>
+    <includes refid="eigenIncludes_8h" local="yes">eigenIncludes.h</includes>
+    <includedby refid="contactForce_8h" local="yes">/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/contactForce.h</includedby>
+    <includedby refid="floorContactForce_8h" local="yes">/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h</includedby>
+    <includedby refid="symbolicEquations_8cpp" local="yes">/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/symbolicEquations.cpp</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="14">
+        <label>sys/mman.h</label>
+      </node>
+      <node id="6">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="10">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>fcntl.h</label>
+      </node>
+      <node id="2">
+        <label>symengine/llvm_double.h</label>
+      </node>
+      <node id="3">
+        <label>eigenIncludes.h</label>
+        <link refid="eigenIncludes_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Eigen/Sparse</label>
+      </node>
+      <node id="5">
+        <label>Eigen/Dense</label>
+      </node>
+      <node id="9">
+        <label>unistd.h</label>
+      </node>
+      <node id="11">
+        <label>cstdlib</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>csignal</label>
+      </node>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/symbolicEquations.h</label>
+        <link refid="symbolicEquations_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h</label>
+        <link refid="openglDERSimulationEnvironment_8h_source"/>
+      </node>
+      <node id="9">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/baseTimeStepper.h</label>
+        <link refid="baseTimeStepper_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/verletPosition.h</label>
+        <link refid="verletPosition_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitMidpoint.h</label>
+        <link refid="implicitMidpoint_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/derSimulationEnvironment.cpp</label>
+        <link refid="derSimulationEnvironment_8cpp"/>
+      </node>
+      <node id="13">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/gravityForce.cpp</label>
+        <link refid="gravityForce_8cpp"/>
+      </node>
+      <node id="14">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.cpp</label>
+        <link refid="uniformConstantForce_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/dampingForce.cpp</label>
+        <link refid="dampingForce_8cpp"/>
+      </node>
+      <node id="15">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.cpp</label>
+        <link refid="elasticBendingForce_8cpp"/>
+      </node>
+      <node id="22">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/rodNodeLogger.cpp</label>
+        <link refid="rodNodeLogger_8cpp"/>
+      </node>
+      <node id="17">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticTwistingForce.cpp</label>
+        <link refid="elasticTwistingForce_8cpp"/>
+      </node>
+      <node id="21">
+        <label>/home/radha/Desktop/dismech-rods-main/src/world.h</label>
+        <link refid="world_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.h</label>
+        <link refid="floorContactForce_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/velocityLogger.cpp</label>
+        <link refid="velocityLogger_8cpp"/>
+      </node>
+      <node id="19">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/explicitTimeStepper.h</label>
+        <link refid="explicitTimeStepper_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp</label>
+        <link refid="worldLogger_8cpp"/>
+      </node>
+      <node id="29">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/forceContainer.h</label>
+        <link refid="forceContainer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/contactForce.h</label>
+        <link refid="contactForce_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/inertialForce.cpp</label>
+        <link refid="inertialForce_8cpp"/>
+      </node>
+      <node id="26">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h</label>
+        <link refid="implicitTimeStepper_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/radha/Desktop/dismech-rods-main/robotDescription.cpp</label>
+        <link refid="robotDescription_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.h</label>
+        <link refid="headlessDERSimulationEnvironment_8h_source"/>
+      </node>
+      <node id="5">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/derSimulationEnvironment.h</label>
+        <link refid="derSimulationEnvironment_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/forwardEuler.h</label>
+        <link refid="forwardEuler_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/symbolicEquations.h</label>
+        <link refid="symbolicEquations_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticStretchingForce.cpp</label>
+        <link refid="elasticStretchingForce_8cpp"/>
+      </node>
+      <node id="10">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/contactForce.cpp</label>
+        <link refid="contactForce_8cpp"/>
+      </node>
+      <node id="32">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/symbolicEquations.cpp</label>
+        <link refid="symbolicEquations_8cpp"/>
+      </node>
+      <node id="12">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp</label>
+        <link refid="floorContactForce_8cpp"/>
+      </node>
+      <node id="30">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/forceContainer.cpp</label>
+        <link refid="forceContainer_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/radha/Desktop/dismech-rods-main/src/robotDescription.h</label>
+        <link refid="robotDescription_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/backwardEuler.h</label>
+        <link refid="backwardEuler_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsymbolicEquations" prot="public">symbolicEquations</innerclass>
+    <innernamespace refid="namespaceSymEngine">SymEngine</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>your name (<ulink url="mailto:you@domain.com">you@domain.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-12-27</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SYMBOLICEQUATIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYMBOLICEQUATIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;symengine/llvm_double.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;eigenIncludes.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">SymEngine;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classsymbolicEquations" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsymbolicEquations" kindref="compound">symbolicEquations</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsymbolicEquations" kindref="compound">symbolicEquations</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>generateContactPotentialPiecewiseFunctions();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>generateFrictionJacobianPiecewiseFunctions();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>void<sp/>generateFloorContactForce();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>generateFloorFrictionJacobianFunctions();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_p2p_gradient_func;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_p2p_hessian_func;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_e2p_gradient_func;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_e2p_hessian_func;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_e2e_gradient_func;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_e2e_hessian_func;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_p2p_pen_gradient_func;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_p2p_pen_hessian_func;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_e2p_pen_gradient_func;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_e2p_pen_hessian_func;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_e2e_pen_gradient_func;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>E_e2e_pen_hessian_func;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>friction_partials_dfr_dx_sticking_func;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>friction_partials_dfr_dfc_sticking_func;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>friction_partials_dfr_dx_sliding_func;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>friction_partials_dfr_dfc_sliding_func;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>floor_friction_partials_dfr_dx_func;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>floor_friction_partials_dfr_dfn_func;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>floor_friction_partials_gamma1_dfr_dx_func;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVMDoubleVisitor<sp/>floor_friction_partials_gamma1_dfr_dfn_func;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>symbolic_cse;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opt_level;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>functions<sp/>for<sp/>symbolic<sp/>differentiation<sp/>process</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>subtract_matrix(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix<sp/>&amp;A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix<sp/>&amp;B,<sp/>DenseMatrix<sp/>&amp;C);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>get_norm(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix<sp/>&amp;num,<sp/>RCP&lt;const<sp/>Basic&gt;<sp/>&amp;C);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>convert_to_unit_vector(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix<sp/>&amp;num,<sp/>DenseMatrix<sp/>&amp;C);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1s_x;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1s_y;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1s_z;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1e_x;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1e_y;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1e_z;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2s_x;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2s_y;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2s_z;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2e_x;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2e_y;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2e_z;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>K1;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>h2;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1s_x0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1s_y0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1s_z0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1e_x0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1e_y0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x1e_z0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2s_x0;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2s_y0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2s_z0;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2e_x0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2e_y0;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>x2e_z0;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f1s_x;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f1s_y;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f1s_z;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f1e_x;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f1e_y;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f1e_z;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f2s_x;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f2s_y;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f2s_z;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f2e_x;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f2e_y;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>f2e_z;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>mu;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>dt;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>K2;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Floor<sp/>contact<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>z;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>RCP&lt;const<sp/>Basic&gt;<sp/>floor_z;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/symbolicEquations.h"/>
+  </compounddef>
+</doxygen>

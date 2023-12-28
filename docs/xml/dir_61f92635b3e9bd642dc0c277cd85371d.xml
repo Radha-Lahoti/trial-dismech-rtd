@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_61f92635b3e9bd642dc0c277cd85371d" kind="dir">
+    <compoundname>/home/radha/Desktop/dismech-rods-main/examples/spider_case</compoundname>
+    <innerfile refid="spiderExample_8cpp">spiderExample.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/examples/spider_case/"/>
+  </compounddef>
+</doxygen>

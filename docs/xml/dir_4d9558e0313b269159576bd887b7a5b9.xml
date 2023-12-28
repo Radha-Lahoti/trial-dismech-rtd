@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_4d9558e0313b269159576bd887b7a5b9" kind="dir">
+    <compoundname>/home/radha/Desktop/dismech-rods-main/examples/real2sim_case</compoundname>
+    <innerdir refid="dir_e8ce17ba9fd81ba511f320437d64b499">/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/solved_phis</innerdir>
+    <innerfile refid="calibrator_8py">calibrator.py</innerfile>
+    <innerfile refid="real2simCalibrationExample_8cpp">real2simCalibrationExample.cpp</innerfile>
+    <innerfile refid="real2simExample_8cpp">real2simExample.cpp</innerfile>
+    <innerfile refid="target__kappa__calculator_8py">target_kappa_calculator.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/"/>
+  </compounddef>
+</doxygen>

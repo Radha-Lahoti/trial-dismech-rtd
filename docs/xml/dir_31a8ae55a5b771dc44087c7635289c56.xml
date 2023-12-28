@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_31a8ae55a5b771dc44087c7635289c56" kind="dir">
+    <compoundname>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces</compoundname>
+    <innerfile refid="elasticBendingForce_8cpp">elasticBendingForce.cpp</innerfile>
+    <innerfile refid="elasticBendingForce_8h">elasticBendingForce.h</innerfile>
+    <innerfile refid="elasticStretchingForce_8cpp">elasticStretchingForce.cpp</innerfile>
+    <innerfile refid="elasticStretchingForce_8h">elasticStretchingForce.h</innerfile>
+    <innerfile refid="elasticTwistingForce_8cpp">elasticTwistingForce.cpp</innerfile>
+    <innerfile refid="elasticTwistingForce_8h">elasticTwistingForce.h</innerfile>
+    <innerfile refid="inertialForce_8cpp">inertialForce.cpp</innerfile>
+    <innerfile refid="inertialForce_8h">inertialForce.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/"/>
+  </compounddef>
+</doxygen>

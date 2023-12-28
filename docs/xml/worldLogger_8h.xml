@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="worldLogger_8h" kind="file" language="C++">
+    <compoundname>worldLogger.h</compoundname>
+    <includes refid="global__const_8h" local="yes">global_const.h</includes>
+    <includes refid="filesystem__finder_8hpp" local="yes">filesystem_finder.hpp</includes>
+    <includes refid="eigenIncludes_8h" local="yes">eigenIncludes.h</includes>
+    <includes local="no">fstream</includes>
+    <includedby refid="rodNodeLogger_8h" local="yes">/home/radha/Desktop/dismech-rods-main/src/logging/rodNodeLogger.h</includedby>
+    <includedby refid="velocityLogger_8h" local="yes">/home/radha/Desktop/dismech-rods-main/src/logging/velocityLogger.h</includedby>
+    <includedby refid="worldLogger_8cpp" local="yes">/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/radha/Desktop/dismech-rods-main/src/main.cpp</includedby>
+    <includedby refid="derSimulationEnvironment_8h" local="yes">/home/radha/Desktop/dismech-rods-main/src/simulation_environments/derSimulationEnvironment.h</includedby>
+    <incdepgraph>
+      <node id="17">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="16">
+        <label>sys/mman.h</label>
+      </node>
+      <node id="8">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="12">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>fcntl.h</label>
+      </node>
+      <node id="18">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>eigenIncludes.h</label>
+        <link refid="eigenIncludes_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Eigen/Sparse</label>
+      </node>
+      <node id="7">
+        <label>Eigen/Dense</label>
+      </node>
+      <node id="11">
+        <label>unistd.h</label>
+      </node>
+      <node id="13">
+        <label>cstdlib</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>global_const.h</label>
+        <link refid="global__const_8h_source"/>
+      </node>
+      <node id="15">
+        <label>csignal</label>
+      </node>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h</label>
+        <link refid="worldLogger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>filesystem_finder.hpp</label>
+        <link refid="filesystem__finder_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>memory</label>
+      </node>
+      <node id="4">
+        <label>experimental/filesystem</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/openglDERSimulationEnvironment.h</label>
+        <link refid="openglDERSimulationEnvironment_8h_source"/>
+      </node>
+      <node id="10">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/baseTimeStepper.h</label>
+        <link refid="baseTimeStepper_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/verletPosition.h</label>
+        <link refid="verletPosition_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitMidpoint.h</label>
+        <link refid="implicitMidpoint_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/derSimulationEnvironment.cpp</label>
+        <link refid="derSimulationEnvironment_8cpp"/>
+      </node>
+      <node id="29">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/velocityLogger.h</label>
+        <link refid="velocityLogger_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/gravityForce.cpp</label>
+        <link refid="gravityForce_8cpp"/>
+      </node>
+      <node id="15">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/uniformConstantForce.cpp</label>
+        <link refid="uniformConstantForce_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/rodNodeLogger.h</label>
+        <link refid="rodNodeLogger_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/dampingForce.cpp</label>
+        <link refid="dampingForce_8cpp"/>
+      </node>
+      <node id="16">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticBendingForce.cpp</label>
+        <link refid="elasticBendingForce_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/rodNodeLogger.cpp</label>
+        <link refid="rodNodeLogger_8cpp"/>
+      </node>
+      <node id="18">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticTwistingForce.cpp</label>
+        <link refid="elasticTwistingForce_8cpp"/>
+      </node>
+      <node id="22">
+        <label>/home/radha/Desktop/dismech-rods-main/src/world.h</label>
+        <link refid="world_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/velocityLogger.cpp</label>
+        <link refid="velocityLogger_8cpp"/>
+      </node>
+      <node id="20">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/explicitTimeStepper.h</label>
+        <link refid="explicitTimeStepper_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.cpp</label>
+        <link refid="worldLogger_8cpp"/>
+      </node>
+      <node id="19">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/inertialForce.cpp</label>
+        <link refid="inertialForce_8cpp"/>
+      </node>
+      <node id="26">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/implicitTimeStepper.h</label>
+        <link refid="implicitTimeStepper_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/radha/Desktop/dismech-rods-main/robotDescription.cpp</label>
+        <link refid="robotDescription_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.h</label>
+        <link refid="headlessDERSimulationEnvironment_8h_source"/>
+      </node>
+      <node id="6">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/derSimulationEnvironment.h</label>
+        <link refid="derSimulationEnvironment_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/forwardEuler.h</label>
+        <link refid="forwardEuler_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h</label>
+        <link refid="worldLogger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/inner_forces/elasticStretchingForce.cpp</label>
+        <link refid="elasticStretchingForce_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/contactForce.cpp</label>
+        <link refid="contactForce_8cpp"/>
+      </node>
+      <node id="13">
+        <label>/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/floorContactForce.cpp</label>
+        <link refid="floorContactForce_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/radha/Desktop/dismech-rods-main/src/robotDescription.h</label>
+        <link refid="robotDescription_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/home/radha/Desktop/dismech-rods-main/src/time_steppers/backwardEuler.h</label>
+        <link refid="backwardEuler_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classworldLogger" prot="public">worldLogger</innerclass>
+    <briefdescription>
+<para>Declarations for the abstract class <ref refid="classworldLogger" kindref="compound">worldLogger</ref>. A <ref refid="classworldLogger" kindref="compound">worldLogger</ref> publishes (writes to a file) certain data from a world (DER simulation.) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Andrew </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-12-27</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright 2020 Andrew P. Sabelhaus and Soft Machines Lab at CMU </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WORLD_LOGGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WORLD_LOGGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Only<sp/>operating<sp/>on<sp/>a<sp/>DER<sp/>world.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classworld" kindref="compound">world</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Some<sp/>constants<sp/>used<sp/>throughout<sp/>this<sp/>program</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;global_const.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;filesystem_finder.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;eigenIncludes.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>C++<sp/>standard<sp/>library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>for<sp/>writing<sp/>to<sp/>a<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Abstract<sp/>class:<sp/>although<sp/>we&apos;ll<sp/>do<sp/>a<sp/>constructor<sp/>to<sp/>set<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>path<sp/>prefix<sp/>variable,<sp/>children<sp/>have<sp/>to<sp/>define<sp/>what<sp/>to<sp/>log<sp/>and<sp/>how.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classworldLogger" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classworldLogger" kindref="compound">worldLogger</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classworldLogger_1a472662b205f96c35a885f19f6ff52b94" kindref="member">worldLogger</ref>(std::string<sp/>fileNamePrefix,<sp/>std::string<sp/>logfile_base,<sp/>std::ofstream&amp;<sp/>df,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>per);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classworldLogger_1a472662b205f96c35a885f19f6ff52b94" kindref="member">worldLogger</ref>(std::string<sp/>fileNamePrefix,<sp/>std::string<sp/>file_name_suffix,<sp/>std::string<sp/>logfile_base,<sp/>std::ofstream&amp;<sp/>df,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>per);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classworldLogger" kindref="compound">worldLogger</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classworldLogger_1a03580c58b07584f5dda1a74f975d4af4" kindref="member">setup</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>shared_ptr&lt;world&gt;<sp/>world_ptr;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classworldLogger_1a18d0a61fe011912101bc06404342b7c5" kindref="member">logWorldData</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classworldLogger_1a8080b85f207ce73015dded5bf0237016" kindref="member">pruneEmptyLog</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classworldLogger_1a75d1dc493f00d2ec676fbe8c0f4d5c88" kindref="member">initLogFile</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classworldLogger_1a35346a2e14e33a3cda6bd19f981fa310" kindref="member">setupHelper</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Function<sp/>for<sp/>header<sp/>for<sp/>this<sp/>logger.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>must<sp/>be<sp/>defined<sp/>by<sp/>subclasses.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>May<sp/>need<sp/>knowledge<sp/>of<sp/>the<sp/>world<sp/>(example,<sp/>how<sp/>many<sp/>vertices<sp/>-&gt;<sp/>number<sp/>of<sp/>columns.)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/>getLogHeader()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Function<sp/>for<sp/>data<sp/>to<sp/>be<sp/>returned<sp/>by<sp/>this<sp/>logger.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>must<sp/>be<sp/>defined<sp/>by<sp/>subclasses.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pass<sp/>in<sp/>the<sp/>whole<sp/>world,<sp/>so<sp/>the<sp/>children<sp/>can<sp/>decide<sp/>what</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>they&apos;re<sp/>interested<sp/>in<sp/>recording.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/>getLogData()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>helper<sp/>for<sp/>detecting<sp/>empty<sp/>log<sp/>files<sp/>(and<sp/>pruning<sp/>them).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>one<sp/>way<sp/>is<sp/>to<sp/>count<sp/>the<sp/>number<sp/>of<sp/>lines<sp/>in<sp/>the<sp/>file<sp/>and<sp/>match<sp/>it<sp/>against<sp/>the<sp/>number<sp/>of<sp/>lines<sp/>in<sp/>the<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>countLinesInLog();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_lines_header;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Full<sp/>path<sp/>to<sp/>the<sp/>logged<sp/>file,<sp/>with<sp/>prefix<sp/>prepended<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>timestap<sp/>appended.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_fileName;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>to<sp/>get<sp/>a<sp/>timestamp<sp/>string.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>getTimestamp();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Another<sp/>helper<sp/>for<sp/>generating<sp/>the<sp/>folder<sp/>path<sp/>for<sp/>the<sp/>log<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Example:<sp/>May<sp/>7th,<sp/>2020,<sp/>2:51pm<sp/>and<sp/>34<sp/>seconds<sp/>will<sp/>return:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;2020/2020_05/2020_05_07/2020_05_07_2&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>and<sp/>the<sp/>final<sp/>filename<sp/>will<sp/>have<sp/>the<sp/>minute<sp/>and<sp/>seconds<sp/>attached.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>getTimeDateFolderPath();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>file<sp/>stream<sp/>reference.<sp/>Here,<sp/>empty<sp/>constructor,<sp/>will<sp/>be<sp/>replaced<sp/>in<sp/>constructor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream&amp;<sp/>m_dataFile;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>and<sp/>an<sp/>update<sp/>period.<sp/>This<sp/>many<sp/>samples<sp/>in<sp/>between<sp/>writes<sp/>to<sp/>log<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>period;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/logging/worldLogger.h"/>
+  </compounddef>
+</doxygen>

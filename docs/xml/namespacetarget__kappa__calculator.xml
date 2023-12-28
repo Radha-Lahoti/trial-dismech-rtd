@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacetarget__kappa__calculator" kind="namespace" language="Python">
+    <compoundname>target_kappa_calculator</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="target__kappa__calculator_8py_1a0a053fdbd85815be3246248c9a3f94d0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>target_kappa_calculator.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>=  pandas.read_csv(&quot;soft_limb_data.csv&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" line="18" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="target__kappa__calculator_8py_1a34c48572bf31a5866a7dacb63ca53517" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list target_kappa_calculator.tag_ids_x</definition>
+        <argsstring></argsstring>
+        <name>tag_ids_x</name>
+        <initializer>=  [&quot;tagid_x_10{}&quot;.format(i) for i in range(1, 10)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" line="20" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="target__kappa__calculator_8py_1acbc070f58fcefb72f293faf0ce719e34" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list target_kappa_calculator.tag_ids_y</definition>
+        <argsstring></argsstring>
+        <name>tag_ids_y</name>
+        <initializer>=  [&quot;tagid_y_10{}&quot;.format(i) for i in range(1, 10)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" line="21" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="target__kappa__calculator_8py_1a54d34bd0c26fd05251a70a54fcbd86c6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>target_kappa_calculator.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <initializer>=  np.asarray(data.loc[7:, tag_ids_x])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" line="23" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="target__kappa__calculator_8py_1afd22ddf209d784651518db244fa5ef7c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>target_kappa_calculator.z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <initializer>=  -np.asarray(data.loc[7:, tag_ids_y])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" line="24" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="target__kappa__calculator_8py_1a0a394a8b4c42f181119560bf6d08e936" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>target_kappa_calculator.pixel_coordinates</definition>
+        <argsstring></argsstring>
+        <name>pixel_coordinates</name>
+        <initializer>=  np.zeros((x.shape[0], x.shape[1], 2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" line="30" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="target__kappa__calculator_8py_1a4ffac23ad9a0833b043f5cefdcb9abfa" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list target_kappa_calculator.kappas</definition>
+        <argsstring></argsstring>
+        <name>kappas</name>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" line="34" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="target__kappa__calculator_8py_1a3982c9221edb74e9aa3a3f2042b1fe4f" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple target_kappa_calculator.kappa1</definition>
+        <argsstring></argsstring>
+        <name>kappa1</name>
+        <initializer>=  (compute_kappa(ts) + compute_kappa(ts[1:]) + compute_kappa(ts[2:])) / 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" line="36" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="target__kappa__calculator_8py_1aa5ea23103aacac0a7a9b23347b91dfd6" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple target_kappa_calculator.kappa2</definition>
+        <argsstring></argsstring>
+        <name>kappa2</name>
+        <initializer>=  (compute_kappa(ts[4:]) + compute_kappa(ts[5:]) + compute_kappa(ts[6:])) / 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" line="37" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="target__kappa__calculator_8py_1aba085202ca0db7b2dd01250cbafe772c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def target_kappa_calculator.compute_kappa</definition>
+        <argsstring>(v123)</argsstring>
+        <name>compute_kappa</name>
+        <param>
+          <type>v123</type>
+          <defname>v123</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" line="7" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" bodystart="7" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/target_kappa_calculator.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

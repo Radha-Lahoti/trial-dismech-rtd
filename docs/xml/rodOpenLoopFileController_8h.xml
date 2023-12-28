@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="rodOpenLoopFileController_8h" kind="file" language="C++">
+    <compoundname>rodOpenLoopFileController.h</compoundname>
+    <includes refid="rodController_8h" local="yes">rodController.h</includes>
+    <includes refid="pwmPeripheral_8h" local="yes">pwmPeripheral.h</includes>
+    <includes refid="eigenIncludes_8h" local="yes">../eigenIncludes.h</includes>
+    <includedby refid="rodOpenLoopFileController_8cpp" local="yes">/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.cpp</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="14">
+        <label>sys/mman.h</label>
+      </node>
+      <node id="6">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="2">
+        <label>rodController.h</label>
+        <link refid="rodController_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>fcntl.h</label>
+      </node>
+      <node id="16">
+        <label>pwmPeripheral.h</label>
+        <link refid="pwmPeripheral_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>exception</label>
+      </node>
+      <node id="3">
+        <label>eigenIncludes.h</label>
+        <link refid="eigenIncludes_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Eigen/Sparse</label>
+      </node>
+      <node id="5">
+        <label>Eigen/Dense</label>
+      </node>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h</label>
+        <link refid="rodOpenLoopFileController_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>unistd.h</label>
+      </node>
+      <node id="11">
+        <label>cstdlib</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="17">
+        <label>../global_const.h</label>
+        <link refid="global__const_8h_source"/>
+      </node>
+      <node id="13">
+        <label>csignal</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.cpp</label>
+        <link refid="rodOpenLoopFileController_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h</label>
+        <link refid="rodOpenLoopFileController_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classrodOpenLoopFileController" prot="public">rodOpenLoopFileController</innerclass>
+    <briefdescription>
+<para>Declaration(s) for the concrete class <ref refid="classrodOpenLoopFileController" kindref="compound">rodOpenLoopFileController</ref>. Pipes through the output of PWM blocks, based on a given CSV file of duty cycle timepoints. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Andrew </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-12-27</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright 2020 Andrew P. Sabelhaus and Soft Machines Lab at CMU </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ROD_OPEN_LOOP_FILE_CONTROLLER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROD_OPEN_LOOP_FILE_CONTROLLER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>everything<sp/>comes<sp/>from<sp/>parent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rodController_8h" kindref="compound">rodController.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>except<sp/>the<sp/>PWM<sp/>blocks,<sp/>which<sp/>are<sp/>particular<sp/>to<sp/>this<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pwmPeripheral_8h" kindref="compound">pwmPeripheral.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Need<sp/>Eigen<sp/>here<sp/>for<sp/>elasticRod<sp/>interactions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../eigenIncludes.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classrodOpenLoopFileController" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrodOpenLoopFileController" kindref="compound">rodOpenLoopFileController</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classrodController" kindref="compound">rodController</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrodOpenLoopFileController_1a1ba1a56d65d4838e5813999144dd9a87" kindref="member">rodOpenLoopFileController</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numAct,<sp/>std::vector&lt;double&gt;<sp/>m_periods,<sp/>std::string<sp/>m_filepath);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classrodOpenLoopFileController" kindref="compound">rodOpenLoopFileController</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="classrodOpenLoopFileController_1aab556a91e22f7153471f941687aa1c2b" kindref="member">getU</ref>(shared_ptr&lt;elasticRod&gt;<sp/>rod_p);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>redefine<sp/>the<sp/>base<sp/>class&apos;<sp/>timestepping<sp/>function<sp/>to<sp/>also<sp/>include<sp/>the<sp/>PWMs.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateTimestep(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>helper<sp/>to<sp/>parse<sp/>the<sp/>csv<sp/>file.<sp/>Writes<sp/>data<sp/>into<sp/>time_pts<sp/>and<sp/>dutys.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>parseActuationFile(std::string<sp/>csv_path);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>will<sp/>need<sp/>to<sp/>keep<sp/>track<sp/>of<sp/>a<sp/>set<sp/>of<sp/>PWM<sp/>peripherals.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;shared_ptr&lt;pwmPeripheral&gt;&gt;<sp/>pwm;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>and<sp/>be<sp/>able<sp/>to<sp/>open<sp/>the<sp/>actuation<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::string<sp/>csv_path;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Store<sp/>the<sp/>timepoints<sp/>for<sp/>PWM<sp/>duty<sp/>cycles.<sp/>We&apos;ll<sp/>assume<sp/>index<sp/>alignment<sp/>between<sp/>these<sp/>two</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>time_pts;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;double&gt;<sp/>&gt;<sp/>dutys;<sp/></highlight><highlight class="comment">//<sp/>at<sp/>index<sp/>(whatever),<sp/>a<sp/>list<sp/>of<sp/>the<sp/>duty<sp/>cycles<sp/>for<sp/>each<sp/>PWM.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>CSV<sp/>file<sp/>will<sp/>have<sp/>a<sp/>certain<sp/>number<sp/>of<sp/>lines<sp/>as<sp/>a<sp/>header.<sp/>We&apos;ll<sp/>need<sp/>to<sp/>remove<sp/>them.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>csv_header_lines<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>debugging,<sp/>if<sp/>desired:<sp/>detect<sp/>when<sp/>we&apos;ve<sp/>change<sp/>to<sp/>the<sp/>next<sp/>timepoint,<sp/>so<sp/>we<sp/>can<sp/>pause<sp/>and<sp/>inspect<sp/>the<sp/>gait.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prev_time_pt_idx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//ROD_OPEN_LOOP_FILE_CONTROLLER_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/controllers/rodOpenLoopFileController.h"/>
+  </compounddef>
+</doxygen>

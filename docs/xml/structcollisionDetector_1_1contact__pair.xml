@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structcollisionDetector_1_1contact__pair" kind="struct" language="C++" prot="public">
+    <compoundname>collisionDetector::contact_pair</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcollisionDetector_1_1contact__pair_1af33f3b57dcab57c63e094dba34b1f8a6" prot="public" static="no" mutable="no">
+        <type><ref refid="structcollisionDetector_1_1limb__edge__info" kindref="compound">limb_edge_info</ref> *</type>
+        <definition>limb_edge_info* collisionDetector::contact_pair::c1</definition>
+        <argsstring></argsstring>
+        <name>c1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="37" column="24" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcollisionDetector_1_1contact__pair_1a632520fde3d3b626447315401af5e38e" prot="public" static="no" mutable="no">
+        <type><ref refid="structcollisionDetector_1_1limb__edge__info" kindref="compound">limb_edge_info</ref> *</type>
+        <definition>limb_edge_info* collisionDetector::contact_pair::c2</definition>
+        <argsstring></argsstring>
+        <name>c2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="38" column="24" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcollisionDetector_1_1contact__pair_1a7efb610c6d04d7f397796b9eede2878c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>collisionDetector::contact_pair::contact_pair</definition>
+        <argsstring>(limb_edge_info *c1, limb_edge_info *c2)</argsstring>
+        <name>contact_pair</name>
+        <param>
+          <type><ref refid="structcollisionDetector_1_1limb__edge__info" kindref="compound">limb_edge_info</ref> *</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type><ref refid="structcollisionDetector_1_1limb__edge__info" kindref="compound">limb_edge_info</ref> *</type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="34" column="9" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="34" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>collisionDetector::contact_pair</label>
+        <link refid="structcollisionDetector_1_1contact__pair"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>c1</edgelabel>
+          <edgelabel>c2</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>collisionDetector::limb_edge_info</label>
+        <link refid="structcollisionDetector_1_1limb__edge__info"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" line="33" column="5" bodyfile="/home/radha/Desktop/dismech-rods-main/src/rod_mechanics/external_forces/collisionDetector.h" bodystart="33" bodyend="39"/>
+    <listofallmembers>
+      <member refid="structcollisionDetector_1_1contact__pair_1af33f3b57dcab57c63e094dba34b1f8a6" prot="public" virt="non-virtual"><scope>collisionDetector::contact_pair</scope><name>c1</name></member>
+      <member refid="structcollisionDetector_1_1contact__pair_1a632520fde3d3b626447315401af5e38e" prot="public" virt="non-virtual"><scope>collisionDetector::contact_pair</scope><name>c2</name></member>
+      <member refid="structcollisionDetector_1_1contact__pair_1a7efb610c6d04d7f397796b9eede2878c" prot="public" virt="non-virtual"><scope>collisionDetector::contact_pair</scope><name>contact_pair</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

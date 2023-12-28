@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="headlessDERSimulationEnvironment_8h" kind="file" language="C++">
+    <compoundname>headlessDERSimulationEnvironment.h</compoundname>
+    <includes refid="derSimulationEnvironment_8h" local="yes">derSimulationEnvironment.h</includes>
+    <includedby refid="main_8cpp" local="yes">/home/radha/Desktop/dismech-rods-main/src/main.cpp</includedby>
+    <includedby refid="headlessDERSimulationEnvironment_8cpp" local="yes">/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.cpp</includedby>
+    <incdepgraph>
+      <node id="18">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="47">
+        <label>rod_mechanics/inner_forces/elasticStretchingForce.h</label>
+        <link refid="elasticStretchingForce_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>baseTimeStepper.h</label>
+        <link refid="baseTimeStepper_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>time_steppers/verletPosition.h</label>
+        <link refid="verletPosition_8h_source"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>fcl/broadphase/default_broadphase_callbacks.h</label>
+      </node>
+      <node id="58">
+        <label>time_steppers/implicitMidpoint.h</label>
+        <link refid="implicitMidpoint_8h_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>rod_mechanics/external_forces/gravityForce.h</label>
+        <link refid="gravityForce_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>baseForce.h</label>
+        <link refid="baseForce_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>sys/mman.h</label>
+      </node>
+      <node id="57">
+        <label>mkl_types.h</label>
+      </node>
+      <node id="9">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="22">
+        <label>rodController.h</label>
+        <link refid="rodController_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>logging/velocityLogger.h</label>
+        <link refid="velocityLogger_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>cmath</label>
+      </node>
+      <node id="4">
+        <label>stdexcept</label>
+      </node>
+      <node id="15">
+        <label>fcntl.h</label>
+      </node>
+      <node id="28">
+        <label>symengine/llvm_double.h</label>
+      </node>
+      <node id="49">
+        <label>rod_mechanics/inner_forces/elasticTwistingForce.h</label>
+        <link refid="elasticTwistingForce_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>logging/rodNodeLogger.h</label>
+        <link refid="rodNodeLogger_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>solvers/solverTypes.h</label>
+        <link refid="solverTypes_8h_source"/>
+      </node>
+      <node id="36">
+        <label>rod_mechanics/external_forces/uniformConstantForce.h</label>
+        <link refid="uniformConstantForce_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>fstream</label>
+      </node>
+      <node id="21">
+        <label>controllers/rodOpenLoopFileKappabarSetter.h</label>
+        <link refid="rodOpenLoopFileKappabarSetter_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>world.h</label>
+        <link refid="world_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rod_mechanics/softRobots.h</label>
+        <link refid="softRobots_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>eigenIncludes.h</label>
+        <link refid="eigenIncludes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Eigen/Sparse</label>
+      </node>
+      <node id="37">
+        <label>utils/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Eigen/Dense</label>
+      </node>
+      <node id="33">
+        <label>external_forces/floorContactForce.h</label>
+        <link refid="floorContactForce_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>unistd.h</label>
+      </node>
+      <node id="46">
+        <label>rod_mechanics/inner_forces/inertialForce.h</label>
+        <link refid="inertialForce_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>explicitTimeStepper.h</label>
+        <link refid="explicitTimeStepper_8h_source"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>rod_mechanics/external_forces/dampingForce.h</label>
+        <link refid="dampingForce_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>rod_mechanics/forceContainer.h</label>
+        <link refid="forceContainer_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>cstdlib</label>
+      </node>
+      <node id="26">
+        <label>rod_mechanics/external_forces/contactEnums.h</label>
+        <link refid="contactEnums_8h"/>
+      </node>
+      <node id="25">
+        <label>external_forces/contactForce.h</label>
+        <link refid="contactForce_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>elasticJoint.h</label>
+        <link refid="elasticJoint_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="41">
+        <label>global_const.h</label>
+        <link refid="global__const_8h_source"/>
+      </node>
+      <node id="55">
+        <label>implicitTimeStepper.h</label>
+        <link refid="implicitTimeStepper_8h_source"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>rod_mechanics/external_forces/collisionDetector.h</label>
+        <link refid="collisionDetector_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>elasticRod.h</label>
+        <link refid="elasticRod_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>csignal</label>
+      </node>
+      <node id="1">
+        <label>/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.h</label>
+        <link refid="headlessDERSimulationEnvironment_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>derSimulationEnvironment.h</label>
+        <link refid="derSimulationEnvironment_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>fcl/narrowphase/collision.h</label>
+      </node>
+      <node id="50">
+        <label>time_steppers/forwardEuler.h</label>
+        <link refid="forwardEuler_8h_source"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>rod_mechanics/external_forces/symbolicEquations.h</label>
+        <link refid="symbolicEquations_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>worldLogger.h</label>
+        <link refid="worldLogger_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>filesystem_finder.hpp</label>
+        <link refid="filesystem__finder_8hpp_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>fcl/broadphase/broadphase_dynamic_AABB_tree.h</label>
+      </node>
+      <node id="48">
+        <label>rod_mechanics/inner_forces/elasticBendingForce.h</label>
+        <link refid="elasticBendingForce_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>memory</label>
+      </node>
+      <node id="43">
+        <label>experimental/filesystem</label>
+      </node>
+      <node id="3">
+        <label>robotDescription.h</label>
+        <link refid="robotDescription_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>time_steppers/backwardEuler.h</label>
+        <link refid="backwardEuler_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classheadlessDERSimulationEnvironment" prot="public">headlessDERSimulationEnvironment</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>HEADLESS_DER_SIMULATION_ENVIRONMENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HEADLESS_DER_SIMULATION_ENVIRONMENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Subclass<sp/>of<sp/>simulation<sp/>environment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;derSimulationEnvironment.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classheadlessDERSimulationEnvironment" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classheadlessDERSimulationEnvironment" kindref="compound">headlessDERSimulationEnvironment</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classderSimulationEnvironment" kindref="compound">derSimulationEnvironment</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classheadlessDERSimulationEnvironment" kindref="compound">headlessDERSimulationEnvironment</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>shared_ptr&lt;world&gt;&amp;<sp/>m_world,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsimParams" kindref="compound">simParams</ref>&amp;<sp/>sim_params,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>shared_ptr&lt;worldLogger&gt;&amp;<sp/>logger);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classheadlessDERSimulationEnvironment" kindref="compound">headlessDERSimulationEnvironment</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classheadlessDERSimulationEnvironment_1a4612efdd8794486b70fe369349860b95" kindref="member">runSimulation</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>HEADLESS_DER_SIMULATION_ENVIRONMENT_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/radha/Desktop/dismech-rods-main/src/simulation_environments/headlessDERSimulationEnvironment.h"/>
+  </compounddef>
+</doxygen>

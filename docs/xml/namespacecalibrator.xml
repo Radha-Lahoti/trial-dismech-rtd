@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacecalibrator" kind="namespace" language="Python">
+    <compoundname>calibrator</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="calibrator_8py_1a2d5dd9a36955ac7dee4145a2408e5b2f" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary calibrator.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <initializer>=  {**os.environ, &quot;OMP_NUM_THREADS&quot;: str(1)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="74" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1ab4998c2752d3f389f9a00882d2c2aec8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrator.target_kappas</definition>
+        <argsstring></argsstring>
+        <name>target_kappas</name>
+        <initializer>=  pickle.load(f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="85" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1aabbaddd8d1268cb3f1828905a6f3bf0c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int calibrator.n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <initializer>=  25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="89" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1ad0390379b46bd2403f25ec7028357d91" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrator.a_kappa</definition>
+        <argsstring></argsstring>
+        <name>a_kappa</name>
+        <initializer>=  np.zeros((2, ))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="94" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1ad8c824e1728674ad71f18f113c9598c2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float calibrator.delta</definition>
+        <argsstring></argsstring>
+        <name>delta</name>
+        <initializer>=  0.005</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="97" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1aeca2da4cc716128d5f89cce527521ac7" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list calibrator.solved_phis</definition>
+        <argsstring></argsstring>
+        <name>solved_phis</name>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="99" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1a8437f86926dbc423b31b74fce07abb3f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int calibrator.start_from</definition>
+        <argsstring></argsstring>
+        <name>start_from</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="100" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1a3315a27e75f89b55cb68a9594b63a68f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float calibrator::alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <initializer>=  0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="102" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1ad62bf306ccdf7769a5e1ae53a0957f37" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrator.t_kappa</definition>
+        <argsstring></argsstring>
+        <name>t_kappa</name>
+        <initializer>=  np.array([t_kappa1, t_kappa2])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="106" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1aacd913bacf10c7d9ff1902cc73e693ec" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrator.prev_lambda</definition>
+        <argsstring></argsstring>
+        <name>prev_lambda</name>
+        <initializer>=  np.inf</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="110" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1a4e851bb0853eb57d6be3c47fe5ef8e65" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>def calibrator::llambda</definition>
+        <argsstring></argsstring>
+        <name>llambda</name>
+        <initializer>=  np.inf</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="111" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1ab944ab800aa1df4737418180b5bf2288" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int calibrator.iter</definition>
+        <argsstring></argsstring>
+        <name>iter</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="113" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1aefaa369f63734b364b0047125a26240e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrator.a_kappa1</definition>
+        <argsstring></argsstring>
+        <name>a_kappa1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="118" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1a50ccb05e988379069c12f3c1d6cfc1ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrator.a_kappa2</definition>
+        <argsstring></argsstring>
+        <name>a_kappa2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="118" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1a45bfc866228a3887c881439e02fa0f87" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrator.dllambda_dkappa</definition>
+        <argsstring></argsstring>
+        <name>dllambda_dkappa</name>
+        <initializer>=  np.zeros((2,))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="137" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1af778820452fb8ebf64cd293a432004b3" prot="public" static="no" mutable="no">
+        <type>def</type>
+        <definition>def calibrator.lambda1</definition>
+        <argsstring></argsstring>
+        <name>lambda1</name>
+        <initializer>=  get_lambda_from_sim(a_kappa1 + delta, a_kappa2, t_kappa)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="140" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1a74df679982d75951f120712025461f79" prot="public" static="no" mutable="no">
+        <type>def</type>
+        <definition>def calibrator.lambda2</definition>
+        <argsstring></argsstring>
+        <name>lambda2</name>
+        <initializer>=  get_lambda_from_sim(a_kappa1, a_kappa2 + delta, t_kappa)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="144" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="calibrator_8py_1a450ec2be3e7c891c4190ffe14b6286c8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrator.phis</definition>
+        <argsstring></argsstring>
+        <name>phis</name>
+        <initializer>=  np.rad2deg(2 * np.arctan(a_kappa / 2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="155" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="calibrator_8py_1a5da87310264b78359c2b8b13e581bc55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrator.compute_kappa</definition>
+        <argsstring>(xz)</argsstring>
+        <name>compute_kappa</name>
+        <param>
+          <type>xz</type>
+          <defname>xz</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="10" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="10" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="calibrator_8py_1a93db0baa1f18d45012f3fe1d7adab031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrator.change_kappabar</definition>
+        <argsstring>(kappabar1, kappabar2, controller_path=&quot;src/controllers/openloop_control_trajectories/real2sim_controller.csv&quot;)</argsstring>
+        <name>change_kappabar</name>
+        <param>
+          <type>kappabar1</type>
+          <defname>kappabar1</defname>
+        </param>
+        <param>
+          <type>kappabar2</type>
+          <defname>kappabar2</defname>
+        </param>
+        <param>
+          <type>controller_path</type>
+          <defname>controller_path</defname>
+          <defval>&quot;src/controllers/openloop_control_trajectories/real2sim_controller.csv&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="30" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="31" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="calibrator_8py_1ac8b151a8aa802db85b709e6fd0ae6a51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrator.compute_current_kappas</definition>
+        <argsstring>(logfile_path=&quot;log_files/real2sim/&quot;)</argsstring>
+        <name>compute_current_kappas</name>
+        <param>
+          <type>logfile_path</type>
+          <defname>logfile_path</defname>
+          <defval>&quot;log_files/real2sim/&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="44" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="44" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="calibrator_8py_1af29b7b02af33a2c3fa34c1ac2284d9d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrator.get_lambda_from_sim</definition>
+        <argsstring>(a_kappa1, a_kappa2, t_kappa)</argsstring>
+        <name>get_lambda_from_sim</name>
+        <param>
+          <type>a_kappa1</type>
+          <defname>a_kappa1</defname>
+        </param>
+        <param>
+          <type>a_kappa2</type>
+          <defname>a_kappa2</defname>
+        </param>
+        <param>
+          <type>t_kappa</type>
+          <defname>t_kappa</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="77" column="1" bodyfile="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" bodystart="77" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/radha/Desktop/dismech-rods-main/examples/real2sim_case/calibrator.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
