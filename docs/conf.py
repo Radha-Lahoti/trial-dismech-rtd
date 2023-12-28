@@ -34,7 +34,7 @@ if read_the_docs_build:
     input_dir = '../src'
     output_dir = 'build'
     configureDoxyfile(input_dir, output_dir)
-    subprocess.call('doxygen', shell=True)
+    subprocess.call('doxygen <Doxyfile.in>', shell=True)
     breathe_projects["DisMech"] = output_dir + '/xml'
 
 extensions = ["sphinx.ext.todo", "sphinx.ext.autodoc", "sphinx.ext.viewcode", "breathe", 'sphinx_mdinclude']
