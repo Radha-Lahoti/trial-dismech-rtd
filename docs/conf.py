@@ -17,7 +17,7 @@ release = 'v0'
 extensions = ["sphinx.ext.todo", "sphinx.ext.autodoc", "sphinx.ext.viewcode", "breathe", 'sphinx_mdinclude']
 
 # Breathe Configuration
-breathe_projects = {"DisMech": "docs/xml"}
+breathe_projects = {"DisMech": "/docs/xml"}
 breathe_default_project = "DisMech"
 breathe_default_members = ('members', 'undoc-members')
 
