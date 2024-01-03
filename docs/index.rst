@@ -12,6 +12,10 @@ Welcome to DisMech's documentation!
   :width: 400
   :alt: helix oscillating freely under gravity
 
+.. |dismech| image:: ../media/dismech-logo.jpg
+  :width: 400
+  :alt: dismech logo
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
